@@ -1,0 +1,16 @@
+{
+  "errors": {
+    "401": "U bent niet bevoegd om de API te gebruiken.",
+    "404": "Apparaat niet gevonden.",
+    "50x": "Smappee API is niet beschikbaar.",
+    "response": "Ongeldig antwoord van Smappee API."
+  },
+  "service": {
+    "error": "De Smappee __service__ geeft een foutmelding, mogelijk werkt het apparaat niet zoals verwacht.",
+    "disconnected": "Verbinding met Smappee __service__ is verbroken, mogelijk werkt het apparaat niet zoals verwacht.",
+    "offline": "Kan geen verbinding maken met de Smappee __service__, controleer de internet verbinding.",
+    "reconnect": "Bezig met opnieuw verbinden met de Smappee __service__..."
+  },
+  "api": "API",
+  "mqtt": "berichtenservice"
+}

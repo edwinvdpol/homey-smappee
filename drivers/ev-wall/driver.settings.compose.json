@@ -1,0 +1,48 @@
+[
+  {
+    "type": "group",
+    "label": {
+      "en": "Settings",
+      "nl": "Instellingen"
+    },
+    "children": [
+      {
+        "id": "min_current",
+        "type": "label",
+        "label": {
+          "en": "Minimum current",
+          "nl": "Minimum stroom"
+        },
+        "value": "-",
+        "hint": {
+          "en": "The minimum current your electric vehicle needs to start charging.",
+          "nl": "De minimale stroom die uw elektrische auto nodig heeft om op te laden."
+        }
+      },
+      {
+        "id": "max_current",
+        "type": "label",
+        "label": {
+          "en": "Maximum current",
+          "nl": "Maximum stroom"
+        },
+        "value": "-",
+        "hint": {
+          "en": "The maximum current that this charging point can support.",
+          "nl": "De maximale stroom die dit oplaadpunt kan ondersteunen."
+        }
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Details"
+    },
+    "children": [
+      {
+        "$extends": "serial_number"
+      }
+    ]
+  }
+]

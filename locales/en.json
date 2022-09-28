@@ -1,0 +1,16 @@
+{
+  "errors": {
+    "401": "You are not authorized to use the Smappee API.",
+    "404": "Device not found.",
+    "50x": "Smappee API is not available.",
+    "response": "Invalid response from Smappee API."
+  },
+  "service": {
+    "error": "The Smappee __service__ throws an error, the device may not work as expected.",
+    "disconnected": "Connection to Smappee __service__ has been lost, the device may not work as expected.",
+    "offline": "Cannot connect to the Smappee __service__, check the internet connection.",
+    "reconnect": "Reconnecting to the Smappee __service__..."
+  },
+  "api": "API",
+  "mqtt": "message service"
+}

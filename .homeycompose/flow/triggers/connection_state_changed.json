@@ -1,0 +1,55 @@
+{
+  "title": {
+    "en": "Connection state has changed",
+    "nl": "Verbindingsstatus is veranderd"
+  },
+  "titleFormatted": {
+    "en": "Connection state has changed to [[state]]",
+    "nl": "Verbindingsstatus is veranderd naar [[state]]"
+  },
+  "hint": {
+    "en": "This flowcard is activated when the connection state has changed.",
+    "nl": "Deze kaart wordt geactiveerd wanneer de verbindingsstatus veranderd is."
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "title": {
+        "en": "State",
+        "nl": "Status"
+      },
+      "type": "dropdown",
+      "name": "state",
+      "values": [
+        {
+          "id": "connected",
+          "label": {
+            "en": "Connected",
+            "nl": "Verbonden"
+          }
+        },
+        {
+          "id": "disconnected",
+          "label": {
+            "en": "Disconnected",
+            "nl": "Verbroken"
+          }
+        },
+        {
+          "id": "unreachable",
+          "label": {
+            "en": "Unreachable",
+            "nl": "Onbereikbaar"
+          }
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=switch"
+    }
+  ]
+}

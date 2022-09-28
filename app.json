@@ -1,0 +1,633 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.smappee",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "brandColor": "#99C031",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Smappee"
+  },
+  "description": {
+    "en": "Make the smart grid revolution happen"
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png"
+  },
+  "author": {
+    "name": "Edwin van de Pol",
+    "email": "developer@edwinvandepol.nl"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Edwin van de Pol",
+        "email": "developer@edwinvandepol.nl"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "edwinvdpol"
+      }
+    }
+  },
+  "homepage": "https://smappee.com",
+  "homeyCommunityTopicId": 68316,
+  "support": "https://community.homey.app/t/68316",
+  "bugs": {
+    "url": "https://community.homey.app/t/68316"
+  },
+  "flow": {
+    "triggers": [
+      {
+        "title": {
+          "en": "Cable was disconnected",
+          "nl": "Kabel werd losgekoppeld"
+        },
+        "hint": {
+          "en": "This flowcard is activated when the cable is disconnected.",
+          "nl": "Deze kaart wordt geactiveerd wanneer de kabel losgekoppeld werd."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ev-wall"
+          }
+        ],
+        "id": "cable_connected_false"
+      },
+      {
+        "title": {
+          "en": "Cable was connected",
+          "nl": "Kabel werd aangesloten"
+        },
+        "hint": {
+          "en": "This flowcard is activated when the cable is connected.",
+          "nl": "Deze kaart wordt geactiveerd wanneer de kabel aangesloten werd."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ev-wall"
+          }
+        ],
+        "id": "cable_connected_true"
+      },
+      {
+        "title": {
+          "en": "Connection state has changed",
+          "nl": "Verbindingsstatus is veranderd"
+        },
+        "titleFormatted": {
+          "en": "Connection state has changed to [[state]]",
+          "nl": "Verbindingsstatus is veranderd naar [[state]]"
+        },
+        "hint": {
+          "en": "This flowcard is activated when the connection state has changed.",
+          "nl": "Deze kaart wordt geactiveerd wanneer de verbindingsstatus veranderd is."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "title": {
+              "en": "State",
+              "nl": "Status"
+            },
+            "type": "dropdown",
+            "name": "state",
+            "values": [
+              {
+                "id": "connected",
+                "label": {
+                  "en": "Connected",
+                  "nl": "Verbonden"
+                }
+              },
+              {
+                "id": "disconnected",
+                "label": {
+                  "en": "Disconnected",
+                  "nl": "Verbroken"
+                }
+              },
+              {
+                "id": "unreachable",
+                "label": {
+                  "en": "Unreachable",
+                  "nl": "Onbereikbaar"
+                }
+              }
+            ]
+          },
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=switch"
+          }
+        ],
+        "id": "connection_state_changed"
+      }
+    ],
+    "conditions": [
+      {
+        "title": {
+          "en": "Cable is !{{connected|disconnected}}",
+          "nl": "Kabel is !{{aangesloten|losgekoppeld}}"
+        },
+        "hint": {
+          "en": "Checks whether the cable is connected.",
+          "nl": "Controleert of de kabel aangesloten is."
+        },
+        "platforms": [
+          "local"
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ev-wall"
+          }
+        ],
+        "id": "cable_connected"
+      }
+    ],
+    "actions": [
+      {
+        "title": {
+          "en": "Stop charging",
+          "nl": "Stop laden"
+        },
+        "hint": {
+          "en": "Use this flowcard to stop charging.",
+          "nl": "Gebruik deze kaart om het opladen te stoppen."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ev-wall"
+          }
+        ],
+        "id": "charging_mode_pause"
+      },
+      {
+        "title": {
+          "en": "Start smart charging",
+          "nl": "Slim laden starten"
+        },
+        "hint": {
+          "en": "Use this flowcard to set the charging mode to smart charging.",
+          "nl": "Gebruik deze kaart om de oplaadmodus in te stellen op slim laden."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ev-wall"
+          }
+        ],
+        "id": "charging_mode_smart"
+      },
+      {
+        "title": {
+          "en": "Start standard charging",
+          "nl": "Standaard laden starten"
+        },
+        "hint": {
+          "en": "Use this flowcard to set the charging mode to standard charging.",
+          "nl": "Gebruik deze kaart om de oplaadmodus in te stellen op standaard laden."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ev-wall"
+          }
+        ],
+        "id": "charging_mode_standard"
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/ev-wall/assets/images/small.png",
+        "large": "/drivers/ev-wall/assets/images/large.png"
+      },
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Settings",
+            "nl": "Instellingen"
+          },
+          "children": [
+            {
+              "id": "min_current",
+              "type": "label",
+              "label": {
+                "en": "Minimum current",
+                "nl": "Minimum stroom"
+              },
+              "value": "-",
+              "hint": {
+                "en": "The minimum current your electric vehicle needs to start charging.",
+                "nl": "De minimale stroom die uw elektrische auto nodig heeft om op te laden."
+              }
+            },
+            {
+              "id": "max_current",
+              "type": "label",
+              "label": {
+                "en": "Maximum current",
+                "nl": "Maximum stroom"
+              },
+              "value": "-",
+              "hint": {
+                "en": "The maximum current that this charging point can support.",
+                "nl": "De maximale stroom die dit oplaadpunt kan ondersteunen."
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Details"
+          },
+          "children": [
+            {
+              "id": "serial_number",
+              "type": "label",
+              "label": {
+                "en": "Serial Number",
+                "nl": "Serienummer"
+              },
+              "value": "-"
+            }
+          ]
+        }
+      ],
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "name": {
+        "en": "EV Wall"
+      },
+      "class": "other",
+      "capabilities": [
+        "cable_connected",
+        "charging_mode"
+      ],
+      "id": "ev-wall"
+    },
+    {
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/gas-water/assets/images/small.png",
+        "large": "/drivers/gas-water/assets/images/large.png"
+      },
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Details"
+          },
+          "children": [
+            {
+              "id": "serial_number",
+              "type": "label",
+              "label": {
+                "en": "Serial Number",
+                "nl": "Serienummer"
+              },
+              "value": "-"
+            }
+          ]
+        }
+      ],
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "name": {
+        "en": "Gas & Water"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_battery",
+        "measure_humidity",
+        "measure_temperature",
+        "meter_gas",
+        "meter_water"
+      ],
+      "energy": {
+        "batteries": [
+          "AA",
+          "AA"
+        ]
+      },
+      "id": "gas-water"
+    },
+    {
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/genius/assets/images/small.png",
+        "large": "/drivers/genius/assets/images/large.png"
+      },
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Details"
+          },
+          "children": [
+            {
+              "id": "serial_number",
+              "type": "label",
+              "label": {
+                "en": "Serial Number",
+                "nl": "Serienummer"
+              },
+              "value": "-"
+            }
+          ]
+        }
+      ],
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "name": {
+        "en": "Genius"
+      },
+      "class": "solarpanel",
+      "capabilities": [
+        "measure_power",
+        "measure_power.alwayson",
+        "measure_power.consumption"
+      ],
+      "capabilitiesOptions": {
+        "measure_power": {
+          "title": {
+            "en": "Production",
+            "nl": "Productie"
+          }
+        },
+        "measure_power.consumption": {
+          "title": {
+            "en": "Consumption",
+            "nl": "Verbruik"
+          }
+        },
+        "measure_power.alwayson": {
+          "title": {
+            "en": "Always on power",
+            "nl": "Sluimerverbruik"
+          }
+        }
+      },
+      "energy": {
+        "cumulative": true
+      },
+      "id": "genius"
+    },
+    {
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "images": {
+        "small": "/drivers/switch/assets/images/small.png",
+        "large": "/drivers/switch/assets/images/large.png"
+      },
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Details"
+          },
+          "children": [
+            {
+              "id": "serial_number",
+              "type": "label",
+              "label": {
+                "en": "Serial Number",
+                "nl": "Serienummer"
+              },
+              "value": "-"
+            }
+          ]
+        }
+      ],
+      "pair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "name": {
+        "en": "Switch"
+      },
+      "class": "socket",
+      "capabilities": [
+        "connection_state",
+        "measure_power",
+        "onoff"
+      ],
+      "id": "switch"
+    }
+  ],
+  "capabilities": {
+    "cable_connected": {
+      "title": {
+        "en": "Cable connected",
+        "nl": "Kabel aangesloten"
+      },
+      "uiComponent": "sensor",
+      "type": "boolean",
+      "icon": "/assets/capabilities/cable_connected.svg",
+      "getable": true,
+      "setable": false
+    },
+    "charging_mode": {
+      "title": {
+        "en": "Charging mode",
+        "nl": "Oplaadmodus"
+      },
+      "uiComponent": "picker",
+      "type": "enum",
+      "getable": true,
+      "setable": true,
+      "values": [
+        {
+          "id": "normal",
+          "title": {
+            "en": "Standard charging",
+            "nl": "Standaard laden"
+          }
+        },
+        {
+          "id": "smart",
+          "title": {
+            "en": "Smart charging",
+            "nl": "Slim laden"
+          }
+        },
+        {
+          "id": "paused",
+          "title": {
+            "en": "Pause charging",
+            "nl": "Pauzeer laden"
+          }
+        }
+      ]
+    },
+    "connection_state": {
+      "title": {
+        "en": "Connection state",
+        "nl": "Verbindingsstatus"
+      },
+      "uiComponent": null,
+      "type": "enum",
+      "getable": true,
+      "setable": false,
+      "values": [
+        {
+          "id": "connected",
+          "title": {
+            "en": "Connected",
+            "nl": "Verbonden"
+          }
+        },
+        {
+          "id": "disconnected",
+          "title": {
+            "en": "Disconnected",
+            "nl": "Verbroken"
+          }
+        },
+        {
+          "id": "unreachable",
+          "title": {
+            "en": "Unreachable",
+            "nl": "Onbereikbaar"
+          }
+        }
+      ]
+    }
+  }
+}

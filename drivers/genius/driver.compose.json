@@ -1,0 +1,37 @@
+{
+  "name": {
+    "en": "Genius"
+  },
+  "class": "solarpanel",
+  "capabilities": [
+    "measure_power",
+    "measure_power.alwayson",
+    "measure_power.consumption"
+  ],
+  "capabilitiesOptions": {
+    "measure_power": {
+      "title": {
+        "en": "Production",
+        "nl": "Productie"
+      }
+    },
+    "measure_power.consumption": {
+      "title": {
+        "en": "Consumption",
+        "nl": "Verbruik"
+      }
+    },
+    "measure_power.alwayson": {
+      "title": {
+        "en": "Always on power",
+        "nl": "Sluimerverbruik"
+      }
+    }
+  },
+  "energy": {
+    "cumulative": true
+  },
+  "$extends": [
+    "defaults"
+  ]
+}

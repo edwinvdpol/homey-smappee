@@ -1,0 +1,13 @@
+{
+  "name": {
+    "en": "EV Wall"
+  },
+  "class": "other",
+  "capabilities": [
+    "cable_connected",
+    "charging_mode"
+  ],
+  "$extends": [
+    "defaults"
+  ]
+}

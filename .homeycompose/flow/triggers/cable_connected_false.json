@@ -1,0 +1,20 @@
+{
+  "title": {
+    "en": "Cable was disconnected",
+    "nl": "Kabel werd losgekoppeld"
+  },
+  "hint": {
+    "en": "This flowcard is activated when the cable is disconnected.",
+    "nl": "Deze kaart wordt geactiveerd wanneer de kabel losgekoppeld werd."
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=ev-wall"
+    }
+  ]
+}

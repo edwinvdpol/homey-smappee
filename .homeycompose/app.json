@@ -1,0 +1,49 @@
+{
+  "id": "com.smappee",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "brandColor": "#99C031",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Smappee"
+  },
+  "description": {
+    "en": "Make the smart grid revolution happen"
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png"
+  },
+  "author": {
+    "name": "Edwin van de Pol",
+    "email": "developer@edwinvandepol.nl"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Edwin van de Pol",
+        "email": "developer@edwinvandepol.nl"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "edwinvdpol"
+      }
+    }
+  },
+  "homepage": "https://smappee.com",
+  "homeyCommunityTopicId": 68316,
+  "support": "https://community.homey.app/t/68316",
+  "bugs": {
+    "url": "https://community.homey.app/t/68316"
+  }
+}

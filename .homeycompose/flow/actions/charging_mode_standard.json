@@ -1,0 +1,17 @@
+{
+  "title": {
+    "en": "Start standard charging",
+    "nl": "Standaard laden starten"
+  },
+  "hint": {
+    "en": "Use this flowcard to set the charging mode to standard charging.",
+    "nl": "Gebruik deze kaart om de oplaadmodus in te stellen op standaard laden."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=ev-wall"
+    }
+  ]
+}

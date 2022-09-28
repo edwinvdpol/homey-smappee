@@ -1,0 +1,33 @@
+{
+  "title": {
+    "en": "Connection state",
+    "nl": "Verbindingsstatus"
+  },
+  "uiComponent": null,
+  "type": "enum",
+  "getable": true,
+  "setable": false,
+  "values": [
+    {
+      "id": "connected",
+      "title": {
+        "en": "Connected",
+        "nl": "Verbonden"
+      }
+    },
+    {
+      "id": "disconnected",
+      "title": {
+        "en": "Disconnected",
+        "nl": "Verbroken"
+      }
+    },
+    {
+      "id": "unreachable",
+      "title": {
+        "en": "Unreachable",
+        "nl": "Onbereikbaar"
+      }
+    }
+  ]
+}

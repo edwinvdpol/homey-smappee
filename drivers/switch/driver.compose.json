@@ -1,0 +1,14 @@
+{
+  "name": {
+    "en": "Switch"
+  },
+  "class": "socket",
+  "capabilities": [
+    "connection_state",
+    "measure_power",
+    "onoff"
+  ],
+  "$extends": [
+    "defaults"
+  ]
+}

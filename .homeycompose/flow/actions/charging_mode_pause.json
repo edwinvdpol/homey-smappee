@@ -1,0 +1,17 @@
+{
+  "title": {
+    "en": "Stop charging",
+    "nl": "Stop laden"
+  },
+  "hint": {
+    "en": "Use this flowcard to stop charging.",
+    "nl": "Gebruik deze kaart om het opladen te stoppen."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=ev-wall"
+    }
+  ]
+}

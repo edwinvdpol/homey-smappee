@@ -1,0 +1,20 @@
+{
+  "title": {
+    "en": "Cable is !{{connected|disconnected}}",
+    "nl": "Kabel is !{{aangesloten|losgekoppeld}}"
+  },
+  "hint": {
+    "en": "Checks whether the cable is connected.",
+    "nl": "Controleert of de kabel aangesloten is."
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=ev-wall"
+    }
+  ]
+}

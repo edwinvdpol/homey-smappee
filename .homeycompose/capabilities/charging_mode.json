@@ -1,0 +1,33 @@
+{
+  "title": {
+    "en": "Charging mode",
+    "nl": "Oplaadmodus"
+  },
+  "uiComponent": "picker",
+  "type": "enum",
+  "getable": true,
+  "setable": true,
+  "values": [
+    {
+      "id": "normal",
+      "title": {
+        "en": "Standard charging",
+        "nl": "Standaard laden"
+      }
+    },
+    {
+      "id": "smart",
+      "title": {
+        "en": "Smart charging",
+        "nl": "Slim laden"
+      }
+    },
+    {
+      "id": "paused",
+      "title": {
+        "en": "Pause charging",
+        "nl": "Pauzeer laden"
+      }
+    }
+  ]
+}

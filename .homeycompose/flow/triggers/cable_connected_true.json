@@ -1,0 +1,20 @@
+{
+  "title": {
+    "en": "Cable was connected",
+    "nl": "Kabel werd aangesloten"
+  },
+  "hint": {
+    "en": "This flowcard is activated when the cable is connected.",
+    "nl": "Deze kaart wordt geactiveerd wanneer de kabel aangesloten werd."
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=ev-wall"
+    }
+  ]
+}

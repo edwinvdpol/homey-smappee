@@ -1,0 +1,22 @@
+{
+  "name": {
+    "en": "Gas & Water"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_battery",
+    "measure_humidity",
+    "measure_temperature",
+    "meter_gas",
+    "meter_water"
+  ],
+  "energy": {
+    "batteries": [
+      "AA",
+      "AA"
+    ]
+  },
+  "$extends": [
+    "defaults"
+  ]
+}
