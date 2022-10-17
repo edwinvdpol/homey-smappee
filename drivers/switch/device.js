@@ -73,9 +73,7 @@ class SwitchDevice extends MqttDevice {
 
   // Set device data
   async handleSyncData(data) {
-    if (blank(data)) {
-      return;
-    }
+    if (blank(data)) return;
 
     // Show log when timestamp is different
     if (blank(data.timestamp) || this.latestRecordTime !== data.timestamp) {

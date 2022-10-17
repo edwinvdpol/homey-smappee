@@ -49,9 +49,7 @@ class EVWallDevice extends MqttDevice {
 
   // Set device data
   async handleSyncData(data) {
-    if (blank(data)) {
-      return;
-    }
+    if (blank(data)) return;
 
     this.log('Handle data:', JSON.stringify(data).slice(0, 150));
 

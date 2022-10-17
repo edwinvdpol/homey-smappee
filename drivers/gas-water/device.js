@@ -34,9 +34,7 @@ class GasWaterDevice extends Device {
 
   // Set device data
   async handleSyncData(data) {
-    if (blank(data)) {
-      return;
-    }
+    if (blank(data)) return;
 
     // Reset meters when timestamp already known
     if (data.timestamp && this.latestRecordTime === data.timestamp) {
