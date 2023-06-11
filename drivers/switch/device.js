@@ -5,8 +5,7 @@ const { blank, filled } = require('../../lib/Utils');
 
 class SwitchDevice extends MqttDevice {
 
-  // Poll interval in seconds
-  static POLL_INTERVAL = 60;
+  static SYNC_INTERVAL = 60; // Seconds
 
   /*
   | Device events
@@ -20,8 +19,8 @@ class SwitchDevice extends MqttDevice {
     // Initialise MQTT device
     await super.onOAuth2Init();
 
-    // Enable polling and synchronize
-    await this.enablePolling();
+    // Register timer and synchronize
+    await this.registerTimer();
   }
 
   // On/off capability changed

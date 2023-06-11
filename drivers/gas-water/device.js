@@ -5,8 +5,7 @@ const { blank, filled } = require('../../lib/Utils');
 
 class GasWaterDevice extends Device {
 
-  // Poll interval in seconds
-  static POLL_INTERVAL = 60;
+  static SYNC_INTERVAL = 60; // Seconds
 
   /*
   | Device events
@@ -18,7 +17,7 @@ class GasWaterDevice extends Device {
     await super.onOAuth2Init();
 
     // Enable polling and synchronize
-    await this.enablePolling();
+    await this.registerTimer();
   }
 
   /*

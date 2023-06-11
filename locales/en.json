@@ -1,9 +1,11 @@
 {
   "errors": {
-    "401": "You are not authorized to use the Smappee API.",
-    "404": "Device not found.",
-    "50x": "Smappee API is not available.",
-    "response": "Invalid response from Smappee API."
+    "401": "Smappee API credentials are incorrect",
+    "403": "Smappee API has denied access to this device",
+    "404": "Device not found in Smappee account",
+    "50x": "Smappee API is unavailable",
+    "network": "Smappee API is unreachable",
+    "unknown": "An unknown error has occurred"
   },
   "service": {
     "error": "The Smappee __service__ throws an error, the device may not work as expected.",
