@@ -4,6 +4,8 @@
     "403": "Smappee API has denied access to this device",
     "404": "Device not found in Smappee account",
     "50x": "Smappee API is unavailable",
+    "clientId": "Enter a valid client ID",
+    "clientSecret": "Enter a valid client secret",
     "network": "Smappee API is unreachable",
     "unknown": "An unknown error has occurred"
   },

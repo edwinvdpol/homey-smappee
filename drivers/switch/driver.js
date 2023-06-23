@@ -23,11 +23,7 @@ class SwitchDriver extends Driver {
 
   // Return devices while pairing
   async getPairDevices({ oAuth2Client }) {
-    const devices = await oAuth2Client.discoverSwitchDevices();
-
-    this.log(devices);
-
-    return devices;
+    return oAuth2Client.discoverSwitchDevices();
   }
 
   // Return capabilities while pairing
