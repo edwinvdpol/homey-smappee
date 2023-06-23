@@ -1,4 +1,7 @@
 {
+  "1.0.1": {
+    "en": "Added API credentials screen"
+  },
   "1.0.0": {
     "en": "Initial release"
   }
