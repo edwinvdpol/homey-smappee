@@ -76,7 +76,7 @@ class SwitchDevice extends MqttDevice {
 
     // Show log when timestamp is different
     if (blank(data.timestamp) || this.latestRecordTime !== data.timestamp) {
-      this.log('Handle data:', JSON.stringify(data));
+      this.log('Handle data', JSON.stringify(data));
     }
 
     // Active power (Watt)

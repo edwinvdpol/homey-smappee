@@ -26,7 +26,7 @@ class GeniusDevice extends MqttDevice {
   async handleSyncData(data) {
     if (blank(data)) return;
 
-    this.log('Handle power data:', JSON.stringify(data).slice(0, 150));
+    this.log('Handle power data', JSON.stringify(data).slice(0, 150));
 
     if (filled(data.solarPower)) {
       this.setCapabilityValue('measure_power', Math.abs(data.solarPower)).catch(this.error);
