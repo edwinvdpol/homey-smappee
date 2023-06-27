@@ -7,6 +7,7 @@
     "clientId": "Voer een geldig client ID in",
     "clientSecret": "Voer een geldig client secret in",
     "network": "Smappee API is niet bereikbaar",
+    "unavailable": "Apparaat is niet beschikbaar",
     "unknown": "Er is een onbekende fout opgetreden"
   },
   "service": {

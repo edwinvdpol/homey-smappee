@@ -70,7 +70,7 @@ class EVWallDevice extends MqttDevice {
       if (data.available) {
         this.setAvailable().catch(this.error);
       } else {
-        this.setUnavailable('Charging point is not available').catch(this.error);
+        this.setUnavailable(this.homey.__('errors.unavailable')).catch(this.error);
       }
     }
   }
