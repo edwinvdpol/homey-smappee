@@ -44,17 +44,17 @@ class GasWaterDevice extends Device {
     }
 
     // Current battery percentage
-    if (filled(data.battery)) {
+    if (this.hasCapability('measure_battery') && filled(data.battery)) {
       this.setCapabilityValue('measure_battery', data.battery).catch(this.error);
     }
 
     // Current humidity
-    if (filled(data.humidity)) {
+    if (this.hasCapability('measure_humidity') && filled(data.humidity)) {
       this.setCapabilityValue('measure_humidity', data.humidity).catch(this.error);
     }
 
     // Current temperature
-    if (filled(data.temperature)) {
+    if (this.hasCapability('measure_temperature') && filled(data.temperature)) {
       this.setCapabilityValue('measure_temperature', data.temperature).catch(this.error);
     }
 

@@ -54,14 +54,14 @@ class EVWallDevice extends MqttDevice {
     this.log('Handle data', JSON.stringify(data).slice(0, 150));
 
     // Cable connected (MQTT)
-    if (filled(data.chargingState)) {
+    if (this.hasCapability('cable_connected') && filled(data.chargingState)) {
       const connected = data.chargingState !== 'STOPPED';
 
       this.setCapabilityValue('cable_connected', connected).catch(this.error);
     }
 
     // Charging mode (MQTT)
-    if (filled(data.chargingMode)) {
+    if (this.hasCapability('charging_mode') && filled(data.chargingMode)) {
       this.setCapabilityValue('charging_mode', data.chargingMode.toLowerCase()).catch(this.error);
     }
 
