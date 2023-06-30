@@ -6,6 +6,7 @@
     "50x": "Smappee API is unavailable",
     "clientId": "Enter a valid client ID",
     "clientSecret": "Enter a valid client secret",
+    "led": "LED brightness is not supported by this device",
     "network": "Smappee API is unreachable",
     "unavailable": "Device is unavailable",
     "unknown": "An unknown error has occurred"

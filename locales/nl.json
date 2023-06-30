@@ -6,6 +6,7 @@
     "50x": "Smappee API is niet beschikbaar",
     "clientId": "Voer een geldig client ID in",
     "clientSecret": "Voer een geldig client secret in",
+    "led": "LED-helderheid wordt niet ondersteund door dit apparaat",
     "network": "Smappee API is niet bereikbaar",
     "unavailable": "Apparaat is niet beschikbaar",
     "unknown": "Er is een onbekende fout opgetreden"

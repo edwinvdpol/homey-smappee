@@ -11,7 +11,7 @@ class EVWallDevice extends MqttDevice {
 
   // Target temperature capability changed
   async onCapabilityChargingMode(mode) {
-    this.log(`Charging mode changed to ${mode}`);
+    this.log(`Charging mode changed to '${mode}'`);
 
     await this.setChargingMode(mode);
   }
@@ -23,20 +23,49 @@ class EVWallDevice extends MqttDevice {
     }
   }
 
+  // Settings changed
+  async onSettings({ oldSettings, newSettings, changedKeys }) {
+    this.log('Updating settings...');
+
+    // LED brightness updated
+    if (changedKeys.includes('led_brightness')) {
+      const percentage = Number(newSettings.led_brightness);
+
+      this.log(`LED brightness is now '${percentage}'`);
+
+      await this.setBrightness(percentage);
+    }
+  }
+
   /*
   | Device actions
   */
 
   // Activate charging mode
   async setChargingMode(mode) {
-    const position = this.getStoreValue('position');
     const stationSerialNumber = this.getStore().station.serialNumber;
+    const position = this.getStoreValue('position');
 
     this.log(`Set position '${position}' charging mode to '${mode}'`);
 
     await this.oAuth2Client.setChargingMode(stationSerialNumber, position, mode);
 
     this.setCapabilityValue('charging_mode', mode).catch(this.error);
+  }
+
+  // LED brightness
+  async setBrightness(percentage) {
+    const serviceLocationId = this.getStoreValue('service_location_id');
+    const ledId = this.getStoreValue('led_id') || null;
+
+    if (blank(ledId)) {
+      this.error('LED brightness not supported');
+      throw new Error(this.homey.__('errors.led'));
+    }
+
+    this.log(`Set LED brightness to '${percentage}%'`);
+
+    await this.oAuth2Client.setBrightness(serviceLocationId, ledId, percentage);
   }
 
   /*
@@ -81,7 +110,9 @@ class EVWallDevice extends MqttDevice {
 
   // Register capability listeners
   async registerCapabilityListeners() {
-    this.registerCapabilityListener('charging_mode', this.onCapabilityChargingMode.bind(this));
+    if (this.hasCapability('charging_mode')) {
+      this.registerCapabilityListener('charging_mode', this.onCapabilityChargingMode.bind(this));
+    }
   }
 
 }

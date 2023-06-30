@@ -51,6 +51,7 @@ class EVWallDriver extends Driver {
       uuid: device.uuid,
       name: device.name,
       icon: device.icon,
+      led_id: device.ledId,
       station: device.station,
       position: device.position,
       min_power: device.minPower,
