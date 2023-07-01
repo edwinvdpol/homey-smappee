@@ -5,11 +5,15 @@
   "class": "solarpanel",
   "capabilities": [
     "measure_power",
-    "measure_power.alwayson",
-    "measure_power.consumption"
+    "measure_power.consumption",
+    "measure_power.production",
+    "measure_power.alwayson"
   ],
   "capabilitiesOptions": {
     "measure_power": {
+      "approximated": true
+    },
+    "measure_power.production": {
       "title": {
         "en": "Production",
         "nl": "Productie"
@@ -27,9 +31,6 @@
         "nl": "Sluimerverbruik"
       }
     }
-  },
-  "energy": {
-    "cumulative": true
   },
   "$extends": [
     "defaults"

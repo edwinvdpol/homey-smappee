@@ -15,11 +15,16 @@ class GeniusDriver extends Driver {
 
   // Return capabilities while pairing
   getPairCapabilities(device) {
-    return [
-      'measure_power',
-      'measure_power.consumption',
-      'measure_power.alwayson',
-    ];
+    const capabilities = ['measure_power'];
+
+    if (device.solar) {
+      capabilities.push('measure_power.consumption');
+      capabilities.push('measure_power.production');
+    }
+
+    capabilities.push('measure_power.alwayson');
+
+    return capabilities;
   }
 
   // Return settings value while pairing
