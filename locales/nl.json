@@ -17,6 +17,10 @@
     "offline": "Kan geen verbinding maken met de Smappee __service__, controleer de internet verbinding.",
     "reconnect": "Bezig met opnieuw verbinden met de Smappee __service__..."
   },
+  "warnings": {
+    "disconnected": "Aparaat is niet verbonden, mogelijk werkt het apparaat niet zoals verwacht.",
+    "unreachable": "Aparaat is niet bereikbaar, mogelijk werkt het apparaat niet zoals verwacht."
+  },
   "api": "API",
   "mqtt": "berichtenservice"
 }

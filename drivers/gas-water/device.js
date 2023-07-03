@@ -8,19 +8,6 @@ class GasWaterDevice extends Device {
   static SYNC_INTERVAL = 60; // Seconds
 
   /*
-  | Device events
-  */
-
-  // Device initialized
-  async onOAuth2Init() {
-    // Initialise parent device
-    await super.onOAuth2Init();
-
-    // Enable polling and synchronize
-    await this.registerTimer();
-  }
-
-  /*
   | Synchronization functions
   */
 

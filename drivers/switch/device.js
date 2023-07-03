@@ -11,18 +11,6 @@ class SwitchDevice extends MqttDevice {
   | Device events
   */
 
-  // Device initialized
-  async onOAuth2Init() {
-    // Reset capabilities
-    this.setCapabilityValue('measure_power', 0).catch(this.error);
-
-    // Initialise MQTT device
-    await super.onOAuth2Init();
-
-    // Register timer and synchronize
-    await this.registerTimer();
-  }
-
   // On/off capability changed
   async onCapabilityOnOff(on) {
     this.log(`Capability 'onoff' is now '${on}'`);
@@ -58,10 +46,6 @@ class SwitchDevice extends MqttDevice {
   | Synchronization functions
   */
 
-  subscribeTopic() {
-    return `plug/${this.getStoreValue('id')}/#`;
-  }
-
   // Return data which need to be synced
   async getSyncData() {
     const result = await this.oAuth2Client.getLatestSwitchConsumption(this.getStoreValue('monitor_id'), this.getStoreValue('service_location_id'));
@@ -86,7 +70,17 @@ class SwitchDevice extends MqttDevice {
 
     // Connection state
     if (this.hasCapability('connection_state') && filled(data.connectionState)) {
-      this.setCapabilityValue('connection_state', data.connectionState.toLowerCase()).catch(this.error);
+      const state = data.connectionState.toLowerCase();
+
+      this.setCapabilityValue('connection_state', state).catch(this.error);
+
+      if (state === 'disconnected') {
+        this.setWarning(this.homey('warnings.disconnected')).catch(this.error);
+      } else if (state === 'unreachable') {
+        this.setWarning(this.homey('warnings.unreachable')).catch(this.error);
+      } else {
+        this.unsetWarning().catch(this.error);
+      }
     }
 
     // On/off state
@@ -95,6 +89,14 @@ class SwitchDevice extends MqttDevice {
 
       this.setCapabilityValue('onoff', on).catch(this.error);
     }
+  }
+
+  /*
+  | MQTT functions
+  */
+
+  subscribeTopic() {
+    return `plug/${this.getStoreValue('id')}/#`;
   }
 
   /*

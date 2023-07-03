@@ -18,15 +18,16 @@ class GeniusDevice extends MqttDevice {
   | Synchronization functions
   */
 
-  subscribeTopic() {
-    return 'power';
+  // Return data which need to be synced
+  async getSyncData() {
+    return {};
   }
 
   // Set device data
   async handleSyncData(data) {
     if (blank(data)) return;
 
-    // this.log('Handle data', JSON.stringify(data).slice(0, 150));
+    this.log('Handle data', JSON.stringify(data).slice(0, 150));
 
     let power = 0;
 
@@ -50,6 +51,16 @@ class GeniusDevice extends MqttDevice {
     }
 
     this.setCapabilityValue('measure_power', power).catch(this.error);
+
+    this.unsetWarning().catch(this.error);
+  }
+
+  /*
+  | MQTT functions
+  */
+
+  subscribeTopic() {
+    return 'power';
   }
 
 }

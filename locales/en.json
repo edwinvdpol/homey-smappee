@@ -17,6 +17,10 @@
     "offline": "Cannot connect to the Smappee __service__, check the internet connection.",
     "reconnect": "Reconnecting to the Smappee __service__..."
   },
+  "warnings": {
+    "disconnected": "Device is disconnected, the device may not work as expected.",
+    "unreachable": "Device is unreachable, the device may not work as expected."
+  },
   "api": "API",
   "mqtt": "message service"
 }
