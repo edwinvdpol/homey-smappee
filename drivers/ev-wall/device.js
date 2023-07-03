@@ -21,6 +21,10 @@ class EVWallDevice extends MqttDevice {
     if (topic.endsWith('chargingstate')) {
       await this.handleSyncData(data);
     }
+
+    if (topic.endsWith('power')) {
+      await this.handleSyncData(data);
+    }
   }
 
   // Settings changed
@@ -82,6 +86,11 @@ class EVWallDevice extends MqttDevice {
 
     this.log('Handle data', JSON.stringify(data).slice(0, 150));
 
+    // Always on power (MQTT)
+    if (this.hasCapability('measure_power.alwayson') && filled(data.alwaysOn)) {
+      this.setCapabilityValue('measure_power.alwayson', data.alwaysOn).catch(this.error);
+    }
+
     // Cable connected (MQTT)
     if (this.hasCapability('cable_connected') && filled(data.chargingState)) {
       const connected = data.chargingState !== 'STOPPED';
@@ -92,6 +101,11 @@ class EVWallDevice extends MqttDevice {
     // Charging mode (MQTT)
     if (this.hasCapability('charging_mode') && filled(data.chargingMode)) {
       this.setCapabilityValue('charging_mode', data.chargingMode.toLowerCase()).catch(this.error);
+    }
+
+    // Consumption power (MQTT)
+    if (this.hasCapability('measure_power') && filled(data.consumptionPower)) {
+      this.setCapabilityValue('measure_power', data.consumptionPower).catch(this.error);
     }
 
     // Availability (MQTT)

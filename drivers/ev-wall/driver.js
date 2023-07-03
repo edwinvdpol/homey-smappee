@@ -30,6 +30,8 @@ class EVWallDriver extends Driver {
   // Return capabilities while pairing
   getPairCapabilities(device) {
     return [
+      'measure_power',
+      'measure_power.alwayson',
       'cable_connected',
       'charging_mode',
     ];

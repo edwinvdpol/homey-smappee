@@ -80,17 +80,17 @@ class SwitchDevice extends MqttDevice {
     }
 
     // Active power (Watt)
-    if (filled(data.active)) {
+    if (this.hasCapability('measure_power') && filled(data.active)) {
       this.setCapabilityValue('measure_power', data.active * 12).catch(this.error);
     }
 
     // Connection state
-    if (filled(data.connectionState)) {
+    if (this.hasCapability('connection_state') && filled(data.connectionState)) {
       this.setCapabilityValue('connection_state', data.connectionState.toLowerCase()).catch(this.error);
     }
 
     // On/off state
-    if (filled(data.state)) {
+    if (this.hasCapability('onoff') && filled(data.state)) {
       const on = data.state === 'ON_ON' || data.state === 'ON';
 
       this.setCapabilityValue('onoff', on).catch(this.error);
