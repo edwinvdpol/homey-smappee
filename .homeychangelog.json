@@ -1,4 +1,7 @@
 {
+  "1.1.0": {
+    "en": "Added multiple device capabilities"
+  },
   "1.0.1": {
     "en": "Added API credentials screen"
   },
