@@ -75,9 +75,9 @@ class SwitchDevice extends MqttDevice {
       this.setCapabilityValue('connection_state', state).catch(this.error);
 
       if (state === 'disconnected') {
-        this.setWarning(this.homey('warnings.disconnected')).catch(this.error);
+        this.setWarning(this.homey.__('warnings.disconnected')).catch(this.error);
       } else if (state === 'unreachable') {
-        this.setWarning(this.homey('warnings.unreachable')).catch(this.error);
+        this.setWarning(this.homey.__('warnings.unreachable')).catch(this.error);
       } else {
         this.unsetWarning().catch(this.error);
       }
