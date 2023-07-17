@@ -231,6 +231,117 @@
   "drivers": [
     {
       "images": {
+        "small": "/drivers/connect/assets/images/small.png",
+        "large": "/drivers/connect/assets/images/large.png"
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Details"
+          },
+          "children": [
+            {
+              "id": "serial_number",
+              "type": "label",
+              "label": {
+                "en": "Serial Number",
+                "nl": "Serienummer"
+              },
+              "value": "-"
+            }
+          ]
+        }
+      ],
+      "pair": [
+        {
+          "id": "login_credentials",
+          "template": "login_credentials",
+          "options": {
+            "logo": "../../../assets/logo.jpg",
+            "title": {
+              "en": "Enter your API credentials",
+              "nl": "Voer uw API inloggegevens in"
+            },
+            "usernameLabel": {
+              "en": "Client ID"
+            },
+            "usernamePlaceholder": {
+              "en": "Contact support@smappee.com"
+            },
+            "passwordLabel": {
+              "en": "Client Secret"
+            },
+            "passwordPlaceholder": {
+              "en": "Contact support@smappee.com"
+            }
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "name": {
+        "en": "Connect"
+      },
+      "class": "solarpanel",
+      "capabilities": [
+        "measure_power",
+        "measure_power.consumption",
+        "measure_power.production",
+        "measure_power.alwayson"
+      ],
+      "capabilitiesOptions": {
+        "measure_power": {
+          "approximated": true
+        },
+        "measure_power.production": {
+          "title": {
+            "en": "Production",
+            "nl": "Productie"
+          }
+        },
+        "measure_power.consumption": {
+          "title": {
+            "en": "Consumption",
+            "nl": "Verbruik"
+          }
+        },
+        "measure_power.alwayson": {
+          "title": {
+            "en": "Always on power",
+            "nl": "Sluimerverbruik"
+          }
+        }
+      },
+      "id": "connect"
+    },
+    {
+      "images": {
         "small": "/drivers/ev-wall/assets/images/small.png",
         "large": "/drivers/ev-wall/assets/images/large.png"
       },
