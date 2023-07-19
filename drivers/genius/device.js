@@ -32,17 +32,20 @@ class GeniusDevice extends MqttDevice {
     let power = 0;
 
     if (this.hasCapability('measure_power.production') && filled(data.solarPower)) {
-      const solar = Math.abs(data.solarPower);
-      power = solar;
+      power = Math.abs(data.solarPower);
 
-      this.setCapabilityValue('measure_power.production', solar).catch(this.error);
+      this.setCapabilityValue('measure_power.production', power).catch(this.error);
     }
 
     if (filled(data.consumptionPower)) {
-      power -= Number(data.consumptionPower);
-
       if (this.hasCapability('measure_power.consumption')) {
-        this.setCapabilityValue('measure_power.consumption', data.consumptionPower).catch(this.error);
+        const consumption = Math.abs(data.consumptionPower);
+
+        power -= consumption;
+
+        this.setCapabilityValue('measure_power.consumption', consumption).catch(this.error);
+      } else {
+        power = -Math.abs(data.consumptionPower);
       }
     }
 
