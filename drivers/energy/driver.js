@@ -21,6 +21,11 @@ class EnergyDriver extends Driver {
     ];
   }
 
+  // Return device ID while pairing
+  getPairDeviceId(device) {
+    return `EN-${device.serviceLocationId}`;
+  }
+
   // Return settings value while pairing
   getPairSettings(device) {
     return {

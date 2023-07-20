@@ -27,6 +27,11 @@ class GeniusDriver extends Driver {
     return capabilities;
   }
 
+  // Return device ID while pairing
+  getPairDeviceId(device) {
+    return `GE-${device.serviceLocationId}`;
+  }
+
   // Return settings value while pairing
   getPairSettings(device) {
     return {

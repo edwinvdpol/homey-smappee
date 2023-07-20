@@ -13,6 +13,11 @@ class ConnectDriver extends GeniusDriver {
     return oAuth2Client.discoverConnectDevices();
   }
 
+  // Return device ID while pairing
+  getPairDeviceId(device) {
+    return `CO-${device.serviceLocationId}`;
+  }
+
 }
 
 module.exports = ConnectDriver;

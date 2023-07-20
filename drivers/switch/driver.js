@@ -35,6 +35,11 @@ class SwitchDriver extends Driver {
     ];
   }
 
+  // Return device ID while pairing
+  getPairDeviceId(device) {
+    return `SW-${device.serviceLocationId}-${device.id}`;
+  }
+
   // Return settings value while pairing
   getPairSettings(device) {
     return {

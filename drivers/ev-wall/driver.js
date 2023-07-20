@@ -37,6 +37,11 @@ class EVWallDriver extends Driver {
     ];
   }
 
+  // Return device ID while pairing
+  getPairDeviceId(device) {
+    return `EV-${device.serviceLocationId}-${device.id}`;
+  }
+
   // Return settings value while pairing
   getPairSettings(device) {
     return {

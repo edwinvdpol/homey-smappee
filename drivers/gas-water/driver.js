@@ -43,6 +43,11 @@ class GasWaterDriver extends Driver {
     return capabilities;
   }
 
+  // Return device ID while pairing
+  getPairDeviceId(device) {
+    return `GW-${device.serviceLocationId}-${device.id}`;
+  }
+
   // Return settings value while pairing
   getPairSettings(device) {
     return {
