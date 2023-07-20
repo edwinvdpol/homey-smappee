@@ -798,6 +798,106 @@
     },
     {
       "images": {
+        "small": "/drivers/solar/assets/images/small.png",
+        "large": "/drivers/solar/assets/images/large.png"
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "cloud"
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Details"
+          },
+          "children": [
+            {
+              "id": "serial_number",
+              "type": "label",
+              "label": {
+                "en": "Serial Number",
+                "nl": "Serienummer"
+              },
+              "value": "-"
+            }
+          ]
+        }
+      ],
+      "pair": [
+        {
+          "id": "login_credentials",
+          "template": "login_credentials",
+          "options": {
+            "logo": "../../../assets/logo.jpg",
+            "title": {
+              "en": "Enter your API credentials",
+              "nl": "Voer uw API inloggegevens in"
+            },
+            "usernameLabel": {
+              "en": "Client ID"
+            },
+            "usernamePlaceholder": {
+              "en": "Contact support@smappee.com"
+            },
+            "passwordLabel": {
+              "en": "Client Secret"
+            },
+            "passwordPlaceholder": {
+              "en": "Contact support@smappee.com"
+            }
+          }
+        },
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "repair": [
+        {
+          "id": "login_oauth2",
+          "template": "login_oauth2"
+        }
+      ],
+      "name": {
+        "en": "Solar"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_power",
+        "measure_power.alwayson"
+      ],
+      "capabilitiesOptions": {
+        "measure_power": {
+          "approximated": true
+        },
+        "measure_power.alwayson": {
+          "title": {
+            "en": "Always on power",
+            "nl": "Sluimerverbruik"
+          }
+        }
+      },
+      "energy": {
+        "cumulative": true
+      },
+      "id": "solar"
+    },
+    {
+      "images": {
         "small": "/drivers/switch/assets/images/small.png",
         "large": "/drivers/switch/assets/images/large.png"
       },

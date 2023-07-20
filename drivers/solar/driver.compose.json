@@ -1,0 +1,27 @@
+{
+  "name": {
+    "en": "Solar"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_power",
+    "measure_power.alwayson"
+  ],
+  "capabilitiesOptions": {
+    "measure_power": {
+      "approximated": true
+    },
+    "measure_power.alwayson": {
+      "title": {
+        "en": "Always on power",
+        "nl": "Sluimerverbruik"
+      }
+    }
+  },
+  "energy": {
+    "cumulative": true
+  },
+  "$extends": [
+    "defaults"
+  ]
+}
