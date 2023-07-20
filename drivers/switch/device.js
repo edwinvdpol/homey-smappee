@@ -5,8 +5,6 @@ const { blank, filled } = require('../../lib/Utils');
 
 class SwitchDevice extends MqttDevice {
 
-  static SYNC_INTERVAL = 60; // Seconds
-
   /*
   | Device events
   */

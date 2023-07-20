@@ -5,7 +5,15 @@ const { blank, filled } = require('../../lib/Utils');
 
 class GasWaterDevice extends Device {
 
-  static SYNC_INTERVAL = 60; // Seconds
+  static TIMER_INTERVAL = 60; // Seconds
+
+  /*
+  | Device events
+  */
+
+  async onTimerInterval() {
+    await this.sync();
+  }
 
   /*
   | Synchronization functions
