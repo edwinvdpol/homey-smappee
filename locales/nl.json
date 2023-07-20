@@ -11,6 +11,9 @@
     "unavailable": "Apparaat is niet beschikbaar",
     "unknown": "Er is een onbekende fout opgetreden"
   },
+  "notifications":  {
+    "water_capability_updated": "Water capability bijgewerkt voor **__name__**. Controleer uw flows."
+  },
   "service": {
     "error": "De Smappee __service__ geeft een foutmelding, mogelijk werkt het apparaat niet zoals verwacht.",
     "disconnected": "Verbinding met Smappee __service__ is verbroken, mogelijk werkt het apparaat niet zoals verwacht.",

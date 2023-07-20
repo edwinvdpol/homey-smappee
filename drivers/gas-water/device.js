@@ -1,5 +1,6 @@
 'use strict';
 
+const semverLte = require('semver/functions/lte');
 const Device = require('../../lib/Device');
 const { blank, filled } = require('../../lib/Utils');
 
@@ -11,6 +12,16 @@ class GasWaterDevice extends Device {
   | Device events
   */
 
+  // Device initialized
+  async onOAuth2Init() {
+    // Migrate
+    await this.migrate();
+
+    // Initialize parent
+    await super.onOAuth2Init();
+  }
+
+  // Timer action
   async onTimerInterval() {
     await this.sync();
   }
@@ -54,7 +65,7 @@ class GasWaterDevice extends Device {
     }
 
     // Get store
-    const store = this.getStore();
+    let store = this.getStore();
 
     // Gas meter
     if (this.hasCapability('meter_gas')) {
@@ -70,6 +81,37 @@ class GasWaterDevice extends Device {
       const value = (data[field] || 0) / store.water_ppu;
 
       this.setCapabilityValue('meter_water', value).catch(this.error);
+    }
+
+    // Water measure
+    if (this.hasCapability('measure_water')) {
+      const field = `value${store.water_channel}`;
+      const value = (data[field] || 0) / store.water_ppu;
+
+      this.setCapabilityValue('measure_water', value).catch(this.error);
+    }
+
+    data = null;
+    store = null;
+  }
+
+  /*
+  | Support functions
+  */
+
+  // Migrate device properties
+  async migrate() {
+    // App version <= 1.2.0
+    if (semverLte(this.homey.manifest.version, '1.2.0')) {
+      // Correct water capability
+      if (!this.hasCapability('meter_water')) return;
+      if (this.getStoreValue('water_uom') === 'm3') return;
+
+      this.removeCapability('meter_water').catch(this.error);
+      this.addCapability('measure_water').catch(this.error);
+
+      const message = this.homey.__('notifications.water_capability_updated', { name: this.getName() });
+      this.homey.notifications.createNotification({ excerpt: message }).catch(this.error);
     }
   }
 

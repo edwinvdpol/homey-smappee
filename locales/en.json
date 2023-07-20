@@ -11,6 +11,9 @@
     "unavailable": "Device is unavailable",
     "unknown": "An unknown error has occurred"
   },
+  "notifications":  {
+    "water_capability_updated": "Water capability updated for **__name__**. Check your flows."
+  },
   "service": {
     "error": "The Smappee __service__ throws an error, the device may not work as expected.",
     "disconnected": "Connection to Smappee __service__ has been lost, the device may not work as expected.",

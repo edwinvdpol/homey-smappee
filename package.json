@@ -25,7 +25,8 @@
     "async-mqtt": "^2.6.3",
     "collect.js": "^4.36.1",
     "homey-log": "^2.1.0",
-    "homey-oauth2app": "^3.5.3"
+    "homey-oauth2app": "^3.5.3",
+    "semver": "^7.5.4"
   },
   "devDependencies": {
     "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.4",

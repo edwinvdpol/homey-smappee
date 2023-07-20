@@ -17,6 +17,8 @@ class GasWaterDriver extends Driver {
   // Return capabilities while pairing
   getPairCapabilities(device) {
     const channels = collect(device.channels);
+    const water = channels.where('type', 'water').first();
+    const gas = channels.where('type', 'gas').first();
 
     const capabilities = [
       'measure_battery',
@@ -24,12 +26,18 @@ class GasWaterDriver extends Driver {
       'measure_temperature',
     ];
 
-    if (channels.firstWhere('type', 'gas')) {
+    if (gas && gas.enabled && gas.uom === 'm3') {
       capabilities.push('meter_gas');
     }
 
-    if (channels.firstWhere('type', 'water')) {
-      capabilities.push('meter_water');
+    if (water && water.enabled) {
+      if (water.uom === 'm3') {
+        capabilities.push('meter_water');
+      }
+
+      if (water.uom === 'l') {
+        capabilities.push('measure_water');
+      }
     }
 
     return capabilities;
@@ -45,8 +53,8 @@ class GasWaterDriver extends Driver {
   // Return store value while pairing
   getPairStore(device) {
     const channels = collect(device.channels);
-    const water = channels.firstWhere('type', 'water');
-    const gas = channels.firstWhere('type', 'gas');
+    const water = channels.where('type', 'water').first();
+    const gas = channels.where('type', 'gas').first();
 
     const store = {
       id: device.id,

@@ -674,7 +674,8 @@
         "measure_humidity",
         "measure_temperature",
         "meter_gas",
-        "meter_water"
+        "meter_water",
+        "measure_water"
       ],
       "energy": {
         "batteries": [
