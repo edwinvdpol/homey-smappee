@@ -17,8 +17,8 @@
   "args": [
     {
       "title": {
-        "en": "State",
-        "nl": "Status"
+        "en": "state",
+        "nl": "status"
       },
       "type": "dropdown",
       "name": "state",
