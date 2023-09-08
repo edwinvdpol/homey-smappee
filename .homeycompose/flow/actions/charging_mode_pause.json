@@ -11,7 +11,7 @@
     {
       "type": "device",
       "name": "device",
-      "filter": "driver_id=ev-wall"
+      "filter": "driver_id=ev-wall&capabilities=charging_mode"
     }
   ]
 }

@@ -55,7 +55,7 @@
           "nl": "Kabel werd losgekoppeld"
         },
         "hint": {
-          "en": "This flowcard is activated when the cable is disconnected.",
+          "en": "This flowcard is activated when the cable was disconnected.",
           "nl": "Deze kaart wordt geactiveerd wanneer de kabel losgekoppeld werd."
         },
         "platforms": [
@@ -65,7 +65,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ev-wall"
+            "filter": "driver_id=ev-wall&capabilities=cable_connected"
           }
         ],
         "id": "cable_connected_false"
@@ -76,7 +76,7 @@
           "nl": "Kabel werd aangesloten"
         },
         "hint": {
-          "en": "This flowcard is activated when the cable is connected.",
+          "en": "This flowcard is activated when the cable was connected.",
           "nl": "Deze kaart wordt geactiveerd wanneer de kabel aangesloten werd."
         },
         "platforms": [
@@ -86,14 +86,14 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ev-wall"
+            "filter": "driver_id=ev-wall&capabilities=cable_connected"
           }
         ],
         "id": "cable_connected_true"
       },
       {
         "title": {
-          "en": "Connection state has changed",
+          "en": "Connection state changed",
           "nl": "Verbindingsstatus is veranderd"
         },
         "titleFormatted": {
@@ -101,20 +101,20 @@
           "nl": "Verbindingsstatus is veranderd naar [[state]]"
         },
         "hint": {
-          "en": "This flowcard is activated when the connection state has changed.",
-          "nl": "Deze kaart wordt geactiveerd wanneer de verbindingsstatus veranderd is."
+          "en": "This flowcard is activated when the connection state was changed.",
+          "nl": "Deze kaart wordt geactiveerd wanneer de verbindingsstatus veranderd werd."
         },
         "platforms": [
           "local"
         ],
         "args": [
           {
+            "type": "dropdown",
+            "name": "state",
             "title": {
               "en": "state",
               "nl": "status"
             },
-            "type": "dropdown",
-            "name": "state",
             "values": [
               {
                 "id": "connected",
@@ -142,7 +142,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=switch"
+            "filter": "driver_id=switch&capabilities=connection_state"
           }
         ],
         "id": "connection_state_changed"
@@ -165,7 +165,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ev-wall"
+            "filter": "driver_id=ev-wall&capabilities=cable_connected"
           }
         ],
         "id": "cable_connected"
@@ -185,7 +185,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ev-wall"
+            "filter": "driver_id=ev-wall&capabilities=charging_mode"
           }
         ],
         "id": "charging_mode_pause"
@@ -203,7 +203,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ev-wall"
+            "filter": "driver_id=ev-wall&capabilities=charging_mode"
           }
         ],
         "id": "charging_mode_smart"
@@ -221,7 +221,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=ev-wall"
+            "filter": "driver_id=ev-wall&capabilities=charging_mode"
           }
         ],
         "id": "charging_mode_standard"
@@ -986,23 +986,23 @@
   ],
   "capabilities": {
     "cable_connected": {
+      "type": "boolean",
       "title": {
         "en": "Cable connected",
         "nl": "Kabel aangesloten"
       },
       "uiComponent": "sensor",
-      "type": "boolean",
       "icon": "/assets/capabilities/cable_connected.svg",
       "getable": true,
       "setable": false
     },
     "charging_mode": {
+      "type": "enum",
       "title": {
         "en": "Charging mode",
         "nl": "Oplaadmodus"
       },
       "uiComponent": "picker",
-      "type": "enum",
       "getable": true,
       "setable": true,
       "values": [
@@ -1030,12 +1030,12 @@
       ]
     },
     "connection_state": {
+      "type": "enum",
       "title": {
         "en": "Connection state",
         "nl": "Verbindingsstatus"
       },
       "uiComponent": null,
-      "type": "enum",
       "getable": true,
       "setable": false,
       "values": [

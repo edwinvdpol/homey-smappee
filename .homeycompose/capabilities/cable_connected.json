@@ -1,10 +1,10 @@
 {
+  "type": "boolean",
   "title": {
     "en": "Cable connected",
     "nl": "Kabel aangesloten"
   },
   "uiComponent": "sensor",
-  "type": "boolean",
   "icon": "/assets/capabilities/cable_connected.svg",
   "getable": true,
   "setable": false
