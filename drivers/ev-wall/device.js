@@ -40,7 +40,7 @@ class EVWallDevice extends MqttDevice {
   async onSettings({ oldSettings, newSettings, changedKeys }) {
     this.updating = true;
 
-    this.log('Updating settings...');
+    this.log('[Settings] Updating');
 
     // LED brightness updated
     if (changedKeys.includes('led_brightness')) {
@@ -52,6 +52,8 @@ class EVWallDevice extends MqttDevice {
     }
 
     this.updating = false;
+
+    this.log('[Settings] Updated');
   }
 
   /*
