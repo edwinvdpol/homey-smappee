@@ -1,4 +1,7 @@
 {
+  "1.2.1": {
+    "en": "Improved flow cards and logging."
+  },
   "1.2.0": {
     "en": "Smappee Connect, Energy and Solar support. Bugfixes and stability improvements."
   },
