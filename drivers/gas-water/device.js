@@ -46,7 +46,7 @@ class GasWaterDevice extends Device {
       data.value1 = 0;
       data.value2 = 0;
     } else {
-      this.log('Handle data', JSON.stringify(data));
+      this.log('Sync]', JSON.stringify(data));
     }
 
     // Current battery percentage

@@ -108,7 +108,7 @@ class EVWallDevice extends MqttDevice {
   async handleSyncData(data) {
     if (blank(data)) return;
 
-    this.log('Handle data', JSON.stringify(data).slice(0, 150));
+    this.log('[Sync]', JSON.stringify(data).slice(0, 150));
 
     // Always on power (MQTT)
     if (this.hasCapability('measure_power.alwayson') && filled(data.alwaysOn)) {
