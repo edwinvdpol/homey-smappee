@@ -1,7 +1,7 @@
 'use strict';
 
 const MqttDevice = require('../../lib/MqttDevice');
-const { blank, filled } = require('../../lib/Utils');
+const { blank } = require('../../lib/Utils');
 
 class GeniusDevice extends MqttDevice {
 
@@ -31,13 +31,13 @@ class GeniusDevice extends MqttDevice {
 
     let power = 0;
 
-    if (this.hasCapability('measure_power.production') && filled(data.solarPower)) {
+    if (this.hasCapability('measure_power.production') && 'solarPower' in data) {
       power = Math.abs(data.solarPower);
 
       this.setCapabilityValue('measure_power.production', power).catch(this.error);
     }
 
-    if (filled(data.consumptionPower)) {
+    if ('consumptionPower' in data) {
       if (this.hasCapability('measure_power.consumption')) {
         const consumption = Math.abs(data.consumptionPower);
 
@@ -49,7 +49,7 @@ class GeniusDevice extends MqttDevice {
       }
     }
 
-    if (this.hasCapability('measure_power.alwayson') && filled(data.alwaysOn)) {
+    if (this.hasCapability('measure_power.alwayson') && 'alwaysOn' in data) {
       this.setCapabilityValue('measure_power.alwayson', data.alwaysOn).catch(this.error);
     }
 

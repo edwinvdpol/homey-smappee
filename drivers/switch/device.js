@@ -1,7 +1,7 @@
 'use strict';
 
 const MqttDevice = require('../../lib/MqttDevice');
-const { blank, filled } = require('../../lib/Utils');
+const { blank } = require('../../lib/Utils');
 
 class SwitchDevice extends MqttDevice {
 
@@ -62,12 +62,12 @@ class SwitchDevice extends MqttDevice {
     }
 
     // Active power (Watt)
-    if (this.hasCapability('measure_power') && filled(data.active)) {
+    if (this.hasCapability('measure_power') && 'active' in data) {
       this.setCapabilityValue('measure_power', data.active * 12).catch(this.error);
     }
 
     // Connection state
-    if (this.hasCapability('connection_state') && filled(data.connectionState)) {
+    if (this.hasCapability('connection_state') && 'connectionState' in data) {
       const state = data.connectionState.toLowerCase();
 
       this.setCapabilityValue('connection_state', state).catch(this.error);
@@ -82,7 +82,7 @@ class SwitchDevice extends MqttDevice {
     }
 
     // On/off state
-    if (this.hasCapability('onoff') && filled(data.state)) {
+    if (this.hasCapability('onoff') && 'state' in data) {
       const on = data.state === 'ON_ON' || data.state === 'ON';
 
       this.setCapabilityValue('onoff', on).catch(this.error);

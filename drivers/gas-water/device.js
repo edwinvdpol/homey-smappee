@@ -2,7 +2,7 @@
 
 const semverLte = require('semver/functions/lte');
 const Device = require('../../lib/Device');
-const { blank, filled } = require('../../lib/Utils');
+const { blank } = require('../../lib/Utils');
 
 class GasWaterDevice extends Device {
 
@@ -50,17 +50,17 @@ class GasWaterDevice extends Device {
     }
 
     // Current battery percentage
-    if (this.hasCapability('measure_battery') && filled(data.battery)) {
+    if (this.hasCapability('measure_battery') && 'battery' in data) {
       this.setCapabilityValue('measure_battery', data.battery).catch(this.error);
     }
 
     // Current humidity
-    if (this.hasCapability('measure_humidity') && filled(data.humidity)) {
+    if (this.hasCapability('measure_humidity') && 'humidity' in data) {
       this.setCapabilityValue('measure_humidity', data.humidity).catch(this.error);
     }
 
     // Current temperature
-    if (this.hasCapability('measure_temperature') && filled(data.temperature)) {
+    if (this.hasCapability('measure_temperature') && 'temperature' in data) {
       this.setCapabilityValue('measure_temperature', data.temperature).catch(this.error);
     }
 

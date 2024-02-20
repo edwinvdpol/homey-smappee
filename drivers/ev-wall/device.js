@@ -1,7 +1,7 @@
 'use strict';
 
 const MqttDevice = require('../../lib/MqttDevice');
-const { filled, blank } = require('../../lib/Utils');
+const { blank } = require('../../lib/Utils');
 
 class EVWallDevice extends MqttDevice {
 
@@ -111,34 +111,34 @@ class EVWallDevice extends MqttDevice {
     this.log('[Sync]', JSON.stringify(data).slice(0, 150));
 
     // Always on power (MQTT)
-    if (this.hasCapability('measure_power.alwayson') && filled(data.alwaysOn)) {
+    if (this.hasCapability('measure_power.alwayson') && 'alwaysOn' in data) {
       this.setCapabilityValue('measure_power.alwayson', data.alwaysOn).catch(this.error);
     }
 
     // LED brightness (MQTT and sync)
-    if (filled(data.led_brightness) && !this.updating) {
+    if ('led_brightness' in data && !this.updating) {
       this.setSettings(data).catch(this.error);
     }
 
     // Cable connected (MQTT)
-    if (this.hasCapability('cable_connected') && filled(data.chargingState)) {
+    if (this.hasCapability('cable_connected') && 'chargingState' in data) {
       const connected = data.chargingState !== 'STOPPED';
 
       this.setCapabilityValue('cable_connected', connected).catch(this.error);
     }
 
     // Charging mode (MQTT)
-    if (this.hasCapability('charging_mode') && filled(data.chargingMode)) {
+    if (this.hasCapability('charging_mode') && 'chargingMode' in data) {
       this.setCapabilityValue('charging_mode', data.chargingMode.toLowerCase()).catch(this.error);
     }
 
     // Consumption power (MQTT)
-    if (this.hasCapability('measure_power') && filled(data.consumptionPower)) {
+    if (this.hasCapability('measure_power') && 'consumptionPower' in data) {
       this.setCapabilityValue('measure_power', data.consumptionPower).catch(this.error);
     }
 
     // Availability (MQTT)
-    if (filled(data.available)) {
+    if ('available' in data) {
       if (data.available) {
         this.setAvailable().catch(this.error);
       } else {
@@ -176,8 +176,9 @@ class EVWallDevice extends MqttDevice {
   getSyncDataFromUpdateMessage(data) {
     const updated = {};
 
-    if (filled(data.configurationPropertyValues)) {
+    if ('configurationPropertyValues' in data) {
       for (const config of data.configurationPropertyValues) {
+        if (!('propertySpecName' in config)) continue;
         if (blank(config.propertySpecName)) continue;
 
         // LED brightness
