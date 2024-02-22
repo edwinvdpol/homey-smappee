@@ -158,17 +158,6 @@ class EVWallDevice extends MqttDevice {
   }
 
   /*
-  | Listener functions
-  */
-
-  // Register capability listeners
-  async registerCapabilityListeners() {
-    if (this.hasCapability('charging_mode')) {
-      this.registerCapabilityListener('charging_mode', this.onCapabilityChargingMode.bind(this));
-    }
-  }
-
-  /*
   | Support functions
   */
 

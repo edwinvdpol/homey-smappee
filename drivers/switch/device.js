@@ -97,15 +97,6 @@ class SwitchDevice extends MqttDevice {
     return `plug/${this.getStoreValue('id')}/#`;
   }
 
-  /*
-  | Listener functions
-  */
-
-  // Register capability listeners
-  async registerCapabilityListeners() {
-    this.registerCapabilityListener('onoff', this.onCapabilityOnOff.bind(this));
-  }
-
 }
 
 module.exports = SwitchDevice;

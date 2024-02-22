@@ -58,12 +58,12 @@ class SwitchDriver extends Driver {
   }
 
   /*
-  | Register flow cards functions
+  | Flow card functions
   */
 
   // Register device trigger flow cards
   registerDeviceTriggerFlowCards() {
-    // ... When connection state changed to ...
+    // When connection state changed to ...
     this.homey.flow.getDeviceTriggerCard('connection_state_changed').registerRunListener(async ({ device, state }) => {
       return device.getCapabilityValue('connection_state') === state;
     });
