@@ -27,7 +27,7 @@ class EnergyDevice extends MqttDevice {
   async handleSyncData(data) {
     if (blank(data)) return;
 
-    this.log('[Sync]', JSON.stringify(data).slice(0, 150));
+    this.log('[Sync]', JSON.stringify(data));
 
     if (this.hasCapability('measure_power') && 'consumptionPower' in data) {
       this.setCapabilityValue('measure_power', data.consumptionPower).catch(this.error);
