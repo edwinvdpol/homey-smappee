@@ -63,7 +63,7 @@ class EVWallDevice extends MqttDevice {
   // LED brightness
   async setBrightness(percentage) {
     const serviceLocationId = this.getStoreValue('service_location_id');
-    const ledId = this.getStoreValue('led_id') || null;
+    const ledId = this.getStoreValue('led_id');
 
     if (blank(ledId)) {
       this.error('LED brightness not supported');
@@ -93,7 +93,7 @@ class EVWallDevice extends MqttDevice {
 
   // Return data which need to be synced
   async getSyncData() {
-    const ledId = this.getStoreValue('led_id') || null;
+    const ledId = this.getStoreValue('led_id');
 
     if (blank(ledId)) return {};
 
