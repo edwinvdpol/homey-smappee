@@ -64,6 +64,29 @@
   ],
   "repair": [
     {
+      "id": "login_credentials",
+      "template": "login_credentials",
+      "options": {
+        "logo": "../../../assets/logo.jpg",
+        "title": {
+          "en": "Enter your API credentials",
+          "nl": "Voer uw API inloggegevens in"
+        },
+        "usernameLabel": {
+          "en": "Client ID"
+        },
+        "usernamePlaceholder": {
+          "en": "Contact support@smappee.com"
+        },
+        "passwordLabel": {
+          "en": "Client Secret"
+        },
+        "passwordPlaceholder": {
+          "en": "Contact support@smappee.com"
+        }
+      }
+    },
+    {
       "id": "login_oauth2",
       "template": "login_oauth2"
     }
