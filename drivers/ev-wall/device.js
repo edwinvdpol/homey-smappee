@@ -2,6 +2,7 @@
 
 const MqttDevice = require('../../lib/MqttDevice');
 const { blank } = require('../../lib/Utils');
+const ChargingState = require('../../models/ChargingState');
 
 class EVWallDevice extends MqttDevice {
 
@@ -20,7 +21,11 @@ class EVWallDevice extends MqttDevice {
   async onMessage(topic, data) {
     // Charging state
     if (topic.endsWith('chargingstate')) {
-      await this.handleSyncData(data);
+      this.log('[ChargingState]', JSON.stringify(data));
+
+      data = new ChargingState(data);
+
+      await this.handleSyncData(data.capabilities);
     }
 
     // Power state
@@ -30,10 +35,14 @@ class EVWallDevice extends MqttDevice {
 
     // Updated message
     if (topic.endsWith('updated')) {
+      this.log('[Updated]', JSON.stringify(data));
+
       data = this.getSyncDataFromUpdateMessage(data);
 
       await this.handleSyncData(data);
     }
+
+    data = null;
   }
 
   // Settings changed
@@ -121,10 +130,8 @@ class EVWallDevice extends MqttDevice {
     }
 
     // Cable connected (MQTT)
-    if (this.hasCapability('cable_connected') && 'chargingState' in data) {
-      const connected = data.chargingState !== 'STOPPED';
-
-      this.setCapabilityValue('cable_connected', connected).catch(this.error);
+    if (this.hasCapability('cable_connected') && 'cableConnected' in data) {
+      this.setCapabilityValue('cable_connected', data.cableConnected).catch(this.error);
     }
 
     // Charging mode (MQTT)
