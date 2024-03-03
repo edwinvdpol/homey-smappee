@@ -71,7 +71,6 @@ class EVWallDevice extends MqttDevice {
 
   // LED brightness
   async setBrightness(percentage) {
-    const serviceLocationId = this.getStoreValue('service_location_id');
     const ledId = this.getStoreValue('led_id');
 
     if (blank(ledId)) {
@@ -81,7 +80,7 @@ class EVWallDevice extends MqttDevice {
 
     this.log(`Set LED brightness to '${percentage}%'`);
 
-    await this.oAuth2Client.setLedBrightness(serviceLocationId, ledId, percentage);
+    await this.oAuth2Client.setLedBrightness(this.serviceLocationId, ledId, percentage);
   }
 
   // Activate charging mode
@@ -106,7 +105,7 @@ class EVWallDevice extends MqttDevice {
 
     if (blank(ledId)) return {};
 
-    const brightness = await this.oAuth2Client.getLedBrightness(this.getStoreValue('service_location_id'), ledId);
+    const brightness = await this.oAuth2Client.getLedBrightness(this.serviceLocationId, ledId);
 
     return {
       led_brightness: brightness,

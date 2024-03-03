@@ -24,7 +24,7 @@ class SwitchDevice extends MqttDevice {
 
     await this.oAuth2Client.setActuatorState(
       this.getStoreValue('id'),
-      this.getStoreValue('service_location_id'),
+      this.serviceLocationId,
       on ? 'ON_ON' : 'OFF_OFF',
     );
   }
@@ -46,8 +46,8 @@ class SwitchDevice extends MqttDevice {
 
   // Return data which need to be synced
   async getSyncData() {
-    const result = await this.oAuth2Client.getLatestSwitchConsumption(this.getStoreValue('monitor_id'), this.getStoreValue('service_location_id'));
-    result.state = await this.oAuth2Client.getSwitchState(this.getStoreValue('id'), this.getStoreValue('service_location_id'));
+    const result = await this.oAuth2Client.getLatestSwitchConsumption(this.getStoreValue('monitor_id'), this.serviceLocationId);
+    result.state = await this.oAuth2Client.getSwitchState(this.getStoreValue('id'), this.serviceLocationId);
 
     return result;
   }

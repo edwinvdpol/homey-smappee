@@ -33,8 +33,8 @@ class GasWaterDevice extends Device {
   // Return data which need to be synced
   async getSyncData() {
     return this.latestRecordTime
-      ? this.oAuth2Client.getLatestFilledSensorConsumption(this.getStoreValue('id'), this.getStoreValue('service_location_id'))
-      : this.oAuth2Client.getInitialSensorConsumption(this.getStoreValue('id'), this.getStoreValue('service_location_id'));
+      ? this.oAuth2Client.getLatestFilledSensorConsumption(this.getStoreValue('id'), this.serviceLocationId)
+      : this.oAuth2Client.getInitialSensorConsumption(this.getStoreValue('id'), this.serviceLocationId);
   }
 
   // Set device data
