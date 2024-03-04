@@ -10,11 +10,11 @@
   "uiComponent": "sensor",
   "icon": "/assets/capabilities/charging.svg",
   "insightsTitleTrue": {
-    "en": "Charging was started",
+    "en": "Charging is started",
     "nl": "Opladen is gestart"
   },
   "insightsTitleFalse": {
-    "en": "Charging was stopped",
+    "en": "Charging is stopped",
     "nl": "Opladen is gestopt"
   }
 }

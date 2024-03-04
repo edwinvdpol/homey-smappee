@@ -10,11 +10,11 @@
   "uiComponent": "sensor",
   "icon": "/assets/capabilities/cable_connected.svg",
   "insightsTitleTrue": {
-    "en": "Cable was connected",
-    "nl": "Kabel werd aangesloten"
+    "en": "Cable is connected",
+    "nl": "Kabel is aangesloten"
   },
   "insightsTitleFalse": {
-    "en": "Cable was disconnected",
-    "nl": "Kabel werd losgekoppeld"
+    "en": "Cable is disconnected",
+    "nl": "Kabel is losgekoppeld"
   }
 }

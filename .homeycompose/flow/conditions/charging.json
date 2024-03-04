@@ -1,0 +1,20 @@
+{
+  "title": {
+    "en": "!{{Is|Is not}} charging",
+    "nl": "!{{Is|Is niet}} aan het opladen"
+  },
+  "hint": {
+    "en": "Checks whether the device is charging.",
+    "nl": "Controleert of het apparaat aan het opladen is."
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=ev-wall&capabilities=charging"
+    }
+  ]
+}

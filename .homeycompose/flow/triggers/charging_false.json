@@ -1,0 +1,20 @@
+{
+  "title": {
+    "en": "Charging was stopped",
+    "nl": "Opladen werd gestopt"
+  },
+  "hint": {
+    "en": "This flowcard is activated when the charging was stopped.",
+    "nl": "Deze kaart wordt geactiveerd wanneer het opladen gestopt werd."
+  },
+  "platforms": [
+    "local"
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=ev-wall&capabilities=charging"
+    }
+  ]
+}
