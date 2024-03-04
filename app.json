@@ -646,6 +646,7 @@
         "measure_power",
         "measure_power.alwayson",
         "cable_connected",
+        "charging",
         "charging_mode"
       ],
       "capabilitiesOptions": {
@@ -1152,10 +1153,39 @@
         "en": "Cable connected",
         "nl": "Kabel aangesloten"
       },
+      "getable": true,
+      "setable": false,
+      "insights": true,
       "uiComponent": "sensor",
       "icon": "/assets/capabilities/cable_connected.svg",
+      "insightsTitleTrue": {
+        "en": "Cable was connected",
+        "nl": "Kabel werd aangesloten"
+      },
+      "insightsTitleFalse": {
+        "en": "Cable was disconnected",
+        "nl": "Kabel werd losgekoppeld"
+      }
+    },
+    "charging": {
+      "type": "boolean",
+      "title": {
+        "en": "Charging",
+        "nl": "Opladen"
+      },
       "getable": true,
-      "setable": false
+      "setable": false,
+      "insights": true,
+      "uiComponent": "sensor",
+      "icon": "/assets/capabilities/charging.svg",
+      "insightsTitleTrue": {
+        "en": "Charging was started",
+        "nl": "Opladen is gestart"
+      },
+      "insightsTitleFalse": {
+        "en": "Charging was stopped",
+        "nl": "Opladen is gestopt"
+      }
     },
     "charging_mode": {
       "type": "enum",
@@ -1163,9 +1193,9 @@
         "en": "Charging mode",
         "nl": "Oplaadmodus"
       },
-      "uiComponent": "picker",
       "getable": true,
       "setable": true,
+      "uiComponent": "picker",
       "values": [
         {
           "id": "normal",
@@ -1196,9 +1226,9 @@
         "en": "Connection state",
         "nl": "Verbindingsstatus"
       },
-      "uiComponent": null,
       "getable": true,
       "setable": false,
+      "uiComponent": null,
       "values": [
         {
           "id": "connected",

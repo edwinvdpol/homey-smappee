@@ -4,9 +4,9 @@
     "en": "Charging mode",
     "nl": "Oplaadmodus"
   },
-  "uiComponent": "picker",
   "getable": true,
   "setable": true,
+  "uiComponent": "picker",
   "values": [
     {
       "id": "normal",

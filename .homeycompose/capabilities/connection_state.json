@@ -4,9 +4,9 @@
     "en": "Connection state",
     "nl": "Verbindingsstatus"
   },
-  "uiComponent": null,
   "getable": true,
   "setable": false,
+  "uiComponent": null,
   "values": [
     {
       "id": "connected",

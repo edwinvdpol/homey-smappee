@@ -4,8 +4,17 @@
     "en": "Cable connected",
     "nl": "Kabel aangesloten"
   },
+  "getable": true,
+  "setable": false,
+  "insights": true,
   "uiComponent": "sensor",
   "icon": "/assets/capabilities/cable_connected.svg",
-  "getable": true,
-  "setable": false
+  "insightsTitleTrue": {
+    "en": "Cable was connected",
+    "nl": "Kabel werd aangesloten"
+  },
+  "insightsTitleFalse": {
+    "en": "Cable was disconnected",
+    "nl": "Kabel werd losgekoppeld"
+  }
 }

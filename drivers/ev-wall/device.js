@@ -17,6 +17,15 @@ class EVWallDevice extends MqttDevice {
     await this.setChargingMode(mode);
   }
 
+  // Device initialized
+  async onOAuth2Init() {
+    // Migrate
+    await this.migrate();
+
+    // Initialize parent
+    await super.onOAuth2Init();
+  }
+
   // MQTT message received
   async onMessage(topic, data) {
     // Charging state
@@ -133,6 +142,11 @@ class EVWallDevice extends MqttDevice {
       this.setCapabilityValue('cable_connected', data.cableConnected).catch(this.error);
     }
 
+    // Charging (MQTT)
+    if (this.hasCapability('charging') && 'charging' in data) {
+      this.setCapabilityValue('charging', data.charging).catch(this.error);
+    }
+
     // Charging mode (MQTT)
     if (this.hasCapability('charging_mode') && 'chargingMode' in data) {
       this.setCapabilityValue('charging_mode', data.chargingMode.toLowerCase()).catch(this.error);
@@ -184,6 +198,14 @@ class EVWallDevice extends MqttDevice {
     }
 
     return updated;
+  }
+
+  // Migrate device properties
+  async migrate() {
+    // Add charging capability
+    if (!this.hasCapability('charging')) {
+      this.addCapability('charging').catch(this.error);
+    }
   }
 
 }
