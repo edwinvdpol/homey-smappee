@@ -13,15 +13,6 @@ class SwitchDevice extends MqttDevice {
   async onCapabilityOnOff(on) {
     this.log(`Capability 'onoff' is now '${on}'`);
 
-    if (this.mqtt) {
-      await this.publish('setstate', {
-        value: on ? 'ON' : 'OFF',
-        since: new Date().getTime(),
-      });
-
-      return;
-    }
-
     await this.oAuth2Client.setActuatorState(
       this.getStoreValue('id'),
       this.serviceLocationId,
