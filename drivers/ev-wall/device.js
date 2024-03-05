@@ -60,13 +60,15 @@ class EVWallDevice extends MqttDevice {
 
     this.log('[Settings] Updating');
 
-    // LED brightness updated
-    if (changedKeys.includes('led_brightness')) {
-      const percentage = Number(newSettings.led_brightness);
+    for (const name of changedKeys) {
+      const newValue = newSettings[name];
 
-      this.log(`LED brightness is now '${percentage}'`);
+      this.log(`[Settings] '${name}' is now '${newValue}'`);
 
-      await this.setBrightness(percentage);
+      // LED brightness
+      if (name === 'led_brightness') {
+        await this.setBrightness(Number(newValue));
+      }
     }
 
     this.updating = false;
