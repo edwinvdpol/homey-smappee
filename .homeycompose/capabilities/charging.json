@@ -7,14 +7,14 @@
   "getable": true,
   "setable": false,
   "insights": true,
-  "uiComponent": "sensor",
-  "icon": "/assets/capabilities/charging.svg",
   "insightsTitleTrue": {
-    "en": "Charging is started",
-    "nl": "Opladen is gestart"
+    "en": "Charging",
+    "nl": "Opladen"
   },
   "insightsTitleFalse": {
-    "en": "Charging is stopped",
-    "nl": "Opladen is gestopt"
-  }
+    "en": "Charged",
+    "nl": "Opgeladen"
+  },
+  "uiComponent": "sensor",
+  "icon": "/assets/capabilities/charging.svg"
 }
