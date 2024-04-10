@@ -1,17 +1,19 @@
 {
-  "errors": {
+  "api": "API",
+  "error": {
     "401": "Inloggegevens van de Smappee API zijn onjuist",
     "403": "Smappee API heeft de toegang tot dit apparaat geweigerd",
     "404": "Apparaat is niet gevonden in Smappee account",
     "50x": "Smappee API is niet beschikbaar",
-    "clientId": "Voer een geldig client ID in",
-    "clientSecret": "Voer een geldig client secret in",
+    "client_id": "Voer een geldig client ID in",
+    "client_secret": "Voer een geldig client secret in",
     "led": "LED-helderheid wordt niet ondersteund door dit apparaat",
     "network": "Smappee API is niet bereikbaar",
     "unavailable": "Apparaat is niet beschikbaar",
     "unknown": "Er is een onbekende fout opgetreden"
   },
-  "notifications":  {
+  "mqtt": "berichtenservice",
+  "notification": {
     "water_capability_updated": "Water capability bijgewerkt voor **__name__**. Controleer uw flows."
   },
   "service": {
@@ -20,10 +22,8 @@
     "offline": "Kan geen verbinding maken met de Smappee __service__, controleer de internet verbinding.",
     "reconnect": "Bezig met opnieuw verbinden met de Smappee __service__..."
   },
-  "warnings": {
+  "warning": {
     "disconnected": "Aparaat is niet verbonden, mogelijk werkt het apparaat niet zoals verwacht.",
     "unreachable": "Aparaat is niet bereikbaar, mogelijk werkt het apparaat niet zoals verwacht."
-  },
-  "api": "API",
-  "mqtt": "berichtenservice"
+  }
 }

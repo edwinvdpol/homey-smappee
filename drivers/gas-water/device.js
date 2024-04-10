@@ -110,7 +110,7 @@ class GasWaterDevice extends Device {
       this.removeCapability('meter_water').catch(this.error);
       this.addCapability('measure_water').catch(this.error);
 
-      const message = this.homey.__('notifications.water_capability_updated', { name: this.getName() });
+      const message = this.homey.__('notification.water_capability_updated', { name: this.getName() });
       this.homey.notifications.createNotification({ excerpt: message }).catch(this.error);
     }
   }

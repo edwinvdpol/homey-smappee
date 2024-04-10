@@ -86,7 +86,7 @@ class EVWallDevice extends MqttDevice {
 
     if (blank(ledId)) {
       this.error('LED brightness not supported');
-      throw new Error(this.homey.__('errors.led'));
+      throw new Error(this.homey.__('error.led'));
     }
 
     this.log(`Set LED brightness to '${percentage}%'`);
@@ -164,7 +164,7 @@ class EVWallDevice extends MqttDevice {
       if (data.available) {
         this.setAvailable().catch(this.error);
       } else {
-        this.setUnavailable(this.homey.__('errors.unavailable')).catch(this.error);
+        this.setUnavailable(this.homey.__('error.unavailable')).catch(this.error);
       }
     }
 
