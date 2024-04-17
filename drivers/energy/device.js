@@ -18,11 +18,6 @@ class EnergyDevice extends MqttDevice {
   | Synchronization functions
   */
 
-  // Return data which need to be synced
-  async getSyncData() {
-    return {};
-  }
-
   // Set device data
   async handleSyncData(data) {
     if (blank(data)) return;
