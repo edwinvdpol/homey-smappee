@@ -18,8 +18,8 @@
     "energy"
   ],
   "images": {
-    "small": "/assets/images/small.png",
-    "large": "/assets/images/large.png"
+    "small": "/assets/images/small.jpg",
+    "large": "/assets/images/large.jpg"
   },
   "permissions": [],
   "author": {
@@ -294,8 +294,8 @@
   "drivers": [
     {
       "images": {
-        "small": "/drivers/connect/assets/images/small.png",
-        "large": "/drivers/connect/assets/images/large.png"
+        "small": "/drivers/connect/assets/images/small.jpg",
+        "large": "/drivers/connect/assets/images/large.jpg"
       },
       "platforms": [
         "local"
@@ -428,8 +428,8 @@
     },
     {
       "images": {
-        "small": "/drivers/energy/assets/images/small.png",
-        "large": "/drivers/energy/assets/images/large.png"
+        "small": "/drivers/energy/assets/images/small.jpg",
+        "large": "/drivers/energy/assets/images/large.jpg"
       },
       "platforms": [
         "local"
@@ -551,8 +551,8 @@
     },
     {
       "images": {
-        "small": "/drivers/ev-wall/assets/images/small.png",
-        "large": "/drivers/ev-wall/assets/images/large.png"
+        "small": "/drivers/ev-wall/assets/images/small.jpg",
+        "large": "/drivers/ev-wall/assets/images/large.jpg"
       },
       "platforms": [
         "local"
@@ -724,8 +724,8 @@
     },
     {
       "images": {
-        "small": "/drivers/gas-water/assets/images/small.png",
-        "large": "/drivers/gas-water/assets/images/large.png"
+        "small": "/drivers/gas-water/assets/images/small.jpg",
+        "large": "/drivers/gas-water/assets/images/large.jpg"
       },
       "platforms": [
         "local"
@@ -843,8 +843,8 @@
     },
     {
       "images": {
-        "small": "/drivers/genius/assets/images/small.png",
-        "large": "/drivers/genius/assets/images/large.png"
+        "small": "/drivers/genius/assets/images/small.jpg",
+        "large": "/drivers/genius/assets/images/large.jpg"
       },
       "platforms": [
         "local"
@@ -977,8 +977,8 @@
     },
     {
       "images": {
-        "small": "/drivers/solar/assets/images/small.png",
-        "large": "/drivers/solar/assets/images/large.png"
+        "small": "/drivers/solar/assets/images/small.jpg",
+        "large": "/drivers/solar/assets/images/large.jpg"
       },
       "platforms": [
         "local"
@@ -1100,8 +1100,8 @@
     },
     {
       "images": {
-        "small": "/drivers/switch/assets/images/small.png",
-        "large": "/drivers/switch/assets/images/large.png"
+        "small": "/drivers/switch/assets/images/small.jpg",
+        "large": "/drivers/switch/assets/images/large.jpg"
       },
       "platforms": [
         "local"
