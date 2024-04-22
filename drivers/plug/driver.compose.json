@@ -1,0 +1,12 @@
+{
+  "name": {
+    "en": "Comfort Plug"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff"
+  ],
+  "$extends": [
+    "defaults"
+  ]
+}
