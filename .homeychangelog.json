@@ -1,4 +1,7 @@
 {
+  "1.3.3": {
+    "en": "Retain whitespaces in API credentials."
+  },
   "1.3.2": {
     "en": "Fix realtime updates."
   },
