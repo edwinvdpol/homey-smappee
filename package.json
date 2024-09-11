@@ -1,7 +1,7 @@
 {
-  "name": "com.smappee",
+  "name": "homey-smappee",
   "version": "1.3.3",
-  "homepage": "https://github.com/edwinvdpol/com.smappee#readme",
+  "homepage": "https://github.com/edwinvdpol/homey-smappee#readme",
   "license": "SEE LICENSE",
   "author": {
     "name": "Edwin van de Pol",
@@ -16,7 +16,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/edwinvdpol/com.smappee.git"
+    "url": "https://github.com/edwinvdpol/homey-smappee.git"
   },
   "scripts": {
     "lint": "eslint --ext .js,.ts --ignore-path .gitignore ."
