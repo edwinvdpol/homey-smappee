@@ -1,5 +1,7 @@
 # Smappee for Homey
 
+![Homey App Validation](https://github.com/edwinvdpol/homey-smappee/actions/workflows/validate.yml/badge.svg)
+
 Make the smart grid revolution happen.
 
 Smappee is an award-winning global cleantech company that aims to save its customers energy and money by reducing energy consumption and improving energy efficiency.
