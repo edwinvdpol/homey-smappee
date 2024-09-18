@@ -33,6 +33,7 @@ class EnergyDevice extends MqttDevice {
     }
 
     this.unsetWarning().catch(this.error);
+    this.setAvailable().catch(this.error);
   }
 
   /*

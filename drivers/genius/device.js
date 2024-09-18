@@ -51,6 +51,7 @@ class GeniusDevice extends MqttDevice {
     this.setCapabilityValue('measure_power', power).catch(this.error);
 
     this.unsetWarning().catch(this.error);
+    this.setAvailable().catch(this.error);
   }
 
   /*

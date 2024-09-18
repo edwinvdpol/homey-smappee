@@ -91,6 +91,8 @@ class GasWaterDevice extends Device {
       this.setCapabilityValue('measure_water', value).catch(this.error);
     }
 
+    this.setAvailable().catch(this.error);
+
     data = null;
     store = null;
   }

@@ -78,6 +78,8 @@ class SwitchDevice extends MqttDevice {
 
       this.setCapabilityValue('onoff', on).catch(this.error);
     }
+
+    this.setAvailable().catch(this.error);
   }
 
   /*

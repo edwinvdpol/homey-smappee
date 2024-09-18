@@ -1,5 +1,8 @@
 {
   "api": "API",
+  "authentication": {
+    "connecting": "Connecting..."
+  },
   "error": {
     "401": "Smappee API credentials are incorrect",
     "403": "Smappee API has denied access to this device",

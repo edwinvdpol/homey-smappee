@@ -1,5 +1,8 @@
 {
   "api": "API",
+  "authentication": {
+    "connecting": "Bezig met verbinden..."
+  },
   "error": {
     "401": "Inloggegevens van de Smappee API zijn onjuist",
     "403": "Smappee API heeft de toegang tot dit apparaat geweigerd",
