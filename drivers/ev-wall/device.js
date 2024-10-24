@@ -10,11 +10,11 @@ class EVWallDevice extends MqttDevice {
   | Device events
   */
 
-  // Target temperature capability changed
-  async onCapabilityChargingMode(mode) {
-    this.log(`Charging mode changed to '${mode}'`);
+  // Charging mode capability changed
+  async onCapabilityChargingMode(value) {
+    this.log(`User changed capability 'charging_mode' to '${value}'`);
 
-    await this.setChargingMode(mode);
+    await this.setChargingMode(value);
   }
 
   // Device initialized
