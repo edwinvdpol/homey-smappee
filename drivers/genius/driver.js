@@ -18,7 +18,6 @@ class GeniusDriver extends Driver {
     const capabilities = ['measure_power'];
 
     if (device.solar) {
-      capabilities.push('measure_power.consumption');
       capabilities.push('measure_power.production');
     }
 

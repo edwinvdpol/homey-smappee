@@ -394,27 +394,17 @@
       "name": {
         "en": "Connect"
       },
-      "class": "solarpanel",
+      "class": "sensor",
       "capabilities": [
         "measure_power",
-        "measure_power.consumption",
         "measure_power.production",
         "measure_power.alwayson"
       ],
       "capabilitiesOptions": {
-        "measure_power": {
-          "approximated": true
-        },
         "measure_power.production": {
           "title": {
             "en": "Production",
             "nl": "Productie"
-          }
-        },
-        "measure_power.consumption": {
-          "title": {
-            "en": "Consumption",
-            "nl": "Verbruik"
           }
         },
         "measure_power.alwayson": {
@@ -423,6 +413,9 @@
             "nl": "Sluimerverbruik"
           }
         }
+      },
+      "energy": {
+        "cumulative": true
       },
       "id": "connect"
     },
@@ -534,9 +527,6 @@
         "measure_power.alwayson"
       ],
       "capabilitiesOptions": {
-        "measure_power": {
-          "approximated": true
-        },
         "measure_power.alwayson": {
           "title": {
             "en": "Always on power",
@@ -837,7 +827,8 @@
         "batteries": [
           "AA",
           "AA"
-        ]
+        ],
+        "cumulative": true
       },
       "id": "gas-water"
     },
@@ -943,27 +934,17 @@
       "name": {
         "en": "Genius"
       },
-      "class": "solarpanel",
+      "class": "sensor",
       "capabilities": [
         "measure_power",
-        "measure_power.consumption",
         "measure_power.production",
         "measure_power.alwayson"
       ],
       "capabilitiesOptions": {
-        "measure_power": {
-          "approximated": true
-        },
         "measure_power.production": {
           "title": {
             "en": "Production",
             "nl": "Productie"
-          }
-        },
-        "measure_power.consumption": {
-          "title": {
-            "en": "Consumption",
-            "nl": "Verbruik"
           }
         },
         "measure_power.alwayson": {
@@ -972,6 +953,9 @@
             "nl": "Sluimerverbruik"
           }
         }
+      },
+      "energy": {
+        "cumulative": true
       },
       "id": "genius"
     },
@@ -1185,27 +1169,17 @@
       "name": {
         "en": "Plus"
       },
-      "class": "solarpanel",
+      "class": "sensor",
       "capabilities": [
         "measure_power",
-        "measure_power.consumption",
         "measure_power.production",
         "measure_power.alwayson"
       ],
       "capabilitiesOptions": {
-        "measure_power": {
-          "approximated": true
-        },
         "measure_power.production": {
           "title": {
             "en": "Production",
             "nl": "Productie"
-          }
-        },
-        "measure_power.consumption": {
-          "title": {
-            "en": "Consumption",
-            "nl": "Verbruik"
           }
         },
         "measure_power.alwayson": {
@@ -1214,6 +1188,9 @@
             "nl": "Sluimerverbruik"
           }
         }
+      },
+      "energy": {
+        "cumulative": true
       },
       "id": "plus"
     },
@@ -1325,9 +1302,6 @@
         "measure_power.alwayson"
       ],
       "capabilitiesOptions": {
-        "measure_power": {
-          "approximated": true
-        },
         "measure_power.alwayson": {
           "title": {
             "en": "Always on power",

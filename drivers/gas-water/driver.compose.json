@@ -15,7 +15,8 @@
     "batteries": [
       "AA",
       "AA"
-    ]
+    ],
+    "cumulative": true
   },
   "$extends": [
     "defaults"
