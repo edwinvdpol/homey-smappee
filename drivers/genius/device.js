@@ -24,14 +24,12 @@ class GeniusDevice extends MqttDevice {
 
     this.log('[Sync]', JSON.stringify(data));
 
-    if (this.hasCapability('measure_power.production') && 'solarPower' in data) {
-      this.setCapabilityValue('measure_power.production', data.solarPower).catch(this.error);
+    if (this.hasCapability('measure_power') && 'consumptionPower' in data) {
+      this.setCapabilityValue('measure_power', data.consumptionPower).catch(this.error);
     }
 
-    if (this.hasCapability('measure_power') && 'consumptionPower' in data) {
-      const consumption = data.consumptionPower;
-
-      this.setCapabilityValue('measure_power', consumption).catch(this.error);
+    if (this.hasCapability('measure_power.production') && 'solarPower' in data) {
+      this.setCapabilityValue('measure_power.production', data.solarPower).catch(this.error);
     }
 
     if (this.hasCapability('measure_power.alwayson') && 'alwaysOn' in data) {

@@ -208,6 +208,11 @@ class EVWallDevice extends MqttDevice {
     if (!this.hasCapability('charging')) {
       this.addCapability('charging').catch(this.error);
     }
+
+    // Remove measure_power.alwayson capability
+    if (this.hasCapability('measure_power.alwayson')) {
+      this.removeCapability('measure_power.alwayson').catch(this.error);
+    }
   }
 
 }

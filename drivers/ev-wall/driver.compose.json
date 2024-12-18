@@ -5,19 +5,10 @@
   "class": "evcharger",
   "capabilities": [
     "measure_power",
-    "measure_power.alwayson",
     "cable_connected",
     "charging",
     "charging_mode"
   ],
-  "capabilitiesOptions": {
-    "measure_power.alwayson": {
-      "title": {
-        "en": "Always on power",
-        "nl": "Sluimerverbruik"
-      }
-    }
-  },
   "$extends": [
     "defaults"
   ]
