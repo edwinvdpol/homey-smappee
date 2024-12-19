@@ -5,7 +5,8 @@
   "class": "sensor",
   "capabilities": [
     "measure_power",
-    "measure_power.alwayson"
+    "measure_power.alwayson",
+    "meter_power"
   ],
   "capabilitiesOptions": {
     "measure_power.alwayson": {
