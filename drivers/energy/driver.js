@@ -18,6 +18,7 @@ class EnergyDriver extends Driver {
     return [
       'measure_power',
       'measure_power.alwayson',
+      'meter_power',
     ];
   }
 
