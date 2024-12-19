@@ -53,7 +53,6 @@ class SwitchDriver extends Driver {
       id: device.id,
       monitor_id: device.monitorId,
       service_location_id: device.serviceLocationId,
-      service_location_from: device.serviceLocationFrom,
       service_location_uuid: device.serviceLocationUuid,
     };
   }
