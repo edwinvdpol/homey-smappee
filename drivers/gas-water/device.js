@@ -11,6 +11,62 @@ class GasWaterDevice extends Device {
   | Device events
   */
 
+  // Reset water meter
+  async onCapabilityResetWaterMeter() {
+    this.log('[Maintenance] Reset water meter');
+
+    // Device does not have water enabled
+    if (!this.getStoreValue('water_enabled')) {
+      this.error('[Maintenance] Device does not have water enabled');
+      throw new Error(this.homey.__('error.water_disabled'));
+    }
+
+    this.log('[Maintenance] Get device from API');
+    const sensor = await this.oAuth2Client.discoverGasWaterDevices(this.getStoreValue('id'));
+
+    // Device not found
+    if (blank(sensor)) {
+      this.error('[Maintenance] Device not found in Smappee account');
+      throw new Error(this.homey.__('error.404'));
+    }
+
+    this.log('[Maintenance] Device found:', JSON.stringify(sensor));
+
+    // Wait for driver
+    await this.driver.ready();
+    const store = this.driver.getPairStore(sensor);
+
+    // Check unit of measure
+    if (store.water_uom !== 'm3') {
+      this.error(`[Maintenance] Water unit of measure is ${store.water_uom} instead of m³`);
+      throw new Error(this.homey.__('error.water_uom', { uom: store.water_uom }));
+    }
+
+    // Update store
+    this.setStoreValue('water_uom', store.water_uom).catch(this.error);
+    this.setStoreValue('water_ppu', store.water_ppu).catch(this.error);
+
+    // Remove `measure_water` capability
+    if (this.hasCapability('measure_water')) {
+      this.removeCapability('measure_water').catch(this.error);
+      this.log('[Maintenance] Removed `measure_water` capability');
+    }
+
+    // Add `meter_water` capability
+    if (!this.hasCapability('meter_water')) {
+      await this.addCapability('meter_water');
+      this.log('[Maintenance] Added `meter_water` capability');
+    }
+
+    // Reset to defaults
+    this.setDefaults();
+
+    // Synchronize
+    this.sync().catch(this.error);
+
+    this.log('[Maintenance] Reset water meter done!');
+  }
+
   // Device initialized
   async onOAuth2Init() {
     // Migrate
@@ -107,32 +163,6 @@ class GasWaterDevice extends Device {
   }
 
   /*
-  | Timer functions
-  */
-
-  // Register timer
-  registerTimer() {
-    if (this.syncDeviceTimer) return;
-
-    const interval = 1000 * this.constructor.TIMER_INTERVAL;
-
-    this.syncDeviceTimer = this.homey.setInterval(this.onTimerInterval.bind(this), interval);
-
-    this.log('[Timer] Registered');
-  }
-
-  // Unregister timer
-  unregisterTimer() {
-    if (!this.syncDeviceTimer) return;
-
-    this.homey.clearTimeout(this.syncDeviceTimer);
-
-    this.syncDeviceTimer = null;
-
-    this.log('[Timer] Unregistered');
-  }
-
-  /*
   | Support functions
   */
 
@@ -154,62 +184,6 @@ class GasWaterDevice extends Device {
     }
 
     this.log('[Migrate] Finished');
-  }
-
-  // Reset water capabilities and meters
-  async onMaintenanceResetWaterMeter() {
-    this.log('[Maintenance] Reset water meter');
-
-    // Device does not have water enabled
-    if (!this.getStoreValue('water_enabled')) {
-      this.error('[Maintenance] Device does not have water enabled');
-      throw new Error(this.homey.__('error.water_disabled'));
-    }
-
-    this.log('[Maintenance] Get device from API');
-    const sensor = await this.oAuth2Client.discoverGasWaterDevices(this.getStoreValue('id'));
-
-    // Device not found
-    if (blank(sensor)) {
-      this.error('[Maintenance] Device not found in Smappee account');
-      throw new Error(this.homey.__('error.404'));
-    }
-
-    this.log('[Maintenance] Device found:', JSON.stringify(sensor));
-
-    // Wait for driver
-    await this.driver.ready();
-    const store = this.driver.getPairStore(sensor);
-
-    // Check unit of measure
-    if (store.water_uom !== 'm3') {
-      this.error(`[Maintenance] Water unit of measure is ${store.water_uom} instead of m³`);
-      throw new Error(this.homey.__('error.water_uom', { uom: store.water_uom }));
-    }
-
-    // Update store
-    this.setStoreValue('water_uom', store.water_uom).catch(this.error);
-    this.setStoreValue('water_ppu', store.water_ppu).catch(this.error);
-
-    // Remove `measure_water` capability
-    if (this.hasCapability('measure_water')) {
-      this.removeCapability('measure_water').catch(this.error);
-      this.log('[Maintenance] Removed `measure_water` capability');
-    }
-
-    // Add `meter_water` capability
-    if (!this.hasCapability('meter_water')) {
-      await this.addCapability('meter_water');
-      this.log('[Maintenance] Added `meter_water` capability');
-    }
-
-    // Reset to defaults
-    this.setDefaults();
-
-    // Synchronize
-    this.sync().catch(this.error);
-
-    this.log('[Maintenance] Reset water meter done!');
   }
 
 }
