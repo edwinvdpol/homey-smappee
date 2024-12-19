@@ -1,10 +1,12 @@
 'use strict';
 
 const MqttDevice = require('../../lib/MqttDevice');
-const { blank } = require('../../lib/Utils');
+const { blank, filled } = require('../../lib/Utils');
 const ChargingState = require('../../models/ChargingState');
 
 class EVWallDevice extends MqttDevice {
+
+  static SYNC_INTERVAL = 660; // 11 minutes
 
   /*
   | Device events
@@ -21,6 +23,9 @@ class EVWallDevice extends MqttDevice {
   async onOAuth2Init() {
     // Migrate
     await this.migrate();
+
+    // Register timer
+    this.registerTimer();
 
     // Initialize parent
     await super.onOAuth2Init();
@@ -112,15 +117,17 @@ class EVWallDevice extends MqttDevice {
 
   // Return data which need to be synced
   async getSyncData() {
+    const result = this.latestRecordTime
+      ? await this.oAuth2Client.getLatestServiceLocationConsumption(this.serviceLocationId, this.latestRecordTime)
+      : await this.oAuth2Client.getInitialServiceLocationConsumption(this.serviceLocationId);
+
     const ledId = this.getStoreValue('led_id');
 
-    if (blank(ledId)) return {};
+    if (filled(ledId)) {
+      result.led_brightness = await this.oAuth2Client.getLedBrightness(this.serviceLocationId, ledId);
+    }
 
-    const brightness = await this.oAuth2Client.getLedBrightness(this.serviceLocationId, ledId);
-
-    return {
-      led_brightness: brightness,
-    };
+    return result;
   }
 
   // Set device data
@@ -152,6 +159,14 @@ class EVWallDevice extends MqttDevice {
     // Consumption power (MQTT)
     if (this.hasCapability('measure_power') && 'consumptionPower' in data) {
       this.setCapabilityValue('measure_power', data.consumptionPower).catch(this.error);
+    }
+
+    // Consumption (sync)
+    if (this.hasCapability('meter_power') && 'consumption' in data) {
+      let current = this.latestRecordTime ? this.getCapabilityValue('meter_power') : 0;
+      current += data.consumption;
+
+      this.setCapabilityValue('meter_power', current).catch(this.error);
     }
 
     // Availability (MQTT)
@@ -199,15 +214,27 @@ class EVWallDevice extends MqttDevice {
 
   // Migrate device properties
   async migrate() {
-    // Add charging capability
-    if (!this.hasCapability('charging')) {
-      this.addCapability('charging').catch(this.error);
+    this.log('[Migrate] Started');
+
+    // Add `meter_power` capability
+    if (!this.hasCapability('meter_power')) {
+      this.addCapability('meter_power').catch(this.error);
+      this.log('[Migrate] Added `meter_power` capability');
     }
 
-    // Remove measure_power.alwayson capability
+    // Add `charging` capability
+    if (!this.hasCapability('charging')) {
+      this.addCapability('charging').catch(this.error);
+      this.log('[Migrate] Added `charging` capability');
+    }
+
+    // Remove `measure_power.alwayson` capability
     if (this.hasCapability('measure_power.alwayson')) {
       this.removeCapability('measure_power.alwayson').catch(this.error);
+      this.log('[Migrate] Removed `measure_power.alwayson` capability');
     }
+
+    this.log('[Migrate] Finished');
   }
 
 }
