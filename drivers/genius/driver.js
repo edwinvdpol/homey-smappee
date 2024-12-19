@@ -43,6 +43,7 @@ class GeniusDriver extends Driver {
     return {
       id: device.serviceLocationId,
       service_location_id: device.serviceLocationId,
+      service_location_from: device.serviceLocationFrom,
       service_location_uuid: device.serviceLocationUuid,
     };
   }

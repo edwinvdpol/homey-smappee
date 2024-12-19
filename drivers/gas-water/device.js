@@ -22,7 +22,7 @@ class GasWaterDevice extends Device {
     }
 
     this.log('[Maintenance] Get device from API');
-    const sensor = await this.oAuth2Client.discoverGasWaterDevices(this.getStoreValue('id'));
+    const sensor = await this.oAuth2Client.getGasWaterDevice(this.getStoreValue('id'));
 
     // Device not found
     if (blank(sensor)) {
