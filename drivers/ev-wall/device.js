@@ -129,11 +129,6 @@ class EVWallDevice extends MqttDevice {
 
     this.log('[Sync]', JSON.stringify(data));
 
-    // Always on power (MQTT)
-    if (this.hasCapability('measure_power.alwayson') && 'alwaysOn' in data) {
-      this.setCapabilityValue('measure_power.alwayson', data.alwaysOn).catch(this.error);
-    }
-
     // LED brightness (MQTT and sync)
     if ('led_brightness' in data && !this.updating) {
       this.setSettings(data).catch(this.error);
