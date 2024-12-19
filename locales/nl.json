@@ -13,11 +13,13 @@
     "led": "LED-helderheid wordt niet ondersteund door dit apparaat",
     "network": "Smappee API is niet bereikbaar",
     "unavailable": "Apparaat is niet beschikbaar",
-    "unknown": "Er is een onbekende fout opgetreden"
+    "unknown": "Er is een onbekende fout opgetreden",
+    "water_disabled": "Apparaat heeft geen waterfunctie",
+    "water_uom": "De maateenheid voor water zou m³ moeten zijn in plaats van __uom__"
   },
   "mqtt": "berichtenservice",
   "notification": {
-    "water_capability_updated": "Water capability bijgewerkt voor **__name__**. Controleer uw flows."
+    "water_capability_updated": "Watermeter voor **__name__** moet bijgewerkt worden. Start de onderhoudsactie 'Watermeter resetten' vanuit de apparaatinstellingen."
   },
   "service": {
     "error": "De Smappee __service__ geeft een foutmelding, mogelijk werkt het apparaat niet zoals verwacht.",

@@ -13,11 +13,13 @@
     "led": "LED brightness is not supported by this device",
     "network": "Smappee API is unreachable",
     "unavailable": "Device is unavailable",
-    "unknown": "An unknown error has occurred"
+    "unknown": "An unknown error has occurred",
+    "water_disabled": "Device does not have water enabled",
+    "water_uom": "Water unit of measure should be m³ instead of __uom__"
   },
   "mqtt": "message service",
   "notification": {
-    "water_capability_updated": "Water capability updated for **__name__**. Check your flows."
+    "water_capability_updated": "Water meter for **__name__** needs to be updated. Start the 'Reset water meter' maintenance action from the device settings."
   },
   "service": {
     "error": "The Smappee __service__ throws an error, the device may not work as expected.",

@@ -9,8 +9,21 @@
     "measure_temperature",
     "meter_gas",
     "meter_water",
-    "measure_water"
+    "button.reset_water_meter"
   ],
+  "capabilitiesOptions": {
+    "button.reset_water_meter": {
+      "maintenanceAction": true,
+      "title": {
+        "en": "Reset water meter",
+        "nl": "Watermeter resetten"
+      },
+      "desc": {
+        "en": "Make sure the unit of measure of the water is set to m³ instead of liter (l) in the Smappee mobile app before running this action.",
+        "nl": "Zorg ervoor dat de watermaateenheid in de Smappee mobiele app is ingesteld op m³ in plaats van liter (l) voordat u deze actie uitvoert."
+      }
+    }
+  },
   "energy": {
     "batteries": [
       "AA",

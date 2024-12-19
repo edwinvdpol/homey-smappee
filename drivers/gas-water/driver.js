@@ -31,12 +31,10 @@ class GasWaterDriver extends Driver {
     }
 
     if (water && water.enabled) {
+      capabilities.push('button.reset_water_meter');
+
       if (water.uom === 'm3') {
         capabilities.push('meter_water');
-      }
-
-      if (water.uom === 'l') {
-        capabilities.push('measure_water');
       }
     }
 
