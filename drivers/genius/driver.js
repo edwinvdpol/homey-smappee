@@ -22,6 +22,7 @@ class GeniusDriver extends Driver {
     }
 
     capabilities.push('measure_power.alwayson');
+    capabilities.push('meter_power');
 
     return capabilities;
   }
