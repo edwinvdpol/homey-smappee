@@ -5,7 +5,7 @@ const { blank, filled } = require('../../lib/Utils');
 
 class GasWaterDevice extends Device {
 
-  static TIMER_INTERVAL = 780; // 13 minutes
+  static SYNC_INTERVAL = 780; // 13 minutes
 
   /*
   | Device events
@@ -77,19 +77,6 @@ class GasWaterDevice extends Device {
 
     // Initialize parent
     await super.onOAuth2Init();
-  }
-
-  // Device destroyed
-  async onOAuth2Uninit() {
-    // Unregister timer
-    this.unregisterTimer();
-
-    await super.onOAuth2Uninit();
-  }
-
-  // Timer action
-  async onTimerInterval() {
-    await this.sync();
   }
 
   /*
