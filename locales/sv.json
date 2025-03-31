@@ -1,0 +1,34 @@
+{
+  "api": "API",
+  "authentication": {
+    "connecting": "Ansluter..."
+  },
+  "error": {
+    "401": "Smappee API-referenser är felaktiga",
+    "403": "Smappee API har nekad åtkomst till denna enhet",
+    "404": "Enheten hittades inte i Smappee-kontot",
+    "50x": "Smappee API är inte tillgänglig",
+    "client_id": "Ange ett giltigt klient-ID",
+    "client_secret": "Ange ett giltigt klienthemlighet",
+    "led": "LED-ljusstyrka stöds inte av denna enhet",
+    "network": "Smappee API är oåtkomlig",
+    "unavailable": "Enheten är inte tillgänglig",
+    "unknown": "Ett okänt fel har inträffat",
+    "water_disabled": "Enheten har inte vatten aktiverat",
+    "water_uom": "Vattenmätenheten bör vara m³ istället för __uom__"
+  },
+  "mqtt": "meddelandetjänst",
+  "notification": {
+    "water_capability_updated": "Vattenmätaren för **__name__** behöver uppdateras. Starta underhållsåtgärden 'Återställ vattenmätare' från enhetens inställningar."
+  },
+  "service": {
+    "error": "Smappee __service__ kastar ett fel, enheten kanske inte fungerar som förväntat.",
+    "disconnected": "Anslutningen till Smappee __service__ har gått förlorad, enheten kanske inte fungerar som förväntat.",
+    "offline": "Kan inte ansluta till Smappee __service__, kontrollera internetanslutningen.",
+    "reconnect": "Ansluter om till Smappee __service__..."
+  },
+  "warning": {
+    "disconnected": "Enheten är frånkopplad, den kanske inte fungerar som förväntat.",
+    "unreachable": "Enheten är oåtkomlig, den kanske inte fungerar som förväntat."
+  }
+}

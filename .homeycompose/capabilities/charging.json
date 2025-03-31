@@ -2,18 +2,48 @@
   "type": "boolean",
   "title": {
     "en": "Charging",
-    "nl": "Opladen"
+    "nl": "Opladen",
+    "da": "Opladning",
+    "de": "Aufladen",
+    "es": "Cargando",
+    "fr": "Chargement",
+    "it": "Caricamento",
+    "no": "Lading",
+    "sv": "Laddar",
+    "pl": "Ładowanie",
+    "ru": "Зарядка",
+    "ko": "충전 중"
   },
   "getable": true,
   "setable": false,
   "insights": true,
   "insightsTitleTrue": {
     "en": "Charging",
-    "nl": "Opladen"
+    "nl": "Opladen",
+    "da": "Opladning",
+    "de": "Aufladen",
+    "es": "Cargando",
+    "fr": "Chargement",
+    "it": "Caricamento",
+    "no": "Lading",
+    "sv": "Laddar",
+    "pl": "Ładowanie",
+    "ru": "Зарядка",
+    "ko": "충전 중"
   },
   "insightsTitleFalse": {
     "en": "Charged",
-    "nl": "Opgeladen"
+    "nl": "Opgeladen",
+    "da": "Opladet",
+    "de": "Aufgeladen",
+    "es": "Cargado",
+    "fr": "Chargé",
+    "it": "Caricato",
+    "no": "Ladet",
+    "sv": "Laddad",
+    "pl": "Naładowany",
+    "ru": "Заряжено",
+    "ko": "충전 완료"
   },
   "uiComponent": "sensor",
   "icon": "/assets/capabilities/charging.svg"

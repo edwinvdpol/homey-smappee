@@ -1,11 +1,31 @@
 {
   "title": {
     "en": "Start smart charging",
-    "nl": "Slim laden starten"
+    "nl": "Slim laden starten",
+    "da": "Start smart opladning",
+    "de": "Intelligentes Laden starten",
+    "es": "Comenzar carga inteligente",
+    "fr": "Démarrer la charge intelligente",
+    "it": "Inizia la ricarica intelligente",
+    "no": "Start smart lading",
+    "sv": "Starta smart laddning",
+    "pl": "Rozpocznij inteligentne ładowanie",
+    "ru": "Начать умную зарядку",
+    "ko": "스마트 충전 시작"
   },
   "hint": {
     "en": "Use this flowcard to set the charging mode to smart charging.",
-    "nl": "Gebruik deze kaart om de oplaadmodus in te stellen op slim laden."
+    "nl": "Gebruik deze kaart om de oplaadmodus in te stellen op slim laden.",
+    "da": "Brug dette flowkort til at indstille opladningstilstanden til smart opladning.",
+    "de": "Verwenden Sie diese Flusskarte, um den Lademodus auf intelligentes Laden zu setzen.",
+    "es": "Usa esta tarjeta de flujo para establecer el modo de carga en carga inteligente.",
+    "fr": "Utilisez cette carte de flux pour définir le mode de charge sur charge intelligente.",
+    "it": "Usa questa scheda di flusso per impostare la modalità di ricarica su ricarica intelligente.",
+    "no": "Bruk dette flytkortet for å sette lade-modus til smart lading.",
+    "sv": "Använd detta flödesschema för att ställa in laddningsläget till smart laddning.",
+    "pl": "Użyj tej karty przepływu, aby ustawić tryb ładowania na ładowanie inteligentne.",
+    "ru": "Используйте эту карточку потока, чтобы установить режим зарядки на умную зарядку.",
+    "ko": "이 플로우 카드를 사용하여 충전 모드를 스마트 충전으로 설정하세요."
   },
   "args": [
     {

@@ -16,11 +16,31 @@
       "maintenanceAction": true,
       "title": {
         "en": "Reset water meter",
-        "nl": "Watermeter resetten"
+        "nl": "Watermeter resetten",
+        "da": "Nulstil vandmåler",
+        "de": "Wasserzähler zurücksetzen",
+        "es": "Restablecer contador de agua",
+        "fr": "Réinitialiser le compteur d'eau",
+        "it": "Reimposta il contatore dell'acqua",
+        "no": "Nullstill vannmåler",
+        "sv": "Återställ vattenmätare",
+        "pl": "Zresetuj licznik wody",
+        "ru": "Сбросить водяной счетчик",
+        "ko": "수도계량기 초기화"
       },
       "desc": {
         "en": "Make sure the unit of measure of the water is set to m³ instead of liter (l) in the Smappee mobile app before running this action.",
-        "nl": "Zorg ervoor dat de watermaateenheid in de Smappee mobiele app is ingesteld op m³ in plaats van liter (l) voordat u deze actie uitvoert."
+        "nl": "Zorg ervoor dat de watermaateenheid in de Smappee mobiele app is ingesteld op m³ in plaats van liter (l) voordat u deze actie uitvoert.",
+        "da": "Sørg for, at måleenheden for vandet er indstillet til m³ i stedet for liter (l) i Smappee mobilapp, før du udfører denne handling.",
+        "de": "Stellen Sie sicher, dass die Maßeinheit für Wasser in der Smappee-App auf m³ anstelle von Liter (l) eingestellt ist, bevor Sie diese Aktion ausführen.",
+        "es": "Asegúrate de que la unidad de medida del agua esté configurada en m³ en lugar de litros (l) en la aplicación móvil de Smappee antes de realizar esta acción.",
+        "fr": "Assurez-vous que l'unité de mesure de l'eau est réglée sur m³ au lieu de litre (l) dans l'application mobile Smappee avant d'exécuter cette action.",
+        "it": "Assicurati che l'unità di misura dell'acqua sia impostata su m³ anziché litri (l) nell'app mobile Smappee prima di eseguire questa azione.",
+        "no": "Sørg for at måleenheten for vann er satt til m³ i stedet for liter (l) i Smappee-appen før du utfører denne handlingen.",
+        "sv": "Se till att vattenmätarens enhet är inställd på m³ istället för liter (l) i Smappees mobilapp innan du utför den här åtgärden.",
+        "pl": "Upewnij się, że jednostka miary wody jest ustawiona na m³ zamiast litr (l) w aplikacji mobilnej Smappee przed wykonaniem tej akcji.",
+        "ru": "Убедитесь, что единица измерения воды в приложении Smappee установлена на м³, а не литры (л) перед выполнением этого действия.",
+        "ko": "Smappee 모바일 앱에서 물의 측정 단위가 리터(l) 대신 m³로 설정되어 있는지 확인한 후 이 작업을 실행하세요."
       }
     }
   },

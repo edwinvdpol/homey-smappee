@@ -1,11 +1,31 @@
 {
   "title": {
     "en": "Start standard charging",
-    "nl": "Standaard laden starten"
+    "nl": "Standaard laden starten",
+    "da": "Start standard opladning",
+    "de": "Standardladung starten",
+    "es": "Iniciar carga estándar",
+    "fr": "Démarrer la charge standard",
+    "it": "Avvia la ricarica standard",
+    "no": "Start standard lading",
+    "sv": "Starta standardladdning",
+    "pl": "Rozpocznij standardowe ładowanie",
+    "ru": "Начать стандартную зарядку",
+    "ko": "표준 충전 시작"
   },
   "hint": {
     "en": "Use this flowcard to set the charging mode to standard charging.",
-    "nl": "Gebruik deze kaart om de oplaadmodus in te stellen op standaard laden."
+    "nl": "Gebruik deze kaart om de oplaadmodus in te stellen op standaard laden.",
+    "da": "Brug dette flowkort til at indstille opladningstilstanden til standard opladning.",
+    "de": "Verwenden Sie diese Flow-Karte, um den Ladestil auf Standardladung zu setzen.",
+    "es": "Utilice esta tarjeta de flujo para configurar el modo de carga en carga estándar.",
+    "fr": "Utilisez cette carte de flux pour définir le mode de charge sur la charge standard.",
+    "it": "Usa questa scheda di flusso per impostare la modalità di ricarica su quella standard.",
+    "no": "Bruk dette flytkortet for å sette lademodusen til standard lading.",
+    "sv": "Använd detta flödeskort för att ställa in laddningsläget till standardladdning.",
+    "pl": "Użyj tej karty przepływu, aby ustawić tryb ładowania na standardowy.",
+    "ru": "Используйте эту карточку, чтобы установить режим зарядки на стандартный.",
+    "ko": "이 플로우 카드를 사용하여 충전 모드를 표준 충전으로 설정하세요."
   },
   "args": [
     {

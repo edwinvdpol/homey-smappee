@@ -1,0 +1,34 @@
+{
+  "api": "API",
+  "authentication": {
+    "connecting": "Forbinder..."
+  },
+  "error": {
+    "401": "Smappee API legitimationsoplysninger er forkerte",
+    "403": "Smappee API har nægtet adgang til denne enhed",
+    "404": "Enhed ikke fundet i Smappee-konto",
+    "50x": "Smappee API er utilgængelig",
+    "client_id": "Indtast en gyldig klient-ID",
+    "client_secret": "Indtast en gyldig klienthemmelighed",
+    "led": "LED-lysstyrke understøttes ikke af denne enhed",
+    "network": "Smappee API kan ikke nås",
+    "unavailable": "Enhed er utilgængelig",
+    "unknown": "En ukendt fejl er opstået",
+    "water_disabled": "Enhed har ikke vand aktiveret",
+    "water_uom": "Vand måleenhed skal være m³ i stedet for __uom__"
+  },
+  "mqtt": "beskedtjeneste",
+  "notification": {
+    "water_capability_updated": "Vandmåler for **__name__** skal opdateres. Start 'Nulstil vandmåler' vedligeholdelsesaktionen fra enhedsindstillingerne."
+  },
+  "service": {
+    "error": "Smappee __service__ kaster en fejl, enheden fungerer muligvis ikke som forventet.",
+    "disconnected": "Forbindelsen til Smappee __service__ er mistet, enheden fungerer muligvis ikke som forventet.",
+    "offline": "Kan ikke oprette forbindelse til Smappee __service__, kontroller internetforbindelsen.",
+    "reconnect": "Opretter forbindelse til Smappee __service__ igen..."
+  },
+  "warning": {
+    "disconnected": "Enheden er afbrudt, enheden fungerer muligvis ikke som forventet.",
+    "unreachable": "Enheden kan ikke nås, enheden fungerer muligvis ikke som forventet."
+  }
+}

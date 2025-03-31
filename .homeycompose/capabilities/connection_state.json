@@ -2,7 +2,17 @@
   "type": "enum",
   "title": {
     "en": "Connection state",
-    "nl": "Verbindingsstatus"
+    "nl": "Verbindingsstatus",
+    "da": "Forbindelsestilstand",
+    "de": "Verbindungsstatus",
+    "es": "Estado de conexión",
+    "fr": "État de la connexion",
+    "it": "Stato della connessione",
+    "no": "Tilkoblingstilstand",
+    "sv": "Anslutningstillstånd",
+    "pl": "Stan połączenia",
+    "ru": "Состояние соединения",
+    "ko": "연결 상태"
   },
   "getable": true,
   "setable": false,
@@ -12,21 +22,51 @@
       "id": "connected",
       "title": {
         "en": "Connected",
-        "nl": "Verbonden"
+        "nl": "Verbonden",
+        "da": "Forbundet",
+        "de": "Verbunden",
+        "es": "Conectado",
+        "fr": "Connecté",
+        "it": "Connesso",
+        "no": "Tilkoblet",
+        "sv": "Ansluten",
+        "pl": "Połączono",
+        "ru": "Подключено",
+        "ko": "연결됨"
       }
     },
     {
       "id": "disconnected",
       "title": {
         "en": "Disconnected",
-        "nl": "Verbroken"
+        "nl": "Verbroken",
+        "da": "Afbrudt",
+        "de": "Getrennt",
+        "es": "Desconectado",
+        "fr": "Déconnecté",
+        "it": "Disconnesso",
+        "no": "Frakoblet",
+        "sv": "Frånkopplad",
+        "pl": "Rozłączono",
+        "ru": "Отключено",
+        "ko": "연결 끊김"
       }
     },
     {
       "id": "unreachable",
       "title": {
         "en": "Unreachable",
-        "nl": "Onbereikbaar"
+        "nl": "Onbereikbaar",
+        "da": "Uopnåelig",
+        "de": "Nicht erreichbar",
+        "es": "Inalcanzable",
+        "fr": "Inaccessible",
+        "it": "Irraggiungibile",
+        "no": "Utilgjengelig",
+        "sv": "Oåtkomlig",
+        "pl": "Nieosiągalny",
+        "ru": "Недоступен",
+        "ko": "접근 불가"
       }
     }
   ]

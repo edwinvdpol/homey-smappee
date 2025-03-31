@@ -1,0 +1,34 @@
+{
+  "api": "API",
+  "authentication": {
+    "connecting": "Connexion..."
+  },
+  "error": {
+    "401": "Les informations d'identification API de Smappee sont incorrectes",
+    "403": "L'API Smappee a refusé l'accès à cet appareil",
+    "404": "Appareil non trouvé dans le compte Smappee",
+    "50x": "L'API de Smappee est indisponible",
+    "client_id": "Entrez un ID client valide",
+    "client_secret": "Entrez un secret client valide",
+    "led": "La luminosité des LED n'est pas prise en charge par cet appareil",
+    "network": "L'API Smappee est injoignable",
+    "unavailable": "L'appareil est indisponible",
+    "unknown": "Une erreur inconnue s'est produite",
+    "water_disabled": "L'appareil n'a pas l'eau activée",
+    "water_uom": "L'unité de mesure de l'eau doit être m³ au lieu de __uom__"
+  },
+  "mqtt": "service de messages",
+  "notification": {
+    "water_capability_updated": "Le compteur d'eau pour **__name__** doit être mis à jour. Démarrez l'action de maintenance 'Réinitialiser le compteur d'eau' à partir des paramètres de l'appareil."
+  },
+  "service": {
+    "error": "Le service Smappee __service__ déclenche une erreur, l'appareil peut ne pas fonctionner comme prévu.",
+    "disconnected": "La connexion au service Smappee __service__ a été perdue, l'appareil peut ne pas fonctionner comme prévu.",
+    "offline": "Impossible de se connecter au service Smappee __service__, vérifiez la connexion Internet.",
+    "reconnect": "Reconnexion au service Smappee __service__..."
+  },
+  "warning": {
+    "disconnected": "L'appareil est déconnecté, il peut ne pas fonctionner comme prévu.",
+    "unreachable": "L'appareil est injoignable, il peut ne pas fonctionner comme prévu."
+  }
+}

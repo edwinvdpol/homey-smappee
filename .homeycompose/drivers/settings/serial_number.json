@@ -2,7 +2,17 @@
   "type": "label",
   "label": {
     "en": "Serial Number",
-    "nl": "Serienummer"
+    "nl": "Serienummer",
+    "da": "Serienummer",
+    "de": "Seriennummer",
+    "es": "Número de serie",
+    "fr": "Numéro de série",
+    "it": "Numero di serie",
+    "no": "Serienummer",
+    "sv": "Serienummer",
+    "pl": "Numer seryjny",
+    "ru": "Серийный номер",
+    "ko": "일련번호"
   },
   "value": "-"
 }

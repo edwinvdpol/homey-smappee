@@ -1,11 +1,31 @@
 {
   "title": {
     "en": "Charging was stopped",
-    "nl": "Opladen werd gestopt"
+    "nl": "Opladen werd gestopt",
+    "da": "Opladning blev stoppet",
+    "de": "Laden wurde gestoppt",
+    "es": "La carga fue detenida",
+    "fr": "La charge a été arrêtée",
+    "it": "La ricarica è stata interrotta",
+    "no": "Lading ble stoppet",
+    "sv": "Laddningen stoppades",
+    "pl": "Ładowanie zostało zatrzymane",
+    "ru": "Зарядка была остановлена",
+    "ko": "충전이 중단되었습니다"
   },
   "hint": {
     "en": "This flowcard is activated when the charging was stopped.",
-    "nl": "Deze kaart wordt geactiveerd wanneer het opladen gestopt werd."
+    "nl": "Deze kaart wordt geactiveerd wanneer het opladen gestopt werd.",
+    "da": "Dette flowkort aktiveres, når opladningen blev stoppet.",
+    "de": "Diese Flowcard wird aktiviert, wenn das Laden gestoppt wurde.",
+    "es": "Esta tarjeta de flujo se activa cuando se detiene la carga.",
+    "fr": "Cette carte de flux est activée lorsque la charge a été arrêtée.",
+    "it": "Questa scheda viene attivata quando la ricarica è stata interrotta.",
+    "no": "Dette flytkortet aktiveres når ladingen ble stoppet.",
+    "sv": "Detta flödeskort aktiveras när laddningen stoppades.",
+    "pl": "Ta karta przepływu jest aktywowana, gdy ładowanie zostało zatrzymane.",
+    "ru": "Эта потоковая карта активируется, когда зарядка была остановлена.",
+    "ko": "충전이 중단되면 이 플로우카드가 활성화됩니다."
   },
   "platforms": [
     "local"

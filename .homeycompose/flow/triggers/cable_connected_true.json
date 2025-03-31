@@ -1,11 +1,31 @@
 {
   "title": {
     "en": "Cable was connected",
-    "nl": "Kabel werd aangesloten"
+    "nl": "Kabel werd aangesloten",
+    "da": "Kabelen blev tilsluttet",
+    "de": "Kabel wurde angeschlossen",
+    "es": "El cable fue conectado",
+    "fr": "Le câble a été connecté",
+    "it": "Il cavo è stato collegato",
+    "no": "Kabelen ble koblet til",
+    "sv": "Kabeln anslöts",
+    "pl": "Kabel został podłączony",
+    "ru": "Кабель был подключен",
+    "ko": "케이블이 연결되었습니다"
   },
   "hint": {
     "en": "This flowcard is activated when the cable was connected.",
-    "nl": "Deze kaart wordt geactiveerd wanneer de kabel aangesloten werd."
+    "nl": "Deze kaart wordt geactiveerd wanneer de kabel aangesloten werd.",
+    "da": "Dette flowkort aktiveres, når kablet blev tilsluttet.",
+    "de": "Diese Flowkarte wird aktiviert, wenn das Kabel angeschlossen wurde.",
+    "es": "Esta tarjeta de flujo se activa cuando se conecta el cable.",
+    "fr": "Cette carte de flux est activée lorsque le câble est connecté.",
+    "it": "Questa scheda di flusso si attiva quando il cavo è collegato.",
+    "no": "Dette flytkortet aktiveres når kabelen ble koblet til.",
+    "sv": "Detta flödeskort aktiveras när kabeln anslöts.",
+    "pl": "Ta karta przepływu jest aktywowana, gdy kabel został podłączony.",
+    "ru": "Эта карточка потока активируется, когда кабель был подключен.",
+    "ko": "이 흐름 카드는 케이블이 연결되었을 때 활성화됩니다."
   },
   "platforms": [
     "local"

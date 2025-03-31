@@ -12,7 +12,18 @@
     "en": "Smappee"
   },
   "description": {
-    "en": "Make the smart grid revolution happen"
+    "en": "Make the smart grid revolution happen",
+    "nl": "Laat de revolutie van het slimme netwerk plaatsvinden",
+    "da": "Få den smarte netværksrevolution til at ske",
+    "de": "Machen Sie die Revolution des intelligenten Netzes möglich",
+    "es": "Haz que la revolución de la red inteligente suceda",
+    "fr": "Faites que la révolution du réseau intelligent ait lieu",
+    "it": "Fai accadere la rivoluzione della rete intelligente",
+    "no": "Få revolusjonen av det smarte nettet til å skje",
+    "sv": "Gör det smarta nätets revolution möjlig",
+    "pl": "Spraw, by rewolucja inteligentnej sieci się wydarzyła",
+    "ru": "Совершите революцию умной сети",
+    "ko": "스마트 그리드 혁명을 일으키세요"
   },
   "category": [
     "energy"
@@ -52,11 +63,31 @@
       {
         "title": {
           "en": "Cable was disconnected",
-          "nl": "Kabel werd losgekoppeld"
+          "nl": "Kabel werd losgekoppeld",
+          "da": "Kablet var frakoblet",
+          "de": "Kabel wurde getrennt",
+          "es": "El cable fue desconectado",
+          "fr": "Le câble a été débranché",
+          "it": "Il cavo è stato scollegato",
+          "no": "Kabelen ble frakoblet",
+          "sv": "Kabeln kopplades från",
+          "pl": "Kabel został odłączony",
+          "ru": "Кабель был отключен",
+          "ko": "케이블이 연결 해제되었습니다"
         },
         "hint": {
           "en": "This flowcard is activated when the cable was disconnected.",
-          "nl": "Deze kaart wordt geactiveerd wanneer de kabel losgekoppeld werd."
+          "nl": "Deze kaart wordt geactiveerd wanneer de kabel losgekoppeld werd.",
+          "da": "Dette flowkort aktiveres, når kablet blev frakoblet.",
+          "de": "Diese Flow-Karte wird aktiviert, wenn das Kabel getrennt wurde.",
+          "es": "Esta tarjeta de flujo se activa cuando el cable fue desconectado.",
+          "fr": "Cette carte de flux est activée lorsque le câble est débranché.",
+          "it": "Questa scheda flusso si attiva quando il cavo viene scollegato.",
+          "no": "Dette flytkortet aktiveres når kabelen ble frakoblet.",
+          "sv": "Detta flödeskort aktiveras när kabeln kopplas från.",
+          "pl": "Ta karta przepływu jest aktywowana, gdy kabel został odłączony.",
+          "ru": "Эта карта потока активируется, когда кабель отключен.",
+          "ko": "케이블이 연결 해제되면 이 흐름 카드가 활성화됩니다."
         },
         "platforms": [
           "local"
@@ -73,11 +104,31 @@
       {
         "title": {
           "en": "Cable was connected",
-          "nl": "Kabel werd aangesloten"
+          "nl": "Kabel werd aangesloten",
+          "da": "Kabelen blev tilsluttet",
+          "de": "Kabel wurde angeschlossen",
+          "es": "El cable fue conectado",
+          "fr": "Le câble a été connecté",
+          "it": "Il cavo è stato collegato",
+          "no": "Kabelen ble koblet til",
+          "sv": "Kabeln anslöts",
+          "pl": "Kabel został podłączony",
+          "ru": "Кабель был подключен",
+          "ko": "케이블이 연결되었습니다"
         },
         "hint": {
           "en": "This flowcard is activated when the cable was connected.",
-          "nl": "Deze kaart wordt geactiveerd wanneer de kabel aangesloten werd."
+          "nl": "Deze kaart wordt geactiveerd wanneer de kabel aangesloten werd.",
+          "da": "Dette flowkort aktiveres, når kablet blev tilsluttet.",
+          "de": "Diese Flowkarte wird aktiviert, wenn das Kabel angeschlossen wurde.",
+          "es": "Esta tarjeta de flujo se activa cuando se conecta el cable.",
+          "fr": "Cette carte de flux est activée lorsque le câble est connecté.",
+          "it": "Questa scheda di flusso si attiva quando il cavo è collegato.",
+          "no": "Dette flytkortet aktiveres når kabelen ble koblet til.",
+          "sv": "Detta flödeskort aktiveras när kabeln anslöts.",
+          "pl": "Ta karta przepływu jest aktywowana, gdy kabel został podłączony.",
+          "ru": "Эта карточка потока активируется, когда кабель был подключен.",
+          "ko": "이 흐름 카드는 케이블이 연결되었을 때 활성화됩니다."
         },
         "platforms": [
           "local"
@@ -94,11 +145,31 @@
       {
         "title": {
           "en": "Charging was stopped",
-          "nl": "Opladen werd gestopt"
+          "nl": "Opladen werd gestopt",
+          "da": "Opladning blev stoppet",
+          "de": "Laden wurde gestoppt",
+          "es": "La carga fue detenida",
+          "fr": "La charge a été arrêtée",
+          "it": "La ricarica è stata interrotta",
+          "no": "Lading ble stoppet",
+          "sv": "Laddningen stoppades",
+          "pl": "Ładowanie zostało zatrzymane",
+          "ru": "Зарядка была остановлена",
+          "ko": "충전이 중단되었습니다"
         },
         "hint": {
           "en": "This flowcard is activated when the charging was stopped.",
-          "nl": "Deze kaart wordt geactiveerd wanneer het opladen gestopt werd."
+          "nl": "Deze kaart wordt geactiveerd wanneer het opladen gestopt werd.",
+          "da": "Dette flowkort aktiveres, når opladningen blev stoppet.",
+          "de": "Diese Flowcard wird aktiviert, wenn das Laden gestoppt wurde.",
+          "es": "Esta tarjeta de flujo se activa cuando se detiene la carga.",
+          "fr": "Cette carte de flux est activée lorsque la charge a été arrêtée.",
+          "it": "Questa scheda viene attivata quando la ricarica è stata interrotta.",
+          "no": "Dette flytkortet aktiveres når ladingen ble stoppet.",
+          "sv": "Detta flödeskort aktiveras när laddningen stoppades.",
+          "pl": "Ta karta przepływu jest aktywowana, gdy ładowanie zostało zatrzymane.",
+          "ru": "Эта потоковая карта активируется, когда зарядка была остановлена.",
+          "ko": "충전이 중단되면 이 플로우카드가 활성화됩니다."
         },
         "platforms": [
           "local"
@@ -115,11 +186,31 @@
       {
         "title": {
           "en": "Charging was started",
-          "nl": "Opladen werd gestart"
+          "nl": "Opladen werd gestart",
+          "da": "Opladning blev startet",
+          "de": "Das Laden wurde gestartet",
+          "es": "La carga fue iniciada",
+          "fr": "Le chargement a commencé",
+          "it": "La ricarica è stata avviata",
+          "no": "Ladingen ble startet",
+          "sv": "Laddningen startades",
+          "pl": "Ładowanie zostało rozpoczęte",
+          "ru": "Зарядка начата",
+          "ko": "충전이 시작되었습니다"
         },
         "hint": {
           "en": "This flowcard is activated when the charging was started.",
-          "nl": "Deze kaart wordt geactiveerd wanneer het opladen gestart werd."
+          "nl": "Deze kaart wordt geactiveerd wanneer het opladen gestart werd.",
+          "da": "Dette flowkort aktiveres, når opladningen startes.",
+          "de": "Diese Flowkarte wird aktiviert, wenn das Laden gestartet wurde.",
+          "es": "Esta tarjeta de flujo se activa cuando comienza la carga.",
+          "fr": "Cette carte de flux est activée lorsque le chargement commence.",
+          "it": "Questa scheda di flusso si attiva quando inizia la ricarica.",
+          "no": "Dette flytkortet aktiveres når ladingen starter.",
+          "sv": "Detta flödeskort aktiveras när laddningen startar.",
+          "pl": "Ta karta przepływu jest aktywowana, gdy ładowanie zostanie rozpoczęte.",
+          "ru": "Эта карточка потока активируется, когда зарядка начинается.",
+          "ko": "충전이 시작되면 이 플로우카드가 활성화됩니다."
         },
         "platforms": [
           "local"
@@ -136,15 +227,45 @@
       {
         "title": {
           "en": "Connection state changed",
-          "nl": "Verbindingsstatus is veranderd"
+          "nl": "Verbindingsstatus is veranderd",
+          "da": "Forbindelsestilstand ændret",
+          "de": "Verbindungsstatus geändert",
+          "es": "Estado de conexión cambiado",
+          "fr": "État de la connexion modifié",
+          "it": "Stato della connessione cambiato",
+          "no": "Tilkoblingstilstand endret",
+          "sv": "Anslutningstillstånd ändrat",
+          "pl": "Stan połączenia zmieniony",
+          "ru": "Состояние подключения изменено",
+          "ko": "연결 상태 변경됨"
         },
         "titleFormatted": {
           "en": "Connection state has changed to [[state]]",
-          "nl": "Verbindingsstatus is veranderd naar [[state]]"
+          "nl": "Verbindingsstatus is veranderd naar [[state]]",
+          "da": "Forbindelsestilstanden har ændret sig til [[state]]",
+          "de": "Der Verbindungsstatus hat sich geändert zu [[state]]",
+          "es": "El estado de conexión ha cambiado a [[state]]",
+          "fr": "L'état de la connexion a changé en [[state]]",
+          "it": "Lo stato della connessione è cambiato in [[state]]",
+          "no": "Tilkoblingstilstanden har endret seg til [[state]]",
+          "sv": "Anslutningstillståndet har ändrats till [[state]]",
+          "pl": "Stan połączenia zmienił się na [[state]]",
+          "ru": "Состояние подключения изменилось на [[state]]",
+          "ko": "연결 상태가 [[state]]으로 변경되었습니다"
         },
         "hint": {
           "en": "This flowcard is activated when the connection state was changed.",
-          "nl": "Deze kaart wordt geactiveerd wanneer de verbindingsstatus veranderd werd."
+          "nl": "Deze kaart wordt geactiveerd wanneer de verbindingsstatus veranderd werd.",
+          "da": "Dette flowkort aktiveres, når forbindelsestilstanden ændres.",
+          "de": "Diese Flowkarte wird aktiviert, wenn sich der Verbindungsstatus ändert.",
+          "es": "Esta tarjeta se activa cuando cambia el estado de la conexión.",
+          "fr": "Cette carte de flux est activée lorsque l'état de la connexion change.",
+          "it": "Questa scheda si attiva quando lo stato della connessione viene modificato.",
+          "no": "Dette flytkortet aktiveres når tilkoblingstilstanden endres.",
+          "sv": "Detta flödeskort aktiveras när anslutningstillståndet ändras.",
+          "pl": "Ta karta przepływu jest aktywowana, gdy stan połączenia się zmienia.",
+          "ru": "Эта карточка срабатывает, когда изменяется состояние подключения.",
+          "ko": "연결 상태가 변경되면 이 플로우카드가 활성화됩니다."
         },
         "platforms": [
           "local"
@@ -155,28 +276,68 @@
             "name": "state",
             "title": {
               "en": "state",
-              "nl": "status"
+              "nl": "status",
+              "da": "tilstand",
+              "de": "Status",
+              "es": "estado",
+              "fr": "état",
+              "it": "stato",
+              "no": "tilstand",
+              "sv": "tillstånd",
+              "pl": "stan",
+              "ru": "состояние",
+              "ko": "상태"
             },
             "values": [
               {
                 "id": "connected",
                 "label": {
                   "en": "Connected",
-                  "nl": "Verbonden"
+                  "nl": "Verbonden",
+                  "da": "Forbundet",
+                  "de": "Verbunden",
+                  "es": "Conectado",
+                  "fr": "Connecté",
+                  "it": "Connesso",
+                  "no": "Tilkoblet",
+                  "sv": "Ansluten",
+                  "pl": "Połączony",
+                  "ru": "Подключен",
+                  "ko": "연결됨"
                 }
               },
               {
                 "id": "disconnected",
                 "label": {
                   "en": "Disconnected",
-                  "nl": "Verbroken"
+                  "nl": "Verbroken",
+                  "da": "Afbrudt",
+                  "de": "Getrennt",
+                  "es": "Desconectado",
+                  "fr": "Déconnecté",
+                  "it": "Scollegato",
+                  "no": "Frakoblet",
+                  "sv": "Frånkopplad",
+                  "pl": "Rozłączony",
+                  "ru": "Отключен",
+                  "ko": "연결 끊김"
                 }
               },
               {
                 "id": "unreachable",
                 "label": {
                   "en": "Unreachable",
-                  "nl": "Onbereikbaar"
+                  "nl": "Onbereikbaar",
+                  "da": "Uopnåelig",
+                  "de": "Unerreichbar",
+                  "es": "Inalcanzable",
+                  "fr": "Inaccessible",
+                  "it": "Irraggiungibile",
+                  "no": "Utilgjengelig",
+                  "sv": "Oåtkomlig",
+                  "pl": "Nieosiągalny",
+                  "ru": "Недоступен",
+                  "ko": "접근할 수 없음"
                 }
               }
             ]
@@ -194,11 +355,31 @@
       {
         "title": {
           "en": "Cable is !{{connected|disconnected}}",
-          "nl": "Kabel is !{{aangesloten|losgekoppeld}}"
+          "nl": "Kabel is !{{aangesloten|losgekoppeld}}",
+          "da": "Kablet er !{{forbundet|frakoblet}}",
+          "de": "Kabel ist !{{verbunden|getrennt}}",
+          "es": "El cable está !{{conectado|desconectado}}",
+          "fr": "Le câble est !{{connecté|déconnecté}}",
+          "it": "Il cavo è !{{collegato|scollegato}}",
+          "no": "Kabelen er !{{tilkoblet|frakoblet}}",
+          "sv": "Kabeln är !{{ansluten|frånkopplad}}",
+          "pl": "Kabel jest !{{podłączony|odłączony}}",
+          "ru": "Кабель !{{подключен|отключен}}",
+          "ko": "케이블이 !{{연결됨|연결 끊김}}"
         },
         "hint": {
           "en": "Checks whether the cable is connected.",
-          "nl": "Controleert of de kabel aangesloten is."
+          "nl": "Controleert of de kabel aangesloten is.",
+          "da": "Kontrollerer om kablet er forbundet.",
+          "de": "Prüft, ob das Kabel verbunden ist.",
+          "es": "Verifica si el cable está conectado.",
+          "fr": "Vérifie si le câble est connecté.",
+          "it": "Verifica se il cavo è collegato.",
+          "no": "Sjekker om kabelen er tilkoblet.",
+          "sv": "Kontrollerar om kabeln är ansluten.",
+          "pl": "Sprawdza, czy kabel jest podłączony.",
+          "ru": "Проверяет, подключен ли кабель.",
+          "ko": "케이블이 연결되어 있는지 확인합니다."
         },
         "platforms": [
           "local"
@@ -215,11 +396,31 @@
       {
         "title": {
           "en": "!{{Is|Is not}} charging",
-          "nl": "!{{Is|Is niet}} aan het opladen"
+          "nl": "!{{Is|Is niet}} aan het opladen",
+          "da": "!{{Er|Er ikke}} ved at oplade",
+          "de": "!{{Lädt|Lädt nicht}}",
+          "es": "¡{{Está|No está}} cargando!",
+          "fr": "!{{Est|N'est pas}} en charge",
+          "it": "!{{Sta|Non sta}} caricando",
+          "no": "!{{Lader|Lader ikke}}",
+          "sv": "!{{Laddar|Laddar inte}}",
+          "pl": "!{{Ładuje się|Nie ładuje się}}",
+          "ru": "!{{Заряжается|Не заряжается}}",
+          "ko": "!{{충전 중|충전 중 아님}}"
         },
         "hint": {
           "en": "Checks whether the device is charging.",
-          "nl": "Controleert of het apparaat aan het opladen is."
+          "nl": "Controleert of het apparaat aan het opladen is.",
+          "da": "Kontrollerer, om enheden oplader.",
+          "de": "Prüft, ob das Gerät geladen wird.",
+          "es": "Verifica si el dispositivo se está cargando.",
+          "fr": "Vérifie si l'appareil est en charge.",
+          "it": "Controlla se il dispositivo è in carica.",
+          "no": "Sjekker om enheten lader.",
+          "sv": "Kontrollerar om enheten laddas.",
+          "pl": "Sprawdza, czy urządzenie się ładuje.",
+          "ru": "Проверяет, заряжается ли устройство.",
+          "ko": "장치가 충전 중인지 확인합니다."
         },
         "platforms": [
           "local"
@@ -238,11 +439,31 @@
       {
         "title": {
           "en": "Stop charging",
-          "nl": "Stop laden"
+          "nl": "Stop laden",
+          "da": "Stop opladning",
+          "de": "Laden stoppen",
+          "es": "Detener la carga",
+          "fr": "Arrêter la charge",
+          "it": "Ferma la ricarica",
+          "no": "Stopp lading",
+          "sv": "Stoppa laddningen",
+          "pl": "Zatrzymaj ładowanie",
+          "ru": "Остановить зарядку",
+          "ko": "충전 중지"
         },
         "hint": {
           "en": "Use this flowcard to stop charging.",
-          "nl": "Gebruik deze kaart om het opladen te stoppen."
+          "nl": "Gebruik deze kaart om het opladen te stoppen.",
+          "da": "Brug dette flowkort til at stoppe opladningen.",
+          "de": "Verwenden Sie diese Flusskarte, um das Laden zu stoppen.",
+          "es": "Usa esta tarjeta para detener la carga.",
+          "fr": "Utilisez cette carte pour arrêter la charge.",
+          "it": "Usa questa scheda per fermare la ricarica.",
+          "no": "Bruk dette flytkortet for å stoppe ladingen.",
+          "sv": "Använd detta flödeskort för att stoppa laddningen.",
+          "pl": "Użyj tej karty, aby zatrzymać ładowanie.",
+          "ru": "Используйте эту карточку, чтобы остановить зарядку.",
+          "ko": "이 플로우카드를 사용하여 충전을 중지하십시오."
         },
         "args": [
           {
@@ -256,11 +477,31 @@
       {
         "title": {
           "en": "Start smart charging",
-          "nl": "Slim laden starten"
+          "nl": "Slim laden starten",
+          "da": "Start smart opladning",
+          "de": "Intelligentes Laden starten",
+          "es": "Comenzar carga inteligente",
+          "fr": "Démarrer la charge intelligente",
+          "it": "Inizia la ricarica intelligente",
+          "no": "Start smart lading",
+          "sv": "Starta smart laddning",
+          "pl": "Rozpocznij inteligentne ładowanie",
+          "ru": "Начать умную зарядку",
+          "ko": "스마트 충전 시작"
         },
         "hint": {
           "en": "Use this flowcard to set the charging mode to smart charging.",
-          "nl": "Gebruik deze kaart om de oplaadmodus in te stellen op slim laden."
+          "nl": "Gebruik deze kaart om de oplaadmodus in te stellen op slim laden.",
+          "da": "Brug dette flowkort til at indstille opladningstilstanden til smart opladning.",
+          "de": "Verwenden Sie diese Flusskarte, um den Lademodus auf intelligentes Laden zu setzen.",
+          "es": "Usa esta tarjeta de flujo para establecer el modo de carga en carga inteligente.",
+          "fr": "Utilisez cette carte de flux pour définir le mode de charge sur charge intelligente.",
+          "it": "Usa questa scheda di flusso per impostare la modalità di ricarica su ricarica intelligente.",
+          "no": "Bruk dette flytkortet for å sette lade-modus til smart lading.",
+          "sv": "Använd detta flödesschema för att ställa in laddningsläget till smart laddning.",
+          "pl": "Użyj tej karty przepływu, aby ustawić tryb ładowania na ładowanie inteligentne.",
+          "ru": "Используйте эту карточку потока, чтобы установить режим зарядки на умную зарядку.",
+          "ko": "이 플로우 카드를 사용하여 충전 모드를 스마트 충전으로 설정하세요."
         },
         "args": [
           {
@@ -274,11 +515,31 @@
       {
         "title": {
           "en": "Start standard charging",
-          "nl": "Standaard laden starten"
+          "nl": "Standaard laden starten",
+          "da": "Start standard opladning",
+          "de": "Standardladung starten",
+          "es": "Iniciar carga estándar",
+          "fr": "Démarrer la charge standard",
+          "it": "Avvia la ricarica standard",
+          "no": "Start standard lading",
+          "sv": "Starta standardladdning",
+          "pl": "Rozpocznij standardowe ładowanie",
+          "ru": "Начать стандартную зарядку",
+          "ko": "표준 충전 시작"
         },
         "hint": {
           "en": "Use this flowcard to set the charging mode to standard charging.",
-          "nl": "Gebruik deze kaart om de oplaadmodus in te stellen op standaard laden."
+          "nl": "Gebruik deze kaart om de oplaadmodus in te stellen op standaard laden.",
+          "da": "Brug dette flowkort til at indstille opladningstilstanden til standard opladning.",
+          "de": "Verwenden Sie diese Flow-Karte, um den Ladestil auf Standardladung zu setzen.",
+          "es": "Utilice esta tarjeta de flujo para configurar el modo de carga en carga estándar.",
+          "fr": "Utilisez cette carte de flux pour définir le mode de charge sur la charge standard.",
+          "it": "Usa questa scheda di flusso per impostare la modalità di ricarica su quella standard.",
+          "no": "Bruk dette flytkortet for å sette lademodusen til standard lading.",
+          "sv": "Använd detta flödeskort för att ställa in laddningsläget till standardladdning.",
+          "pl": "Użyj tej karty przepływu, aby ustawić tryb ładowania na standardowy.",
+          "ru": "Используйте эту карточку, чтобы установить режим зарядки на стандартный.",
+          "ko": "이 플로우 카드를 사용하여 충전 모드를 표준 충전으로 설정하세요."
         },
         "args": [
           {
@@ -307,7 +568,17 @@
         {
           "type": "group",
           "label": {
-            "en": "Details"
+            "en": "Details",
+            "da": "Detaljer",
+            "de": "Einzelheiten",
+            "es": "Detalles",
+            "fr": "Détails",
+            "it": "Dettagli",
+            "no": "Detaljer",
+            "sv": "Detaljer",
+            "pl": "Szczegóły",
+            "ru": "Подробности",
+            "ko": "세부사항"
           },
           "children": [
             {
@@ -315,7 +586,17 @@
               "type": "label",
               "label": {
                 "en": "Serial Number",
-                "nl": "Serienummer"
+                "nl": "Serienummer",
+                "da": "Serienummer",
+                "de": "Seriennummer",
+                "es": "Número de serie",
+                "fr": "Numéro de série",
+                "it": "Numero di serie",
+                "no": "Serienummer",
+                "sv": "Serienummer",
+                "pl": "Numer seryjny",
+                "ru": "Серийный номер",
+                "ko": "일련번호"
               },
               "value": "-"
             }
@@ -330,19 +611,69 @@
             "logo": "../../../assets/logo.jpg",
             "title": {
               "en": "Enter your API credentials",
-              "nl": "Voer uw API inloggegevens in"
+              "nl": "Voer uw API inloggegevens in",
+              "da": "Indtast dine API-legitimationsoplysninger",
+              "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+              "es": "Ingrese sus credenciales de API",
+              "fr": "Entrez vos identifiants API",
+              "it": "Inserisci le tue credenziali API",
+              "no": "Skriv inn dine API-legitimasjoner",
+              "sv": "Ange dina API-referenser",
+              "pl": "Wprowadź swoje dane uwierzytelniające API",
+              "ru": "Введите ваши API учетные данные",
+              "ko": "API 자격 증명을 입력하세요"
             },
             "usernameLabel": {
-              "en": "Client ID"
+              "en": "Client ID",
+              "da": "Klient-id",
+              "de": "Kunden-ID",
+              "es": "ID de cliente",
+              "fr": "ID client",
+              "it": "ID cliente",
+              "no": "Klient-ID",
+              "sv": "Klient-ID",
+              "pl": "ID klienta",
+              "ru": "Идентификатор клиента",
+              "ko": "클라이언트 ID"
             },
             "usernamePlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             },
             "passwordLabel": {
-              "en": "Client Secret"
+              "en": "Client Secret",
+              "da": "Klient hemmelighed",
+              "de": "Kunden Geheimnis",
+              "es": "Secreto del cliente",
+              "fr": "Secret du client",
+              "it": "Segreto del cliente",
+              "no": "Klientens hemmelighet",
+              "sv": "Klienthemlighet",
+              "pl": "Sekret klienta",
+              "ru": "Секрет клиента",
+              "ko": "클라이언트 비밀"
             },
             "passwordPlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             }
           }
         },
@@ -370,19 +701,69 @@
             "logo": "../../../assets/logo.jpg",
             "title": {
               "en": "Enter your API credentials",
-              "nl": "Voer uw API inloggegevens in"
+              "nl": "Voer uw API inloggegevens in",
+              "da": "Indtast dine API-legitimationsoplysninger",
+              "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+              "es": "Ingrese sus credenciales de API",
+              "fr": "Entrez vos identifiants API",
+              "it": "Inserisci le tue credenziali API",
+              "no": "Skriv inn dine API-legitimasjoner",
+              "sv": "Ange dina API-referenser",
+              "pl": "Wprowadź swoje dane uwierzytelniające API",
+              "ru": "Введите ваши API учетные данные",
+              "ko": "API 자격 증명을 입력하세요"
             },
             "usernameLabel": {
-              "en": "Client ID"
+              "en": "Client ID",
+              "da": "Klient-id",
+              "de": "Kunden-ID",
+              "es": "ID de cliente",
+              "fr": "ID client",
+              "it": "ID cliente",
+              "no": "Klient-ID",
+              "sv": "Klient-ID",
+              "pl": "ID klienta",
+              "ru": "Идентификатор клиента",
+              "ko": "클라이언트 ID"
             },
             "usernamePlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             },
             "passwordLabel": {
-              "en": "Client Secret"
+              "en": "Client Secret",
+              "da": "Klient hemmelighed",
+              "de": "Kunden Geheimnis",
+              "es": "Secreto del cliente",
+              "fr": "Secret du client",
+              "it": "Segreto del cliente",
+              "no": "Klientens hemmelighet",
+              "sv": "Klienthemlighet",
+              "pl": "Sekret klienta",
+              "ru": "Секрет клиента",
+              "ko": "클라이언트 비밀"
             },
             "passwordPlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             }
           }
         },
@@ -404,13 +785,33 @@
         "measure_power.production": {
           "title": {
             "en": "Production",
-            "nl": "Productie"
+            "nl": "Productie",
+            "da": "Produktion",
+            "de": "Produktion",
+            "es": "Producción",
+            "fr": "Production",
+            "it": "Produzione",
+            "no": "Produksjon",
+            "sv": "Produktion",
+            "pl": "Produkcja",
+            "ru": "Производство",
+            "ko": "생산"
           }
         },
         "measure_power.alwayson": {
           "title": {
             "en": "Always on power",
-            "nl": "Sluimerverbruik"
+            "nl": "Sluimerverbruik",
+            "da": "Altid tændt strøm",
+            "de": "Ständig eingeschaltet",
+            "es": "Siempre encendido",
+            "fr": "Toujours allumé",
+            "it": "Sempre acceso",
+            "no": "Alltid på strøm",
+            "sv": "Alltid på",
+            "pl": "Zawsze włączony",
+            "ru": "Всегда включено",
+            "ko": "항상 전원 켜짐"
           }
         }
       },
@@ -434,7 +835,17 @@
         {
           "type": "group",
           "label": {
-            "en": "Details"
+            "en": "Details",
+            "da": "Detaljer",
+            "de": "Einzelheiten",
+            "es": "Detalles",
+            "fr": "Détails",
+            "it": "Dettagli",
+            "no": "Detaljer",
+            "sv": "Detaljer",
+            "pl": "Szczegóły",
+            "ru": "Подробности",
+            "ko": "세부사항"
           },
           "children": [
             {
@@ -442,7 +853,17 @@
               "type": "label",
               "label": {
                 "en": "Serial Number",
-                "nl": "Serienummer"
+                "nl": "Serienummer",
+                "da": "Serienummer",
+                "de": "Seriennummer",
+                "es": "Número de serie",
+                "fr": "Numéro de série",
+                "it": "Numero di serie",
+                "no": "Serienummer",
+                "sv": "Serienummer",
+                "pl": "Numer seryjny",
+                "ru": "Серийный номер",
+                "ko": "일련번호"
               },
               "value": "-"
             }
@@ -457,19 +878,69 @@
             "logo": "../../../assets/logo.jpg",
             "title": {
               "en": "Enter your API credentials",
-              "nl": "Voer uw API inloggegevens in"
+              "nl": "Voer uw API inloggegevens in",
+              "da": "Indtast dine API-legitimationsoplysninger",
+              "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+              "es": "Ingrese sus credenciales de API",
+              "fr": "Entrez vos identifiants API",
+              "it": "Inserisci le tue credenziali API",
+              "no": "Skriv inn dine API-legitimasjoner",
+              "sv": "Ange dina API-referenser",
+              "pl": "Wprowadź swoje dane uwierzytelniające API",
+              "ru": "Введите ваши API учетные данные",
+              "ko": "API 자격 증명을 입력하세요"
             },
             "usernameLabel": {
-              "en": "Client ID"
+              "en": "Client ID",
+              "da": "Klient-id",
+              "de": "Kunden-ID",
+              "es": "ID de cliente",
+              "fr": "ID client",
+              "it": "ID cliente",
+              "no": "Klient-ID",
+              "sv": "Klient-ID",
+              "pl": "ID klienta",
+              "ru": "Идентификатор клиента",
+              "ko": "클라이언트 ID"
             },
             "usernamePlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             },
             "passwordLabel": {
-              "en": "Client Secret"
+              "en": "Client Secret",
+              "da": "Klient hemmelighed",
+              "de": "Kunden Geheimnis",
+              "es": "Secreto del cliente",
+              "fr": "Secret du client",
+              "it": "Segreto del cliente",
+              "no": "Klientens hemmelighet",
+              "sv": "Klienthemlighet",
+              "pl": "Sekret klienta",
+              "ru": "Секрет клиента",
+              "ko": "클라이언트 비밀"
             },
             "passwordPlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             }
           }
         },
@@ -497,19 +968,69 @@
             "logo": "../../../assets/logo.jpg",
             "title": {
               "en": "Enter your API credentials",
-              "nl": "Voer uw API inloggegevens in"
+              "nl": "Voer uw API inloggegevens in",
+              "da": "Indtast dine API-legitimationsoplysninger",
+              "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+              "es": "Ingrese sus credenciales de API",
+              "fr": "Entrez vos identifiants API",
+              "it": "Inserisci le tue credenziali API",
+              "no": "Skriv inn dine API-legitimasjoner",
+              "sv": "Ange dina API-referenser",
+              "pl": "Wprowadź swoje dane uwierzytelniające API",
+              "ru": "Введите ваши API учетные данные",
+              "ko": "API 자격 증명을 입력하세요"
             },
             "usernameLabel": {
-              "en": "Client ID"
+              "en": "Client ID",
+              "da": "Klient-id",
+              "de": "Kunden-ID",
+              "es": "ID de cliente",
+              "fr": "ID client",
+              "it": "ID cliente",
+              "no": "Klient-ID",
+              "sv": "Klient-ID",
+              "pl": "ID klienta",
+              "ru": "Идентификатор клиента",
+              "ko": "클라이언트 ID"
             },
             "usernamePlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             },
             "passwordLabel": {
-              "en": "Client Secret"
+              "en": "Client Secret",
+              "da": "Klient hemmelighed",
+              "de": "Kunden Geheimnis",
+              "es": "Secreto del cliente",
+              "fr": "Secret du client",
+              "it": "Segreto del cliente",
+              "no": "Klientens hemmelighet",
+              "sv": "Klienthemlighet",
+              "pl": "Sekret klienta",
+              "ru": "Секрет клиента",
+              "ko": "클라이언트 비밀"
             },
             "passwordPlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             }
           }
         },
@@ -531,7 +1052,17 @@
         "measure_power.alwayson": {
           "title": {
             "en": "Always on power",
-            "nl": "Sluimerverbruik"
+            "nl": "Sluimerverbruik",
+            "da": "Altid tændt strøm",
+            "de": "Dauerstrom",
+            "es": "Siempre encendido",
+            "fr": "Toujours allumé",
+            "it": "Sempre acceso",
+            "no": "Alltid på strøm",
+            "sv": "Alltid påslagen",
+            "pl": "Zawsze włączone",
+            "ru": "Всегда включено",
+            "ko": "항상 켜짐"
           }
         }
       },
@@ -556,7 +1087,17 @@
           "type": "group",
           "label": {
             "en": "Settings",
-            "nl": "Instellingen"
+            "nl": "Instellingen",
+            "da": "Indstillinger",
+            "de": "Einstellungen",
+            "es": "Configuraciones",
+            "fr": "Paramètres",
+            "it": "Impostazioni",
+            "no": "Innstillinger",
+            "sv": "Inställningar",
+            "pl": "Ustawienia",
+            "ru": "Настройки",
+            "ko": "설정"
           },
           "children": [
             {
@@ -564,12 +1105,32 @@
               "type": "label",
               "label": {
                 "en": "Minimum current",
-                "nl": "Minimum stroom"
+                "nl": "Minimum stroom",
+                "da": "Minimumstrøm",
+                "de": "Mindeststrom",
+                "es": "Corriente mínima",
+                "fr": "Courant minimum",
+                "it": "Corrente minima",
+                "no": "Minimumstrøm",
+                "sv": "Minsta ström",
+                "pl": "Minimalny prąd",
+                "ru": "Минимальный ток",
+                "ko": "최소 전류"
               },
               "value": "-",
               "hint": {
                 "en": "The minimum current your electric vehicle needs to start charging.",
-                "nl": "De minimale stroom die uw elektrische auto nodig heeft om op te laden."
+                "nl": "De minimale stroom die uw elektrische auto nodig heeft om op te laden.",
+                "da": "Den minimale strøm, din elbil har brug for for at starte opladning.",
+                "de": "Der Mindeststrom, den Ihr Elektrofahrzeug benötigt, um das Laden zu starten.",
+                "es": "La corriente mínima que su vehículo eléctrico necesita para comenzar a cargar.",
+                "fr": "Le courant minimum dont votre véhicule électrique a besoin pour commencer à charger.",
+                "it": "La corrente minima di cui il tuo veicolo elettrico ha bisogno per iniziare a caricarsi.",
+                "no": "Minimumstrømmen biler trenger for å starte lading.",
+                "sv": "Den minsta ström som ditt elfordon behöver för att börja ladda.",
+                "pl": "Minimalny prąd, którego potrzebuje twój pojazd elektryczny, aby rozpocząć ładowanie.",
+                "ru": "Минимальный ток, необходимый вашему электромобилю для начала зарядки.",
+                "ko": "전기차가 충전을 시작하는데 필요한 최소 전류입니다."
               }
             },
             {
@@ -577,12 +1138,32 @@
               "type": "label",
               "label": {
                 "en": "Maximum current",
-                "nl": "Maximum stroom"
+                "nl": "Maximum stroom",
+                "da": "Maksimalstrøm",
+                "de": "Maximalstrom",
+                "es": "Corriente máxima",
+                "fr": "Courant maximum",
+                "it": "Corrente massima",
+                "no": "Maksimumstrøm",
+                "sv": "Maxström",
+                "pl": "Maksymalny prąd",
+                "ru": "Максимальный ток",
+                "ko": "최대 전류"
               },
               "value": "-",
               "hint": {
                 "en": "The maximum current that this charging point can support.",
-                "nl": "De maximale stroom die dit oplaadpunt kan ondersteunen."
+                "nl": "De maximale stroom die dit oplaadpunt kan ondersteunen.",
+                "da": "Den maksimale strøm, som dette ladestation kan understøtte.",
+                "de": "Der maximale Strom, den dieser Ladepunkt unterstützen kann.",
+                "es": "La corriente máxima que este punto de carga puede soportar.",
+                "fr": "Le courant maximum que ce point de charge peut supporter.",
+                "it": "La corrente massima che questo punto di ricarica può supportare.",
+                "no": "Maksimalstrømmen som dette ladepunktet kan støtte.",
+                "sv": "Maxströmmen som denna laddningspunkt kan stödja.",
+                "pl": "Maksymalny prąd, jaki ten punkt ładowania może obsłużyć.",
+                "ru": "Максимальный ток, который может поддерживать эта зарядная станция.",
+                "ko": "이 충전 지점에서 지원할 수 있는 최대 전류입니다."
               }
             }
           ]
@@ -590,7 +1171,17 @@
         {
           "type": "group",
           "label": {
-            "en": "Details"
+            "en": "Details",
+            "da": "Detaljer",
+            "de": "Einzelheiten",
+            "es": "Detalles",
+            "fr": "Détails",
+            "it": "Dettagli",
+            "no": "Detaljer",
+            "sv": "Detaljer",
+            "pl": "Szczegóły",
+            "ru": "Детали",
+            "ko": "세부 사항"
           },
           "children": [
             {
@@ -598,7 +1189,17 @@
               "type": "label",
               "label": {
                 "en": "Serial Number",
-                "nl": "Serienummer"
+                "nl": "Serienummer",
+                "da": "Serienummer",
+                "de": "Seriennummer",
+                "es": "Número de serie",
+                "fr": "Numéro de série",
+                "it": "Numero di serie",
+                "no": "Serienummer",
+                "sv": "Serienummer",
+                "pl": "Numer seryjny",
+                "ru": "Серийный номер",
+                "ko": "일련번호"
               },
               "value": "-"
             }
@@ -613,19 +1214,69 @@
             "logo": "../../../assets/logo.jpg",
             "title": {
               "en": "Enter your API credentials",
-              "nl": "Voer uw API inloggegevens in"
+              "nl": "Voer uw API inloggegevens in",
+              "da": "Indtast dine API-legitimationsoplysninger",
+              "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+              "es": "Ingrese sus credenciales de API",
+              "fr": "Entrez vos identifiants API",
+              "it": "Inserisci le tue credenziali API",
+              "no": "Skriv inn dine API-legitimasjoner",
+              "sv": "Ange dina API-referenser",
+              "pl": "Wprowadź swoje dane uwierzytelniające API",
+              "ru": "Введите ваши API учетные данные",
+              "ko": "API 자격 증명을 입력하세요"
             },
             "usernameLabel": {
-              "en": "Client ID"
+              "en": "Client ID",
+              "da": "Klient-id",
+              "de": "Kunden-ID",
+              "es": "ID de cliente",
+              "fr": "ID client",
+              "it": "ID cliente",
+              "no": "Klient-ID",
+              "sv": "Klient-ID",
+              "pl": "ID klienta",
+              "ru": "Идентификатор клиента",
+              "ko": "클라이언트 ID"
             },
             "usernamePlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             },
             "passwordLabel": {
-              "en": "Client Secret"
+              "en": "Client Secret",
+              "da": "Klient hemmelighed",
+              "de": "Kunden Geheimnis",
+              "es": "Secreto del cliente",
+              "fr": "Secret du client",
+              "it": "Segreto del cliente",
+              "no": "Klientens hemmelighet",
+              "sv": "Klienthemlighet",
+              "pl": "Sekret klienta",
+              "ru": "Секрет клиента",
+              "ko": "클라이언트 비밀"
             },
             "passwordPlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             }
           }
         },
@@ -653,19 +1304,69 @@
             "logo": "../../../assets/logo.jpg",
             "title": {
               "en": "Enter your API credentials",
-              "nl": "Voer uw API inloggegevens in"
+              "nl": "Voer uw API inloggegevens in",
+              "da": "Indtast dine API-legitimationsoplysninger",
+              "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+              "es": "Ingrese sus credenciales de API",
+              "fr": "Entrez vos identifiants API",
+              "it": "Inserisci le tue credenziali API",
+              "no": "Skriv inn dine API-legitimasjoner",
+              "sv": "Ange dina API-referenser",
+              "pl": "Wprowadź swoje dane uwierzytelniające API",
+              "ru": "Введите ваши API учетные данные",
+              "ko": "API 자격 증명을 입력하세요"
             },
             "usernameLabel": {
-              "en": "Client ID"
+              "en": "Client ID",
+              "da": "Klient-id",
+              "de": "Kunden-ID",
+              "es": "ID de cliente",
+              "fr": "ID client",
+              "it": "ID cliente",
+              "no": "Klient-ID",
+              "sv": "Klient-ID",
+              "pl": "ID klienta",
+              "ru": "Идентификатор клиента",
+              "ko": "클라이언트 ID"
             },
             "usernamePlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             },
             "passwordLabel": {
-              "en": "Client Secret"
+              "en": "Client Secret",
+              "da": "Klient hemmelighed",
+              "de": "Kunden Geheimnis",
+              "es": "Secreto del cliente",
+              "fr": "Secret du client",
+              "it": "Segreto del cliente",
+              "no": "Klientens hemmelighet",
+              "sv": "Klienthemlighet",
+              "pl": "Sekret klienta",
+              "ru": "Секрет клиента",
+              "ko": "클라이언트 비밀"
             },
             "passwordPlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             }
           }
         },
@@ -703,7 +1404,17 @@
         {
           "type": "group",
           "label": {
-            "en": "Details"
+            "en": "Details",
+            "da": "Detaljer",
+            "de": "Einzelheiten",
+            "es": "Detalles",
+            "fr": "Détails",
+            "it": "Dettagli",
+            "no": "Detaljer",
+            "sv": "Detaljer",
+            "pl": "Szczegóły",
+            "ru": "Подробности",
+            "ko": "세부사항"
           },
           "children": [
             {
@@ -711,7 +1422,17 @@
               "type": "label",
               "label": {
                 "en": "Serial Number",
-                "nl": "Serienummer"
+                "nl": "Serienummer",
+                "da": "Serienummer",
+                "de": "Seriennummer",
+                "es": "Número de serie",
+                "fr": "Numéro de série",
+                "it": "Numero di serie",
+                "no": "Serienummer",
+                "sv": "Serienummer",
+                "pl": "Numer seryjny",
+                "ru": "Серийный номер",
+                "ko": "일련번호"
               },
               "value": "-"
             }
@@ -726,19 +1447,69 @@
             "logo": "../../../assets/logo.jpg",
             "title": {
               "en": "Enter your API credentials",
-              "nl": "Voer uw API inloggegevens in"
+              "nl": "Voer uw API inloggegevens in",
+              "da": "Indtast dine API-legitimationsoplysninger",
+              "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+              "es": "Ingrese sus credenciales de API",
+              "fr": "Entrez vos identifiants API",
+              "it": "Inserisci le tue credenziali API",
+              "no": "Skriv inn dine API-legitimasjoner",
+              "sv": "Ange dina API-referenser",
+              "pl": "Wprowadź swoje dane uwierzytelniające API",
+              "ru": "Введите ваши API учетные данные",
+              "ko": "API 자격 증명을 입력하세요"
             },
             "usernameLabel": {
-              "en": "Client ID"
+              "en": "Client ID",
+              "da": "Klient-id",
+              "de": "Kunden-ID",
+              "es": "ID de cliente",
+              "fr": "ID client",
+              "it": "ID cliente",
+              "no": "Klient-ID",
+              "sv": "Klient-ID",
+              "pl": "ID klienta",
+              "ru": "Идентификатор клиента",
+              "ko": "클라이언트 ID"
             },
             "usernamePlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             },
             "passwordLabel": {
-              "en": "Client Secret"
+              "en": "Client Secret",
+              "da": "Klient hemmelighed",
+              "de": "Kunden Geheimnis",
+              "es": "Secreto del cliente",
+              "fr": "Secret du client",
+              "it": "Segreto del cliente",
+              "no": "Klientens hemmelighet",
+              "sv": "Klienthemlighet",
+              "pl": "Sekret klienta",
+              "ru": "Секрет клиента",
+              "ko": "클라이언트 비밀"
             },
             "passwordPlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             }
           }
         },
@@ -766,19 +1537,69 @@
             "logo": "../../../assets/logo.jpg",
             "title": {
               "en": "Enter your API credentials",
-              "nl": "Voer uw API inloggegevens in"
+              "nl": "Voer uw API inloggegevens in",
+              "da": "Indtast dine API-legitimationsoplysninger",
+              "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+              "es": "Ingrese sus credenciales de API",
+              "fr": "Entrez vos identifiants API",
+              "it": "Inserisci le tue credenziali API",
+              "no": "Skriv inn dine API-legitimasjoner",
+              "sv": "Ange dina API-referenser",
+              "pl": "Wprowadź swoje dane uwierzytelniające API",
+              "ru": "Введите ваши API учетные данные",
+              "ko": "API 자격 증명을 입력하세요"
             },
             "usernameLabel": {
-              "en": "Client ID"
+              "en": "Client ID",
+              "da": "Klient-id",
+              "de": "Kunden-ID",
+              "es": "ID de cliente",
+              "fr": "ID client",
+              "it": "ID cliente",
+              "no": "Klient-ID",
+              "sv": "Klient-ID",
+              "pl": "ID klienta",
+              "ru": "Идентификатор клиента",
+              "ko": "클라이언트 ID"
             },
             "usernamePlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             },
             "passwordLabel": {
-              "en": "Client Secret"
+              "en": "Client Secret",
+              "da": "Klient hemmelighed",
+              "de": "Kunden Geheimnis",
+              "es": "Secreto del cliente",
+              "fr": "Secret du client",
+              "it": "Segreto del cliente",
+              "no": "Klientens hemmelighet",
+              "sv": "Klienthemlighet",
+              "pl": "Sekret klienta",
+              "ru": "Секрет клиента",
+              "ko": "클라이언트 비밀"
             },
             "passwordPlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             }
           }
         },
@@ -804,11 +1625,31 @@
           "maintenanceAction": true,
           "title": {
             "en": "Reset water meter",
-            "nl": "Watermeter resetten"
+            "nl": "Watermeter resetten",
+            "da": "Nulstil vandmåler",
+            "de": "Wasserzähler zurücksetzen",
+            "es": "Restablecer contador de agua",
+            "fr": "Réinitialiser le compteur d'eau",
+            "it": "Reimposta il contatore dell'acqua",
+            "no": "Nullstill vannmåler",
+            "sv": "Återställ vattenmätare",
+            "pl": "Zresetuj licznik wody",
+            "ru": "Сбросить водяной счетчик",
+            "ko": "수도계량기 초기화"
           },
           "desc": {
             "en": "Make sure the unit of measure of the water is set to m³ instead of liter (l) in the Smappee mobile app before running this action.",
-            "nl": "Zorg ervoor dat de watermaateenheid in de Smappee mobiele app is ingesteld op m³ in plaats van liter (l) voordat u deze actie uitvoert."
+            "nl": "Zorg ervoor dat de watermaateenheid in de Smappee mobiele app is ingesteld op m³ in plaats van liter (l) voordat u deze actie uitvoert.",
+            "da": "Sørg for, at måleenheden for vandet er indstillet til m³ i stedet for liter (l) i Smappee mobilapp, før du udfører denne handling.",
+            "de": "Stellen Sie sicher, dass die Maßeinheit für Wasser in der Smappee-App auf m³ anstelle von Liter (l) eingestellt ist, bevor Sie diese Aktion ausführen.",
+            "es": "Asegúrate de que la unidad de medida del agua esté configurada en m³ en lugar de litros (l) en la aplicación móvil de Smappee antes de realizar esta acción.",
+            "fr": "Assurez-vous que l'unité de mesure de l'eau est réglée sur m³ au lieu de litre (l) dans l'application mobile Smappee avant d'exécuter cette action.",
+            "it": "Assicurati che l'unità di misura dell'acqua sia impostata su m³ anziché litri (l) nell'app mobile Smappee prima di eseguire questa azione.",
+            "no": "Sørg for at måleenheten for vann er satt til m³ i stedet for liter (l) i Smappee-appen før du utfører denne handlingen.",
+            "sv": "Se till att vattenmätarens enhet är inställd på m³ istället för liter (l) i Smappees mobilapp innan du utför den här åtgärden.",
+            "pl": "Upewnij się, że jednostka miary wody jest ustawiona na m³ zamiast litr (l) w aplikacji mobilnej Smappee przed wykonaniem tej akcji.",
+            "ru": "Убедитесь, что единица измерения воды в приложении Smappee установлена на м³, а не литры (л) перед выполнением этого действия.",
+            "ko": "Smappee 모바일 앱에서 물의 측정 단위가 리터(l) 대신 m³로 설정되어 있는지 확인한 후 이 작업을 실행하세요."
           }
         }
       },
@@ -836,7 +1677,17 @@
         {
           "type": "group",
           "label": {
-            "en": "Details"
+            "en": "Details",
+            "da": "Detaljer",
+            "de": "Einzelheiten",
+            "es": "Detalles",
+            "fr": "Détails",
+            "it": "Dettagli",
+            "no": "Detaljer",
+            "sv": "Detaljer",
+            "pl": "Szczegóły",
+            "ru": "Подробности",
+            "ko": "세부사항"
           },
           "children": [
             {
@@ -844,7 +1695,17 @@
               "type": "label",
               "label": {
                 "en": "Serial Number",
-                "nl": "Serienummer"
+                "nl": "Serienummer",
+                "da": "Serienummer",
+                "de": "Seriennummer",
+                "es": "Número de serie",
+                "fr": "Numéro de série",
+                "it": "Numero di serie",
+                "no": "Serienummer",
+                "sv": "Serienummer",
+                "pl": "Numer seryjny",
+                "ru": "Серийный номер",
+                "ko": "일련번호"
               },
               "value": "-"
             }
@@ -859,19 +1720,69 @@
             "logo": "../../../assets/logo.jpg",
             "title": {
               "en": "Enter your API credentials",
-              "nl": "Voer uw API inloggegevens in"
+              "nl": "Voer uw API inloggegevens in",
+              "da": "Indtast dine API-legitimationsoplysninger",
+              "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+              "es": "Ingrese sus credenciales de API",
+              "fr": "Entrez vos identifiants API",
+              "it": "Inserisci le tue credenziali API",
+              "no": "Skriv inn dine API-legitimasjoner",
+              "sv": "Ange dina API-referenser",
+              "pl": "Wprowadź swoje dane uwierzytelniające API",
+              "ru": "Введите ваши API учетные данные",
+              "ko": "API 자격 증명을 입력하세요"
             },
             "usernameLabel": {
-              "en": "Client ID"
+              "en": "Client ID",
+              "da": "Klient-id",
+              "de": "Kunden-ID",
+              "es": "ID de cliente",
+              "fr": "ID client",
+              "it": "ID cliente",
+              "no": "Klient-ID",
+              "sv": "Klient-ID",
+              "pl": "ID klienta",
+              "ru": "Идентификатор клиента",
+              "ko": "클라이언트 ID"
             },
             "usernamePlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             },
             "passwordLabel": {
-              "en": "Client Secret"
+              "en": "Client Secret",
+              "da": "Klient hemmelighed",
+              "de": "Kunden Geheimnis",
+              "es": "Secreto del cliente",
+              "fr": "Secret du client",
+              "it": "Segreto del cliente",
+              "no": "Klientens hemmelighet",
+              "sv": "Klienthemlighet",
+              "pl": "Sekret klienta",
+              "ru": "Секрет клиента",
+              "ko": "클라이언트 비밀"
             },
             "passwordPlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             }
           }
         },
@@ -899,19 +1810,69 @@
             "logo": "../../../assets/logo.jpg",
             "title": {
               "en": "Enter your API credentials",
-              "nl": "Voer uw API inloggegevens in"
+              "nl": "Voer uw API inloggegevens in",
+              "da": "Indtast dine API-legitimationsoplysninger",
+              "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+              "es": "Ingrese sus credenciales de API",
+              "fr": "Entrez vos identifiants API",
+              "it": "Inserisci le tue credenziali API",
+              "no": "Skriv inn dine API-legitimasjoner",
+              "sv": "Ange dina API-referenser",
+              "pl": "Wprowadź swoje dane uwierzytelniające API",
+              "ru": "Введите ваши API учетные данные",
+              "ko": "API 자격 증명을 입력하세요"
             },
             "usernameLabel": {
-              "en": "Client ID"
+              "en": "Client ID",
+              "da": "Klient-id",
+              "de": "Kunden-ID",
+              "es": "ID de cliente",
+              "fr": "ID client",
+              "it": "ID cliente",
+              "no": "Klient-ID",
+              "sv": "Klient-ID",
+              "pl": "ID klienta",
+              "ru": "Идентификатор клиента",
+              "ko": "클라이언트 ID"
             },
             "usernamePlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             },
             "passwordLabel": {
-              "en": "Client Secret"
+              "en": "Client Secret",
+              "da": "Klient hemmelighed",
+              "de": "Kunden Geheimnis",
+              "es": "Secreto del cliente",
+              "fr": "Secret du client",
+              "it": "Segreto del cliente",
+              "no": "Klientens hemmelighet",
+              "sv": "Klienthemlighet",
+              "pl": "Sekret klienta",
+              "ru": "Секрет клиента",
+              "ko": "클라이언트 비밀"
             },
             "passwordPlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             }
           }
         },
@@ -934,13 +1895,33 @@
         "measure_power.production": {
           "title": {
             "en": "Production",
-            "nl": "Productie"
+            "nl": "Productie",
+            "da": "Produktion",
+            "de": "Produktion",
+            "es": "Producción",
+            "fr": "Production",
+            "it": "Produzione",
+            "no": "Produksjon",
+            "sv": "Produktion",
+            "pl": "Produkcja",
+            "ru": "Производство",
+            "ko": "생산"
           }
         },
         "measure_power.alwayson": {
           "title": {
             "en": "Always on power",
-            "nl": "Sluimerverbruik"
+            "nl": "Sluimerverbruik",
+            "da": "Altid tændt strøm",
+            "de": "Immer eingeschaltet",
+            "es": "Energía siempre encendida",
+            "fr": "Toujours sous tension",
+            "it": "Sempre acceso",
+            "no": "Alltid på kraft",
+            "sv": "Alltid på ström",
+            "pl": "Zawsze włączony",
+            "ru": "Всегда включено",
+            "ko": "항상 켜짐"
           }
         }
       },
@@ -964,7 +1945,17 @@
         {
           "type": "group",
           "label": {
-            "en": "Details"
+            "en": "Details",
+            "da": "Detaljer",
+            "de": "Einzelheiten",
+            "es": "Detalles",
+            "fr": "Détails",
+            "it": "Dettagli",
+            "no": "Detaljer",
+            "sv": "Detaljer",
+            "pl": "Szczegóły",
+            "ru": "Подробности",
+            "ko": "세부사항"
           },
           "children": [
             {
@@ -972,7 +1963,17 @@
               "type": "label",
               "label": {
                 "en": "Serial Number",
-                "nl": "Serienummer"
+                "nl": "Serienummer",
+                "da": "Serienummer",
+                "de": "Seriennummer",
+                "es": "Número de serie",
+                "fr": "Numéro de série",
+                "it": "Numero di serie",
+                "no": "Serienummer",
+                "sv": "Serienummer",
+                "pl": "Numer seryjny",
+                "ru": "Серийный номер",
+                "ko": "일련번호"
               },
               "value": "-"
             }
@@ -987,19 +1988,69 @@
             "logo": "../../../assets/logo.jpg",
             "title": {
               "en": "Enter your API credentials",
-              "nl": "Voer uw API inloggegevens in"
+              "nl": "Voer uw API inloggegevens in",
+              "da": "Indtast dine API-legitimationsoplysninger",
+              "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+              "es": "Ingrese sus credenciales de API",
+              "fr": "Entrez vos identifiants API",
+              "it": "Inserisci le tue credenziali API",
+              "no": "Skriv inn dine API-legitimasjoner",
+              "sv": "Ange dina API-referenser",
+              "pl": "Wprowadź swoje dane uwierzytelniające API",
+              "ru": "Введите ваши API учетные данные",
+              "ko": "API 자격 증명을 입력하세요"
             },
             "usernameLabel": {
-              "en": "Client ID"
+              "en": "Client ID",
+              "da": "Klient-id",
+              "de": "Kunden-ID",
+              "es": "ID de cliente",
+              "fr": "ID client",
+              "it": "ID cliente",
+              "no": "Klient-ID",
+              "sv": "Klient-ID",
+              "pl": "ID klienta",
+              "ru": "Идентификатор клиента",
+              "ko": "클라이언트 ID"
             },
             "usernamePlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             },
             "passwordLabel": {
-              "en": "Client Secret"
+              "en": "Client Secret",
+              "da": "Klient hemmelighed",
+              "de": "Kunden Geheimnis",
+              "es": "Secreto del cliente",
+              "fr": "Secret du client",
+              "it": "Segreto del cliente",
+              "no": "Klientens hemmelighet",
+              "sv": "Klienthemlighet",
+              "pl": "Sekret klienta",
+              "ru": "Секрет клиента",
+              "ko": "클라이언트 비밀"
             },
             "passwordPlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             }
           }
         },
@@ -1027,19 +2078,69 @@
             "logo": "../../../assets/logo.jpg",
             "title": {
               "en": "Enter your API credentials",
-              "nl": "Voer uw API inloggegevens in"
+              "nl": "Voer uw API inloggegevens in",
+              "da": "Indtast dine API-legitimationsoplysninger",
+              "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+              "es": "Ingrese sus credenciales de API",
+              "fr": "Entrez vos identifiants API",
+              "it": "Inserisci le tue credenziali API",
+              "no": "Skriv inn dine API-legitimasjoner",
+              "sv": "Ange dina API-referenser",
+              "pl": "Wprowadź swoje dane uwierzytelniające API",
+              "ru": "Введите ваши API учетные данные",
+              "ko": "API 자격 증명을 입력하세요"
             },
             "usernameLabel": {
-              "en": "Client ID"
+              "en": "Client ID",
+              "da": "Klient-id",
+              "de": "Kunden-ID",
+              "es": "ID de cliente",
+              "fr": "ID client",
+              "it": "ID cliente",
+              "no": "Klient-ID",
+              "sv": "Klient-ID",
+              "pl": "ID klienta",
+              "ru": "Идентификатор клиента",
+              "ko": "클라이언트 ID"
             },
             "usernamePlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             },
             "passwordLabel": {
-              "en": "Client Secret"
+              "en": "Client Secret",
+              "da": "Klient hemmelighed",
+              "de": "Kunden Geheimnis",
+              "es": "Secreto del cliente",
+              "fr": "Secret du client",
+              "it": "Segreto del cliente",
+              "no": "Klientens hemmelighet",
+              "sv": "Klienthemlighet",
+              "pl": "Sekret klienta",
+              "ru": "Секрет клиента",
+              "ko": "클라이언트 비밀"
             },
             "passwordPlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             }
           }
         },
@@ -1072,7 +2173,17 @@
         {
           "type": "group",
           "label": {
-            "en": "Details"
+            "en": "Details",
+            "da": "Detaljer",
+            "de": "Einzelheiten",
+            "es": "Detalles",
+            "fr": "Détails",
+            "it": "Dettagli",
+            "no": "Detaljer",
+            "sv": "Detaljer",
+            "pl": "Szczegóły",
+            "ru": "Подробности",
+            "ko": "세부사항"
           },
           "children": [
             {
@@ -1080,7 +2191,17 @@
               "type": "label",
               "label": {
                 "en": "Serial Number",
-                "nl": "Serienummer"
+                "nl": "Serienummer",
+                "da": "Serienummer",
+                "de": "Seriennummer",
+                "es": "Número de serie",
+                "fr": "Numéro de série",
+                "it": "Numero di serie",
+                "no": "Serienummer",
+                "sv": "Serienummer",
+                "pl": "Numer seryjny",
+                "ru": "Серийный номер",
+                "ko": "일련번호"
               },
               "value": "-"
             }
@@ -1095,19 +2216,69 @@
             "logo": "../../../assets/logo.jpg",
             "title": {
               "en": "Enter your API credentials",
-              "nl": "Voer uw API inloggegevens in"
+              "nl": "Voer uw API inloggegevens in",
+              "da": "Indtast dine API-legitimationsoplysninger",
+              "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+              "es": "Ingrese sus credenciales de API",
+              "fr": "Entrez vos identifiants API",
+              "it": "Inserisci le tue credenziali API",
+              "no": "Skriv inn dine API-legitimasjoner",
+              "sv": "Ange dina API-referenser",
+              "pl": "Wprowadź swoje dane uwierzytelniające API",
+              "ru": "Введите ваши API учетные данные",
+              "ko": "API 자격 증명을 입력하세요"
             },
             "usernameLabel": {
-              "en": "Client ID"
+              "en": "Client ID",
+              "da": "Klient-id",
+              "de": "Kunden-ID",
+              "es": "ID de cliente",
+              "fr": "ID client",
+              "it": "ID cliente",
+              "no": "Klient-ID",
+              "sv": "Klient-ID",
+              "pl": "ID klienta",
+              "ru": "Идентификатор клиента",
+              "ko": "클라이언트 ID"
             },
             "usernamePlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             },
             "passwordLabel": {
-              "en": "Client Secret"
+              "en": "Client Secret",
+              "da": "Klient hemmelighed",
+              "de": "Kunden Geheimnis",
+              "es": "Secreto del cliente",
+              "fr": "Secret du client",
+              "it": "Segreto del cliente",
+              "no": "Klientens hemmelighet",
+              "sv": "Klienthemlighet",
+              "pl": "Sekret klienta",
+              "ru": "Секрет клиента",
+              "ko": "클라이언트 비밀"
             },
             "passwordPlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             }
           }
         },
@@ -1135,19 +2306,69 @@
             "logo": "../../../assets/logo.jpg",
             "title": {
               "en": "Enter your API credentials",
-              "nl": "Voer uw API inloggegevens in"
+              "nl": "Voer uw API inloggegevens in",
+              "da": "Indtast dine API-legitimationsoplysninger",
+              "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+              "es": "Ingrese sus credenciales de API",
+              "fr": "Entrez vos identifiants API",
+              "it": "Inserisci le tue credenziali API",
+              "no": "Skriv inn dine API-legitimasjoner",
+              "sv": "Ange dina API-referenser",
+              "pl": "Wprowadź swoje dane uwierzytelniające API",
+              "ru": "Введите ваши API учетные данные",
+              "ko": "API 자격 증명을 입력하세요"
             },
             "usernameLabel": {
-              "en": "Client ID"
+              "en": "Client ID",
+              "da": "Klient-id",
+              "de": "Kunden-ID",
+              "es": "ID de cliente",
+              "fr": "ID client",
+              "it": "ID cliente",
+              "no": "Klient-ID",
+              "sv": "Klient-ID",
+              "pl": "ID klienta",
+              "ru": "Идентификатор клиента",
+              "ko": "클라이언트 ID"
             },
             "usernamePlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             },
             "passwordLabel": {
-              "en": "Client Secret"
+              "en": "Client Secret",
+              "da": "Klient hemmelighed",
+              "de": "Kunden Geheimnis",
+              "es": "Secreto del cliente",
+              "fr": "Secret du client",
+              "it": "Segreto del cliente",
+              "no": "Klientens hemmelighet",
+              "sv": "Klienthemlighet",
+              "pl": "Sekret klienta",
+              "ru": "Секрет клиента",
+              "ko": "클라이언트 비밀"
             },
             "passwordPlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             }
           }
         },
@@ -1170,13 +2391,33 @@
         "measure_power.production": {
           "title": {
             "en": "Production",
-            "nl": "Productie"
+            "nl": "Productie",
+            "da": "Produktion",
+            "de": "Produktion",
+            "es": "Producción",
+            "fr": "Production",
+            "it": "Produzione",
+            "no": "Produksjon",
+            "sv": "Produktion",
+            "pl": "Produkcja",
+            "ru": "Производство",
+            "ko": "생산"
           }
         },
         "measure_power.alwayson": {
           "title": {
             "en": "Always on power",
-            "nl": "Sluimerverbruik"
+            "nl": "Sluimerverbruik",
+            "da": "Altid tilsluttet strøm",
+            "de": "Immer eingeschaltet",
+            "es": "Siempre encendido",
+            "fr": "Toujours allumé",
+            "it": "Sempre attivo",
+            "no": "Alltid på strøm",
+            "sv": "Alltid påslagen",
+            "pl": "Zawsze włączony",
+            "ru": "Всегда включено",
+            "ko": "항상 켜짐"
           }
         }
       },
@@ -1200,7 +2441,17 @@
         {
           "type": "group",
           "label": {
-            "en": "Details"
+            "en": "Details",
+            "da": "Detaljer",
+            "de": "Einzelheiten",
+            "es": "Detalles",
+            "fr": "Détails",
+            "it": "Dettagli",
+            "no": "Detaljer",
+            "sv": "Detaljer",
+            "pl": "Szczegóły",
+            "ru": "Подробности",
+            "ko": "세부사항"
           },
           "children": [
             {
@@ -1208,7 +2459,17 @@
               "type": "label",
               "label": {
                 "en": "Serial Number",
-                "nl": "Serienummer"
+                "nl": "Serienummer",
+                "da": "Serienummer",
+                "de": "Seriennummer",
+                "es": "Número de serie",
+                "fr": "Numéro de série",
+                "it": "Numero di serie",
+                "no": "Serienummer",
+                "sv": "Serienummer",
+                "pl": "Numer seryjny",
+                "ru": "Серийный номер",
+                "ko": "일련번호"
               },
               "value": "-"
             }
@@ -1223,19 +2484,69 @@
             "logo": "../../../assets/logo.jpg",
             "title": {
               "en": "Enter your API credentials",
-              "nl": "Voer uw API inloggegevens in"
+              "nl": "Voer uw API inloggegevens in",
+              "da": "Indtast dine API-legitimationsoplysninger",
+              "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+              "es": "Ingrese sus credenciales de API",
+              "fr": "Entrez vos identifiants API",
+              "it": "Inserisci le tue credenziali API",
+              "no": "Skriv inn dine API-legitimasjoner",
+              "sv": "Ange dina API-referenser",
+              "pl": "Wprowadź swoje dane uwierzytelniające API",
+              "ru": "Введите ваши API учетные данные",
+              "ko": "API 자격 증명을 입력하세요"
             },
             "usernameLabel": {
-              "en": "Client ID"
+              "en": "Client ID",
+              "da": "Klient-id",
+              "de": "Kunden-ID",
+              "es": "ID de cliente",
+              "fr": "ID client",
+              "it": "ID cliente",
+              "no": "Klient-ID",
+              "sv": "Klient-ID",
+              "pl": "ID klienta",
+              "ru": "Идентификатор клиента",
+              "ko": "클라이언트 ID"
             },
             "usernamePlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             },
             "passwordLabel": {
-              "en": "Client Secret"
+              "en": "Client Secret",
+              "da": "Klient hemmelighed",
+              "de": "Kunden Geheimnis",
+              "es": "Secreto del cliente",
+              "fr": "Secret du client",
+              "it": "Segreto del cliente",
+              "no": "Klientens hemmelighet",
+              "sv": "Klienthemlighet",
+              "pl": "Sekret klienta",
+              "ru": "Секрет клиента",
+              "ko": "클라이언트 비밀"
             },
             "passwordPlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             }
           }
         },
@@ -1263,19 +2574,69 @@
             "logo": "../../../assets/logo.jpg",
             "title": {
               "en": "Enter your API credentials",
-              "nl": "Voer uw API inloggegevens in"
+              "nl": "Voer uw API inloggegevens in",
+              "da": "Indtast dine API-legitimationsoplysninger",
+              "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+              "es": "Ingrese sus credenciales de API",
+              "fr": "Entrez vos identifiants API",
+              "it": "Inserisci le tue credenziali API",
+              "no": "Skriv inn dine API-legitimasjoner",
+              "sv": "Ange dina API-referenser",
+              "pl": "Wprowadź swoje dane uwierzytelniające API",
+              "ru": "Введите ваши API учетные данные",
+              "ko": "API 자격 증명을 입력하세요"
             },
             "usernameLabel": {
-              "en": "Client ID"
+              "en": "Client ID",
+              "da": "Klient-id",
+              "de": "Kunden-ID",
+              "es": "ID de cliente",
+              "fr": "ID client",
+              "it": "ID cliente",
+              "no": "Klient-ID",
+              "sv": "Klient-ID",
+              "pl": "ID klienta",
+              "ru": "Идентификатор клиента",
+              "ko": "클라이언트 ID"
             },
             "usernamePlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             },
             "passwordLabel": {
-              "en": "Client Secret"
+              "en": "Client Secret",
+              "da": "Klient hemmelighed",
+              "de": "Kunden Geheimnis",
+              "es": "Secreto del cliente",
+              "fr": "Secret du client",
+              "it": "Segreto del cliente",
+              "no": "Klientens hemmelighet",
+              "sv": "Klienthemlighet",
+              "pl": "Sekret klienta",
+              "ru": "Секрет клиента",
+              "ko": "클라이언트 비밀"
             },
             "passwordPlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             }
           }
         },
@@ -1297,7 +2658,17 @@
         "measure_power.alwayson": {
           "title": {
             "en": "Always on power",
-            "nl": "Sluimerverbruik"
+            "nl": "Sluimerverbruik",
+            "da": "Altid tændt strøm",
+            "de": "Immer eingeschaltet",
+            "es": "Potencia siempre encendida",
+            "fr": "Toujours sous tension",
+            "it": "Potenza sempre accesa",
+            "no": "Alltid på strøm",
+            "sv": "Alltid på ström",
+            "pl": "Zawsze włączona moc",
+            "ru": "Всегда включенная энергия",
+            "ko": "항상 켜짐 상태의 전원"
           }
         }
       },
@@ -1321,7 +2692,17 @@
         {
           "type": "group",
           "label": {
-            "en": "Details"
+            "en": "Details",
+            "da": "Detaljer",
+            "de": "Einzelheiten",
+            "es": "Detalles",
+            "fr": "Détails",
+            "it": "Dettagli",
+            "no": "Detaljer",
+            "sv": "Detaljer",
+            "pl": "Szczegóły",
+            "ru": "Подробности",
+            "ko": "세부사항"
           },
           "children": [
             {
@@ -1329,7 +2710,17 @@
               "type": "label",
               "label": {
                 "en": "Serial Number",
-                "nl": "Serienummer"
+                "nl": "Serienummer",
+                "da": "Serienummer",
+                "de": "Seriennummer",
+                "es": "Número de serie",
+                "fr": "Numéro de série",
+                "it": "Numero di serie",
+                "no": "Serienummer",
+                "sv": "Serienummer",
+                "pl": "Numer seryjny",
+                "ru": "Серийный номер",
+                "ko": "일련번호"
               },
               "value": "-"
             }
@@ -1344,19 +2735,69 @@
             "logo": "../../../assets/logo.jpg",
             "title": {
               "en": "Enter your API credentials",
-              "nl": "Voer uw API inloggegevens in"
+              "nl": "Voer uw API inloggegevens in",
+              "da": "Indtast dine API-legitimationsoplysninger",
+              "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+              "es": "Ingrese sus credenciales de API",
+              "fr": "Entrez vos identifiants API",
+              "it": "Inserisci le tue credenziali API",
+              "no": "Skriv inn dine API-legitimasjoner",
+              "sv": "Ange dina API-referenser",
+              "pl": "Wprowadź swoje dane uwierzytelniające API",
+              "ru": "Введите ваши API учетные данные",
+              "ko": "API 자격 증명을 입력하세요"
             },
             "usernameLabel": {
-              "en": "Client ID"
+              "en": "Client ID",
+              "da": "Klient-id",
+              "de": "Kunden-ID",
+              "es": "ID de cliente",
+              "fr": "ID client",
+              "it": "ID cliente",
+              "no": "Klient-ID",
+              "sv": "Klient-ID",
+              "pl": "ID klienta",
+              "ru": "Идентификатор клиента",
+              "ko": "클라이언트 ID"
             },
             "usernamePlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             },
             "passwordLabel": {
-              "en": "Client Secret"
+              "en": "Client Secret",
+              "da": "Klient hemmelighed",
+              "de": "Kunden Geheimnis",
+              "es": "Secreto del cliente",
+              "fr": "Secret du client",
+              "it": "Segreto del cliente",
+              "no": "Klientens hemmelighet",
+              "sv": "Klienthemlighet",
+              "pl": "Sekret klienta",
+              "ru": "Секрет клиента",
+              "ko": "클라이언트 비밀"
             },
             "passwordPlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             }
           }
         },
@@ -1384,19 +2825,69 @@
             "logo": "../../../assets/logo.jpg",
             "title": {
               "en": "Enter your API credentials",
-              "nl": "Voer uw API inloggegevens in"
+              "nl": "Voer uw API inloggegevens in",
+              "da": "Indtast dine API-legitimationsoplysninger",
+              "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+              "es": "Ingrese sus credenciales de API",
+              "fr": "Entrez vos identifiants API",
+              "it": "Inserisci le tue credenziali API",
+              "no": "Skriv inn dine API-legitimasjoner",
+              "sv": "Ange dina API-referenser",
+              "pl": "Wprowadź swoje dane uwierzytelniające API",
+              "ru": "Введите ваши API учетные данные",
+              "ko": "API 자격 증명을 입력하세요"
             },
             "usernameLabel": {
-              "en": "Client ID"
+              "en": "Client ID",
+              "da": "Klient-id",
+              "de": "Kunden-ID",
+              "es": "ID de cliente",
+              "fr": "ID client",
+              "it": "ID cliente",
+              "no": "Klient-ID",
+              "sv": "Klient-ID",
+              "pl": "ID klienta",
+              "ru": "Идентификатор клиента",
+              "ko": "클라이언트 ID"
             },
             "usernamePlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             },
             "passwordLabel": {
-              "en": "Client Secret"
+              "en": "Client Secret",
+              "da": "Klient hemmelighed",
+              "de": "Kunden Geheimnis",
+              "es": "Secreto del cliente",
+              "fr": "Secret du client",
+              "it": "Segreto del cliente",
+              "no": "Klientens hemmelighet",
+              "sv": "Klienthemlighet",
+              "pl": "Sekret klienta",
+              "ru": "Секрет клиента",
+              "ko": "클라이언트 비밀"
             },
             "passwordPlaceholder": {
-              "en": "Contact support@smappee.com"
+              "en": "Contact support@smappee.com",
+              "da": "Kontakt support@smappee.com",
+              "de": "Kontaktieren Sie support@smappee.com",
+              "es": "Contacte con support@smappee.com",
+              "fr": "Contactez support@smappee.com",
+              "it": "Contatta support@smappee.com",
+              "no": "Kontakt support@smappee.com",
+              "sv": "Kontakta support@smappee.com",
+              "pl": "Skontaktuj się z support@smappee.com",
+              "ru": "Свяжитесь с support@smappee.com",
+              "ko": "support@smappee.com에 문의하세요"
             }
           }
         },
@@ -1422,18 +2913,48 @@
       "type": "boolean",
       "title": {
         "en": "Cable connected",
-        "nl": "Kabel aangesloten"
+        "nl": "Kabel aangesloten",
+        "da": "Kabel tilsluttet",
+        "de": "Kabel angeschlossen",
+        "es": "Cable conectado",
+        "fr": "Câble connecté",
+        "it": "Cavo collegato",
+        "no": "Kabel tilkoblet",
+        "sv": "Kabel ansluten",
+        "pl": "Kabel podłączony",
+        "ru": "Кабель подключен",
+        "ko": "케이블 연결됨"
       },
       "getable": true,
       "setable": false,
       "insights": true,
       "insightsTitleTrue": {
         "en": "Cable connected",
-        "nl": "Kabel aangesloten"
+        "nl": "Kabel aangesloten",
+        "da": "Kabel tilsluttet",
+        "de": "Kabel angeschlossen",
+        "es": "Cable conectado",
+        "fr": "Câble connecté",
+        "it": "Cavo collegato",
+        "no": "Kabel tilkoblet",
+        "sv": "Kabel ansluten",
+        "pl": "Kabel podłączony",
+        "ru": "Кабель подключен",
+        "ko": "케이블 연결됨"
       },
       "insightsTitleFalse": {
         "en": "Cable disconnected",
-        "nl": "Kabel losgekoppeld"
+        "nl": "Kabel losgekoppeld",
+        "da": "Kabel afbrudt",
+        "de": "Kabel getrennt",
+        "es": "Cable desconectado",
+        "fr": "Câble déconnecté",
+        "it": "Cavo scollegato",
+        "no": "Kabel frakoblet",
+        "sv": "Kabel frånkopplad",
+        "pl": "Kabel odłączony",
+        "ru": "Кабель отключен",
+        "ko": "케이블 연결 끊김"
       },
       "uiComponent": "sensor",
       "icon": "/assets/capabilities/cable_connected.svg"
@@ -1442,18 +2963,48 @@
       "type": "boolean",
       "title": {
         "en": "Charging",
-        "nl": "Opladen"
+        "nl": "Opladen",
+        "da": "Opladning",
+        "de": "Aufladen",
+        "es": "Cargando",
+        "fr": "Chargement",
+        "it": "Caricamento",
+        "no": "Lading",
+        "sv": "Laddar",
+        "pl": "Ładowanie",
+        "ru": "Зарядка",
+        "ko": "충전 중"
       },
       "getable": true,
       "setable": false,
       "insights": true,
       "insightsTitleTrue": {
         "en": "Charging",
-        "nl": "Opladen"
+        "nl": "Opladen",
+        "da": "Opladning",
+        "de": "Aufladen",
+        "es": "Cargando",
+        "fr": "Chargement",
+        "it": "Caricamento",
+        "no": "Lading",
+        "sv": "Laddar",
+        "pl": "Ładowanie",
+        "ru": "Зарядка",
+        "ko": "충전 중"
       },
       "insightsTitleFalse": {
         "en": "Charged",
-        "nl": "Opgeladen"
+        "nl": "Opgeladen",
+        "da": "Opladet",
+        "de": "Aufgeladen",
+        "es": "Cargado",
+        "fr": "Chargé",
+        "it": "Caricato",
+        "no": "Ladet",
+        "sv": "Laddad",
+        "pl": "Naładowany",
+        "ru": "Заряжено",
+        "ko": "충전 완료"
       },
       "uiComponent": "sensor",
       "icon": "/assets/capabilities/charging.svg"
@@ -1462,7 +3013,17 @@
       "type": "enum",
       "title": {
         "en": "Charging mode",
-        "nl": "Oplaadmodus"
+        "nl": "Oplaadmodus",
+        "da": "Opladningstilstand",
+        "de": "Lademodus",
+        "es": "Modo de carga",
+        "fr": "Mode de charge",
+        "it": "Modalità di ricarica",
+        "no": "Lademodus",
+        "sv": "Läget för laddning",
+        "pl": "Tryb ładowania",
+        "ru": "Режим зарядки",
+        "ko": "충전 모드"
       },
       "getable": true,
       "setable": true,
@@ -1472,21 +3033,51 @@
           "id": "normal",
           "title": {
             "en": "Standard charging",
-            "nl": "Standaard laden"
+            "nl": "Standaard laden",
+            "da": "Standard opladning",
+            "de": "Standardladung",
+            "es": "Carga estándar",
+            "fr": "Charge standard",
+            "it": "Ricarica standard",
+            "no": "Standard lading",
+            "sv": "Standardladdning",
+            "pl": "Standardowe ładowanie",
+            "ru": "Стандартная зарядка",
+            "ko": "표준 충전"
           }
         },
         {
           "id": "smart",
           "title": {
             "en": "Smart charging",
-            "nl": "Slim laden"
+            "nl": "Slim laden",
+            "da": "Smart opladning",
+            "de": "Intelligentes Laden",
+            "es": "Carga inteligente",
+            "fr": "Charge intelligente",
+            "it": "Ricarica intelligente",
+            "no": "Smart lading",
+            "sv": "Smart laddning",
+            "pl": "Inteligentne ładowanie",
+            "ru": "Умная зарядка",
+            "ko": "스마트 충전"
           }
         },
         {
           "id": "paused",
           "title": {
             "en": "Pause charging",
-            "nl": "Pauzeer laden"
+            "nl": "Pauzeer laden",
+            "da": "Pause opladning",
+            "de": "Laden pausieren",
+            "es": "Pausar la carga",
+            "fr": "Pause de la charge",
+            "it": "Pausa ricarica",
+            "no": "Pause ladingen",
+            "sv": "Pausa laddning",
+            "pl": "Wstrzymaj ładowanie",
+            "ru": "Приостановить зарядку",
+            "ko": "충전 일시 중지"
           }
         }
       ]
@@ -1495,7 +3086,17 @@
       "type": "enum",
       "title": {
         "en": "Connection state",
-        "nl": "Verbindingsstatus"
+        "nl": "Verbindingsstatus",
+        "da": "Forbindelsestilstand",
+        "de": "Verbindungsstatus",
+        "es": "Estado de conexión",
+        "fr": "État de la connexion",
+        "it": "Stato della connessione",
+        "no": "Tilkoblingstilstand",
+        "sv": "Anslutningstillstånd",
+        "pl": "Stan połączenia",
+        "ru": "Состояние соединения",
+        "ko": "연결 상태"
       },
       "getable": true,
       "setable": false,
@@ -1505,21 +3106,51 @@
           "id": "connected",
           "title": {
             "en": "Connected",
-            "nl": "Verbonden"
+            "nl": "Verbonden",
+            "da": "Forbundet",
+            "de": "Verbunden",
+            "es": "Conectado",
+            "fr": "Connecté",
+            "it": "Connesso",
+            "no": "Tilkoblet",
+            "sv": "Ansluten",
+            "pl": "Połączono",
+            "ru": "Подключено",
+            "ko": "연결됨"
           }
         },
         {
           "id": "disconnected",
           "title": {
             "en": "Disconnected",
-            "nl": "Verbroken"
+            "nl": "Verbroken",
+            "da": "Afbrudt",
+            "de": "Getrennt",
+            "es": "Desconectado",
+            "fr": "Déconnecté",
+            "it": "Disconnesso",
+            "no": "Frakoblet",
+            "sv": "Frånkopplad",
+            "pl": "Rozłączono",
+            "ru": "Отключено",
+            "ko": "연결 끊김"
           }
         },
         {
           "id": "unreachable",
           "title": {
             "en": "Unreachable",
-            "nl": "Onbereikbaar"
+            "nl": "Onbereikbaar",
+            "da": "Uopnåelig",
+            "de": "Nicht erreichbar",
+            "es": "Inalcanzable",
+            "fr": "Inaccessible",
+            "it": "Irraggiungibile",
+            "no": "Utilgjengelig",
+            "sv": "Oåtkomlig",
+            "pl": "Nieosiągalny",
+            "ru": "Недоступен",
+            "ko": "접근 불가"
           }
         }
       ]

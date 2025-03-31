@@ -1,0 +1,7 @@
+La app Smappee Homey ofrece una integración perfecta entre tu sistema de gestión de energía Smappee y Homey, creando un entorno doméstico más inteligente y eficiente. Con esta app, puedes monitorear, controlar y automatizar tu consumo de energía directamente a través de la interfaz de Homey.
+
+Esta app te permite acceder a información energética en tiempo real, proporcionando datos detallados sobre el consumo y la generación de energía de tu hogar para que puedas tomar decisiones informadas y optimizar el uso de energía. También puedes aprovechar la automatización inteligente creando flujos personalizados con Homey, permitiendo que los electrodomésticos funcionen basándose en el consumo de energía o la producción solar. Para aquellos centrados en la sostenibilidad, la app te ayuda a optimizar el uso de energía renovable alineando el uso de dispositivos inteligentes con la producción solar.
+
+Ya sea que quieras reducir tus facturas de energía, disminuir tu huella de carbono o mejorar la comodidad del hogar, la app Smappee Homey te permite gestionar tu consumo de energía de maneras más inteligentes y efectivas.
+
+Necesitas credenciales de API para usar esta app. Puedes obtener estas credenciales contactando a support@smappee.com.

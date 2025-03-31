@@ -1,0 +1,34 @@
+{
+  "api": "API",
+  "authentication": {
+    "connecting": "Conectando..."
+  },
+  "error": {
+    "401": "Las credenciales de la API de Smappee son incorrectas",
+    "403": "La API de Smappee ha denegado el acceso a este dispositivo",
+    "404": "Dispositivo no encontrado en la cuenta de Smappee",
+    "50x": "La API de Smappee no está disponible",
+    "client_id": "Introduce un ID de cliente válido",
+    "client_secret": "Introduce un secreto de cliente válido",
+    "led": "El brillo de LED no es compatible con este dispositivo",
+    "network": "La API de Smappee es inalcanzable",
+    "unavailable": "El dispositivo no está disponible",
+    "unknown": "Ha ocurrido un error desconocido",
+    "water_disabled": "El dispositivo no tiene el agua habilitada",
+    "water_uom": "La unidad de medida del agua debe ser m³ en lugar de __uom__"
+  },
+  "mqtt": "servicio de mensajes",
+  "notification": {
+    "water_capability_updated": "El medidor de agua para **__name__** necesita ser actualizado. Inicia la acción de mantenimiento 'Restablecer medidor de agua' desde la configuración del dispositivo."
+  },
+  "service": {
+    "error": "El servicio Smappee __service__ arroja un error, el dispositivo puede no funcionar como se espera.",
+    "disconnected": "La conexión con el servicio Smappee __service__ se ha perdido, el dispositivo puede no funcionar como se espera.",
+    "offline": "No se puede conectar al servicio Smappee __service__, verifica la conexión a internet.",
+    "reconnect": "Reconectando al servicio Smappee __service__..."
+  },
+  "warning": {
+    "disconnected": "El dispositivo está desconectado, puede no funcionar como se espera.",
+    "unreachable": "El dispositivo es inalcanzable, puede no funcionar como se espera."
+  }
+}

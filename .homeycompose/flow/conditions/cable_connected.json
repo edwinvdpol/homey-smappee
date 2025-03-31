@@ -1,11 +1,31 @@
 {
   "title": {
     "en": "Cable is !{{connected|disconnected}}",
-    "nl": "Kabel is !{{aangesloten|losgekoppeld}}"
+    "nl": "Kabel is !{{aangesloten|losgekoppeld}}",
+    "da": "Kablet er !{{forbundet|frakoblet}}",
+    "de": "Kabel ist !{{verbunden|getrennt}}",
+    "es": "El cable está !{{conectado|desconectado}}",
+    "fr": "Le câble est !{{connecté|déconnecté}}",
+    "it": "Il cavo è !{{collegato|scollegato}}",
+    "no": "Kabelen er !{{tilkoblet|frakoblet}}",
+    "sv": "Kabeln är !{{ansluten|frånkopplad}}",
+    "pl": "Kabel jest !{{podłączony|odłączony}}",
+    "ru": "Кабель !{{подключен|отключен}}",
+    "ko": "케이블이 !{{연결됨|연결 끊김}}"
   },
   "hint": {
     "en": "Checks whether the cable is connected.",
-    "nl": "Controleert of de kabel aangesloten is."
+    "nl": "Controleert of de kabel aangesloten is.",
+    "da": "Kontrollerer om kablet er forbundet.",
+    "de": "Prüft, ob das Kabel verbunden ist.",
+    "es": "Verifica si el cable está conectado.",
+    "fr": "Vérifie si le câble est connecté.",
+    "it": "Verifica se il cavo è collegato.",
+    "no": "Sjekker om kabelen er tilkoblet.",
+    "sv": "Kontrollerar om kabeln är ansluten.",
+    "pl": "Sprawdza, czy kabel jest podłączony.",
+    "ru": "Проверяет, подключен ли кабель.",
+    "ko": "케이블이 연결되어 있는지 확인합니다."
   },
   "platforms": [
     "local"

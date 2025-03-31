@@ -1,11 +1,31 @@
 {
   "title": {
     "en": "Charging was started",
-    "nl": "Opladen werd gestart"
+    "nl": "Opladen werd gestart",
+    "da": "Opladning blev startet",
+    "de": "Das Laden wurde gestartet",
+    "es": "La carga fue iniciada",
+    "fr": "Le chargement a commencé",
+    "it": "La ricarica è stata avviata",
+    "no": "Ladingen ble startet",
+    "sv": "Laddningen startades",
+    "pl": "Ładowanie zostało rozpoczęte",
+    "ru": "Зарядка начата",
+    "ko": "충전이 시작되었습니다"
   },
   "hint": {
     "en": "This flowcard is activated when the charging was started.",
-    "nl": "Deze kaart wordt geactiveerd wanneer het opladen gestart werd."
+    "nl": "Deze kaart wordt geactiveerd wanneer het opladen gestart werd.",
+    "da": "Dette flowkort aktiveres, når opladningen startes.",
+    "de": "Diese Flowkarte wird aktiviert, wenn das Laden gestartet wurde.",
+    "es": "Esta tarjeta de flujo se activa cuando comienza la carga.",
+    "fr": "Cette carte de flux est activée lorsque le chargement commence.",
+    "it": "Questa scheda di flusso si attiva quando inizia la ricarica.",
+    "no": "Dette flytkortet aktiveres når ladingen starter.",
+    "sv": "Detta flödeskort aktiveras när laddningen startar.",
+    "pl": "Ta karta przepływu jest aktywowana, gdy ładowanie zostanie rozpoczęte.",
+    "ru": "Эта карточка потока активируется, когда зарядка начинается.",
+    "ko": "충전이 시작되면 이 플로우카드가 활성화됩니다."
   },
   "platforms": [
     "local"

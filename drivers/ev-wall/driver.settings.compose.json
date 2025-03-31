@@ -3,7 +3,17 @@
     "type": "group",
     "label": {
       "en": "Settings",
-      "nl": "Instellingen"
+      "nl": "Instellingen",
+      "da": "Indstillinger",
+      "de": "Einstellungen",
+      "es": "Configuraciones",
+      "fr": "Paramètres",
+      "it": "Impostazioni",
+      "no": "Innstillinger",
+      "sv": "Inställningar",
+      "pl": "Ustawienia",
+      "ru": "Настройки",
+      "ko": "설정"
     },
     "children": [
       {
@@ -11,12 +21,32 @@
         "type": "label",
         "label": {
           "en": "Minimum current",
-          "nl": "Minimum stroom"
+          "nl": "Minimum stroom",
+          "da": "Minimumstrøm",
+          "de": "Mindeststrom",
+          "es": "Corriente mínima",
+          "fr": "Courant minimum",
+          "it": "Corrente minima",
+          "no": "Minimumstrøm",
+          "sv": "Minsta ström",
+          "pl": "Minimalny prąd",
+          "ru": "Минимальный ток",
+          "ko": "최소 전류"
         },
         "value": "-",
         "hint": {
           "en": "The minimum current your electric vehicle needs to start charging.",
-          "nl": "De minimale stroom die uw elektrische auto nodig heeft om op te laden."
+          "nl": "De minimale stroom die uw elektrische auto nodig heeft om op te laden.",
+          "da": "Den minimale strøm, din elbil har brug for for at starte opladning.",
+          "de": "Der Mindeststrom, den Ihr Elektrofahrzeug benötigt, um das Laden zu starten.",
+          "es": "La corriente mínima que su vehículo eléctrico necesita para comenzar a cargar.",
+          "fr": "Le courant minimum dont votre véhicule électrique a besoin pour commencer à charger.",
+          "it": "La corrente minima di cui il tuo veicolo elettrico ha bisogno per iniziare a caricarsi.",
+          "no": "Minimumstrømmen biler trenger for å starte lading.",
+          "sv": "Den minsta ström som ditt elfordon behöver för att börja ladda.",
+          "pl": "Minimalny prąd, którego potrzebuje twój pojazd elektryczny, aby rozpocząć ładowanie.",
+          "ru": "Минимальный ток, необходимый вашему электромобилю для начала зарядки.",
+          "ko": "전기차가 충전을 시작하는데 필요한 최소 전류입니다."
         }
       },
       {
@@ -24,12 +54,32 @@
         "type": "label",
         "label": {
           "en": "Maximum current",
-          "nl": "Maximum stroom"
+          "nl": "Maximum stroom",
+          "da": "Maksimalstrøm",
+          "de": "Maximalstrom",
+          "es": "Corriente máxima",
+          "fr": "Courant maximum",
+          "it": "Corrente massima",
+          "no": "Maksimumstrøm",
+          "sv": "Maxström",
+          "pl": "Maksymalny prąd",
+          "ru": "Максимальный ток",
+          "ko": "최대 전류"
         },
         "value": "-",
         "hint": {
           "en": "The maximum current that this charging point can support.",
-          "nl": "De maximale stroom die dit oplaadpunt kan ondersteunen."
+          "nl": "De maximale stroom die dit oplaadpunt kan ondersteunen.",
+          "da": "Den maksimale strøm, som dette ladestation kan understøtte.",
+          "de": "Der maximale Strom, den dieser Ladepunkt unterstützen kann.",
+          "es": "La corriente máxima que este punto de carga puede soportar.",
+          "fr": "Le courant maximum que ce point de charge peut supporter.",
+          "it": "La corrente massima che questo punto di ricarica può supportare.",
+          "no": "Maksimalstrømmen som dette ladepunktet kan støtte.",
+          "sv": "Maxströmmen som denna laddningspunkt kan stödja.",
+          "pl": "Maksymalny prąd, jaki ten punkt ładowania może obsłużyć.",
+          "ru": "Максимальный ток, который может поддерживать эта зарядная станция.",
+          "ko": "이 충전 지점에서 지원할 수 있는 최대 전류입니다."
         }
       }
     ]
@@ -37,7 +87,17 @@
   {
     "type": "group",
     "label": {
-      "en": "Details"
+      "en": "Details",
+      "da": "Detaljer",
+      "de": "Einzelheiten",
+      "es": "Detalles",
+      "fr": "Détails",
+      "it": "Dettagli",
+      "no": "Detaljer",
+      "sv": "Detaljer",
+      "pl": "Szczegóły",
+      "ru": "Детали",
+      "ko": "세부 사항"
     },
     "children": [
       {

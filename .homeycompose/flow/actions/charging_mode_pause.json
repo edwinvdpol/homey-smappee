@@ -1,11 +1,31 @@
 {
   "title": {
     "en": "Stop charging",
-    "nl": "Stop laden"
+    "nl": "Stop laden",
+    "da": "Stop opladning",
+    "de": "Laden stoppen",
+    "es": "Detener la carga",
+    "fr": "Arrêter la charge",
+    "it": "Ferma la ricarica",
+    "no": "Stopp lading",
+    "sv": "Stoppa laddningen",
+    "pl": "Zatrzymaj ładowanie",
+    "ru": "Остановить зарядку",
+    "ko": "충전 중지"
   },
   "hint": {
     "en": "Use this flowcard to stop charging.",
-    "nl": "Gebruik deze kaart om het opladen te stoppen."
+    "nl": "Gebruik deze kaart om het opladen te stoppen.",
+    "da": "Brug dette flowkort til at stoppe opladningen.",
+    "de": "Verwenden Sie diese Flusskarte, um das Laden zu stoppen.",
+    "es": "Usa esta tarjeta para detener la carga.",
+    "fr": "Utilisez cette carte pour arrêter la charge.",
+    "it": "Usa questa scheda per fermare la ricarica.",
+    "no": "Bruk dette flytkortet for å stoppe ladingen.",
+    "sv": "Använd detta flödeskort för att stoppa laddningen.",
+    "pl": "Użyj tej karty, aby zatrzymać ładowanie.",
+    "ru": "Используйте эту карточку, чтобы остановить зарядку.",
+    "ko": "이 플로우카드를 사용하여 충전을 중지하십시오."
   },
   "args": [
     {

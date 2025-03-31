@@ -1,0 +1,7 @@
+Smappee Homey-appen erbjuder en sömlös integration mellan ditt Smappee energihanteringssystem och Homey, vilket skapar en smartare och mer effektiv hemmiljö. Med den här appen kan du övervaka, kontrollera och automatisera din energiförbrukning direkt via din Homey-gränssnitt.
+
+Den här appen ger dig tillgång till energidata i realtid, vilket ger detaljerad information om ditt hems energiförbrukning och produktion så att du kan fatta välgrundade beslut för att optimera energianvändningen. Du kan också dra nytta av smart automation genom att skapa anpassade flöden med Homey, vilket gör det möjligt för apparater att fungera baserat på energiförbrukning eller solproduktion. För de som fokuserar på hållbarhet hjälper appen dig att optimera användningen av förnybar energi genom att anpassa användningen av smarta enheter med solproduktion.
+
+Oavsett om du strävar efter att sänka dina energikostnader, minska ditt koldioxidavtryck eller förbättra hemmets bekvämlighet, ger Smappee Homey-appen dig möjlighet att hantera din energiförbrukning på smartare och mer effektiva sätt.
+
+Du behöver API-uppgifter för att använda den här appen. Du kan få dessa uppgifter genom att kontakta support@smappee.com.

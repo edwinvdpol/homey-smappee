@@ -12,7 +12,17 @@
     "measure_power.alwayson": {
       "title": {
         "en": "Always on power",
-        "nl": "Sluimerverbruik"
+        "nl": "Sluimerverbruik",
+        "da": "Altid tændt strøm",
+        "de": "Immer eingeschaltet",
+        "es": "Potencia siempre encendida",
+        "fr": "Toujours sous tension",
+        "it": "Potenza sempre accesa",
+        "no": "Alltid på strøm",
+        "sv": "Alltid på ström",
+        "pl": "Zawsze włączona moc",
+        "ru": "Всегда включенная энергия",
+        "ko": "항상 켜짐 상태의 전원"
       }
     }
   },

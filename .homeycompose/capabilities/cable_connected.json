@@ -2,18 +2,48 @@
   "type": "boolean",
   "title": {
     "en": "Cable connected",
-    "nl": "Kabel aangesloten"
+    "nl": "Kabel aangesloten",
+    "da": "Kabel tilsluttet",
+    "de": "Kabel angeschlossen",
+    "es": "Cable conectado",
+    "fr": "Câble connecté",
+    "it": "Cavo collegato",
+    "no": "Kabel tilkoblet",
+    "sv": "Kabel ansluten",
+    "pl": "Kabel podłączony",
+    "ru": "Кабель подключен",
+    "ko": "케이블 연결됨"
   },
   "getable": true,
   "setable": false,
   "insights": true,
   "insightsTitleTrue": {
     "en": "Cable connected",
-    "nl": "Kabel aangesloten"
+    "nl": "Kabel aangesloten",
+    "da": "Kabel tilsluttet",
+    "de": "Kabel angeschlossen",
+    "es": "Cable conectado",
+    "fr": "Câble connecté",
+    "it": "Cavo collegato",
+    "no": "Kabel tilkoblet",
+    "sv": "Kabel ansluten",
+    "pl": "Kabel podłączony",
+    "ru": "Кабель подключен",
+    "ko": "케이블 연결됨"
   },
   "insightsTitleFalse": {
     "en": "Cable disconnected",
-    "nl": "Kabel losgekoppeld"
+    "nl": "Kabel losgekoppeld",
+    "da": "Kabel afbrudt",
+    "de": "Kabel getrennt",
+    "es": "Cable desconectado",
+    "fr": "Câble déconnecté",
+    "it": "Cavo scollegato",
+    "no": "Kabel frakoblet",
+    "sv": "Kabel frånkopplad",
+    "pl": "Kabel odłączony",
+    "ru": "Кабель отключен",
+    "ko": "케이블 연결 끊김"
   },
   "uiComponent": "sensor",
   "icon": "/assets/capabilities/cable_connected.svg"

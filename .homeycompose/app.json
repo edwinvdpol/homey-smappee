@@ -11,7 +11,18 @@
     "en": "Smappee"
   },
   "description": {
-    "en": "Make the smart grid revolution happen"
+    "en": "Make the smart grid revolution happen",
+    "nl": "Laat de revolutie van het slimme netwerk plaatsvinden",
+    "da": "Få den smarte netværksrevolution til at ske",
+    "de": "Machen Sie die Revolution des intelligenten Netzes möglich",
+    "es": "Haz que la revolución de la red inteligente suceda",
+    "fr": "Faites que la révolution du réseau intelligent ait lieu",
+    "it": "Fai accadere la rivoluzione della rete intelligente",
+    "no": "Få revolusjonen av det smarte nettet til å skje",
+    "sv": "Gör det smarta nätets revolution möjlig",
+    "pl": "Spraw, by rewolucja inteligentnej sieci się wydarzyła",
+    "ru": "Совершите революцию умной сети",
+    "ko": "스마트 그리드 혁명을 일으키세요"
   },
   "category": [
     "energy"

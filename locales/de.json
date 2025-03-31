@@ -1,0 +1,34 @@
+{
+  "api": "API",
+  "authentication": {
+    "connecting": "Verbinde..."
+  },
+  "error": {
+    "401": "Smappee API-Anmeldedaten sind falsch",
+    "403": "Der Zugriff auf dieses Gerät wurde von der Smappee API verweigert",
+    "404": "Gerät nicht im Smappee-Konto gefunden",
+    "50x": "Smappee API ist nicht verfügbar",
+    "client_id": "Geben Sie eine gültige Client-ID ein",
+    "client_secret": "Geben Sie ein gültiges Client-Geheimnis ein",
+    "led": "LED-Helligkeit wird von diesem Gerät nicht unterstützt",
+    "network": "Die Smappee API ist nicht erreichbar",
+    "unavailable": "Gerät ist nicht verfügbar",
+    "unknown": "Ein unbekannter Fehler ist aufgetreten",
+    "water_disabled": "Gerät hat Wasser nicht aktiviert",
+    "water_uom": "Wassermengeneinheit sollte m³ statt __uom__ sein"
+  },
+  "mqtt": "Nachrichtendienst",
+  "notification": {
+    "water_capability_updated": "Der Wasserzähler für **__name__** muss aktualisiert werden. Starten Sie die Wartungsaktion 'Wasserzähler zurücksetzen' aus den Geräteeinstellungen."
+  },
+  "service": {
+    "error": "Der Smappee __service__ verursacht einen Fehler, das Gerät funktioniert möglicherweise nicht wie erwartet.",
+    "disconnected": "Die Verbindung zum Smappee __service__ wurde unterbrochen, das Gerät funktioniert möglicherweise nicht wie erwartet.",
+    "offline": "Kann keine Verbindung zum Smappee __service__ herstellen, überprüfen Sie die Internetverbindung.",
+    "reconnect": "Stelle die Verbindung zum Smappee __service__ wieder her..."
+  },
+  "warning": {
+    "disconnected": "Gerät ist getrennt, das Gerät funktioniert möglicherweise nicht wie erwartet.",
+    "unreachable": "Gerät ist nicht erreichbar, das Gerät funktioniert möglicherweise nicht wie erwartet."
+  }
+}

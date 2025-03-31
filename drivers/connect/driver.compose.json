@@ -12,13 +12,33 @@
     "measure_power.production": {
       "title": {
         "en": "Production",
-        "nl": "Productie"
+        "nl": "Productie",
+        "da": "Produktion",
+        "de": "Produktion",
+        "es": "Producción",
+        "fr": "Production",
+        "it": "Produzione",
+        "no": "Produksjon",
+        "sv": "Produktion",
+        "pl": "Produkcja",
+        "ru": "Производство",
+        "ko": "생산"
       }
     },
     "measure_power.alwayson": {
       "title": {
         "en": "Always on power",
-        "nl": "Sluimerverbruik"
+        "nl": "Sluimerverbruik",
+        "da": "Altid tændt strøm",
+        "de": "Ständig eingeschaltet",
+        "es": "Siempre encendido",
+        "fr": "Toujours allumé",
+        "it": "Sempre acceso",
+        "no": "Alltid på strøm",
+        "sv": "Alltid på",
+        "pl": "Zawsze włączony",
+        "ru": "Всегда включено",
+        "ko": "항상 전원 켜짐"
       }
     }
   },

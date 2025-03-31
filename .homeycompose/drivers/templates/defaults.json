@@ -13,7 +13,17 @@
     {
       "type": "group",
       "label": {
-        "en": "Details"
+        "en": "Details",
+        "da": "Detaljer",
+        "de": "Einzelheiten",
+        "es": "Detalles",
+        "fr": "Détails",
+        "it": "Dettagli",
+        "no": "Detaljer",
+        "sv": "Detaljer",
+        "pl": "Szczegóły",
+        "ru": "Подробности",
+        "ko": "세부사항"
       },
       "children": [
         {
@@ -30,19 +40,69 @@
         "logo": "../../../assets/logo.jpg",
         "title": {
           "en": "Enter your API credentials",
-          "nl": "Voer uw API inloggegevens in"
+          "nl": "Voer uw API inloggegevens in",
+          "da": "Indtast dine API-legitimationsoplysninger",
+          "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+          "es": "Ingrese sus credenciales de API",
+          "fr": "Entrez vos identifiants API",
+          "it": "Inserisci le tue credenziali API",
+          "no": "Skriv inn dine API-legitimasjoner",
+          "sv": "Ange dina API-referenser",
+          "pl": "Wprowadź swoje dane uwierzytelniające API",
+          "ru": "Введите ваши API учетные данные",
+          "ko": "API 자격 증명을 입력하세요"
         },
         "usernameLabel": {
-          "en": "Client ID"
+          "en": "Client ID",
+          "da": "Klient-id",
+          "de": "Kunden-ID",
+          "es": "ID de cliente",
+          "fr": "ID client",
+          "it": "ID cliente",
+          "no": "Klient-ID",
+          "sv": "Klient-ID",
+          "pl": "ID klienta",
+          "ru": "Идентификатор клиента",
+          "ko": "클라이언트 ID"
         },
         "usernamePlaceholder": {
-          "en": "Contact support@smappee.com"
+          "en": "Contact support@smappee.com",
+          "da": "Kontakt support@smappee.com",
+          "de": "Kontaktieren Sie support@smappee.com",
+          "es": "Contacte con support@smappee.com",
+          "fr": "Contactez support@smappee.com",
+          "it": "Contatta support@smappee.com",
+          "no": "Kontakt support@smappee.com",
+          "sv": "Kontakta support@smappee.com",
+          "pl": "Skontaktuj się z support@smappee.com",
+          "ru": "Свяжитесь с support@smappee.com",
+          "ko": "support@smappee.com에 문의하세요"
         },
         "passwordLabel": {
-          "en": "Client Secret"
+          "en": "Client Secret",
+          "da": "Klient hemmelighed",
+          "de": "Kunden Geheimnis",
+          "es": "Secreto del cliente",
+          "fr": "Secret du client",
+          "it": "Segreto del cliente",
+          "no": "Klientens hemmelighet",
+          "sv": "Klienthemlighet",
+          "pl": "Sekret klienta",
+          "ru": "Секрет клиента",
+          "ko": "클라이언트 비밀"
         },
         "passwordPlaceholder": {
-          "en": "Contact support@smappee.com"
+          "en": "Contact support@smappee.com",
+          "da": "Kontakt support@smappee.com",
+          "de": "Kontaktieren Sie support@smappee.com",
+          "es": "Contacte con support@smappee.com",
+          "fr": "Contactez support@smappee.com",
+          "it": "Contatta support@smappee.com",
+          "no": "Kontakt support@smappee.com",
+          "sv": "Kontakta support@smappee.com",
+          "pl": "Skontaktuj się z support@smappee.com",
+          "ru": "Свяжитесь с support@smappee.com",
+          "ko": "support@smappee.com에 문의하세요"
         }
       }
     },
@@ -70,19 +130,69 @@
         "logo": "../../../assets/logo.jpg",
         "title": {
           "en": "Enter your API credentials",
-          "nl": "Voer uw API inloggegevens in"
+          "nl": "Voer uw API inloggegevens in",
+          "da": "Indtast dine API-legitimationsoplysninger",
+          "de": "Geben Sie Ihre API-Anmeldeinformationen ein",
+          "es": "Ingrese sus credenciales de API",
+          "fr": "Entrez vos identifiants API",
+          "it": "Inserisci le tue credenziali API",
+          "no": "Skriv inn dine API-legitimasjoner",
+          "sv": "Ange dina API-referenser",
+          "pl": "Wprowadź swoje dane uwierzytelniające API",
+          "ru": "Введите ваши API учетные данные",
+          "ko": "API 자격 증명을 입력하세요"
         },
         "usernameLabel": {
-          "en": "Client ID"
+          "en": "Client ID",
+          "da": "Klient-id",
+          "de": "Kunden-ID",
+          "es": "ID de cliente",
+          "fr": "ID client",
+          "it": "ID cliente",
+          "no": "Klient-ID",
+          "sv": "Klient-ID",
+          "pl": "ID klienta",
+          "ru": "Идентификатор клиента",
+          "ko": "클라이언트 ID"
         },
         "usernamePlaceholder": {
-          "en": "Contact support@smappee.com"
+          "en": "Contact support@smappee.com",
+          "da": "Kontakt support@smappee.com",
+          "de": "Kontaktieren Sie support@smappee.com",
+          "es": "Contacte con support@smappee.com",
+          "fr": "Contactez support@smappee.com",
+          "it": "Contatta support@smappee.com",
+          "no": "Kontakt support@smappee.com",
+          "sv": "Kontakta support@smappee.com",
+          "pl": "Skontaktuj się z support@smappee.com",
+          "ru": "Свяжитесь с support@smappee.com",
+          "ko": "support@smappee.com에 문의하세요"
         },
         "passwordLabel": {
-          "en": "Client Secret"
+          "en": "Client Secret",
+          "da": "Klient hemmelighed",
+          "de": "Kunden Geheimnis",
+          "es": "Secreto del cliente",
+          "fr": "Secret du client",
+          "it": "Segreto del cliente",
+          "no": "Klientens hemmelighet",
+          "sv": "Klienthemlighet",
+          "pl": "Sekret klienta",
+          "ru": "Секрет клиента",
+          "ko": "클라이언트 비밀"
         },
         "passwordPlaceholder": {
-          "en": "Contact support@smappee.com"
+          "en": "Contact support@smappee.com",
+          "da": "Kontakt support@smappee.com",
+          "de": "Kontaktieren Sie support@smappee.com",
+          "es": "Contacte con support@smappee.com",
+          "fr": "Contactez support@smappee.com",
+          "it": "Contatta support@smappee.com",
+          "no": "Kontakt support@smappee.com",
+          "sv": "Kontakta support@smappee.com",
+          "pl": "Skontaktuj się z support@smappee.com",
+          "ru": "Свяжитесь с support@smappee.com",
+          "ko": "support@smappee.com에 문의하세요"
         }
       }
     },

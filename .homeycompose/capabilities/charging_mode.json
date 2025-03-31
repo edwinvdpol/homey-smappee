@@ -2,7 +2,17 @@
   "type": "enum",
   "title": {
     "en": "Charging mode",
-    "nl": "Oplaadmodus"
+    "nl": "Oplaadmodus",
+    "da": "Opladningstilstand",
+    "de": "Lademodus",
+    "es": "Modo de carga",
+    "fr": "Mode de charge",
+    "it": "Modalità di ricarica",
+    "no": "Lademodus",
+    "sv": "Läget för laddning",
+    "pl": "Tryb ładowania",
+    "ru": "Режим зарядки",
+    "ko": "충전 모드"
   },
   "getable": true,
   "setable": true,
@@ -12,21 +22,51 @@
       "id": "normal",
       "title": {
         "en": "Standard charging",
-        "nl": "Standaard laden"
+        "nl": "Standaard laden",
+        "da": "Standard opladning",
+        "de": "Standardladung",
+        "es": "Carga estándar",
+        "fr": "Charge standard",
+        "it": "Ricarica standard",
+        "no": "Standard lading",
+        "sv": "Standardladdning",
+        "pl": "Standardowe ładowanie",
+        "ru": "Стандартная зарядка",
+        "ko": "표준 충전"
       }
     },
     {
       "id": "smart",
       "title": {
         "en": "Smart charging",
-        "nl": "Slim laden"
+        "nl": "Slim laden",
+        "da": "Smart opladning",
+        "de": "Intelligentes Laden",
+        "es": "Carga inteligente",
+        "fr": "Charge intelligente",
+        "it": "Ricarica intelligente",
+        "no": "Smart lading",
+        "sv": "Smart laddning",
+        "pl": "Inteligentne ładowanie",
+        "ru": "Умная зарядка",
+        "ko": "스마트 충전"
       }
     },
     {
       "id": "paused",
       "title": {
         "en": "Pause charging",
-        "nl": "Pauzeer laden"
+        "nl": "Pauzeer laden",
+        "da": "Pause opladning",
+        "de": "Laden pausieren",
+        "es": "Pausar la carga",
+        "fr": "Pause de la charge",
+        "it": "Pausa ricarica",
+        "no": "Pause ladingen",
+        "sv": "Pausa laddning",
+        "pl": "Wstrzymaj ładowanie",
+        "ru": "Приостановить зарядку",
+        "ko": "충전 일시 중지"
       }
     }
   ]

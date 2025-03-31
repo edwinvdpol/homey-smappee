@@ -1,11 +1,31 @@
 {
   "title": {
     "en": "!{{Is|Is not}} charging",
-    "nl": "!{{Is|Is niet}} aan het opladen"
+    "nl": "!{{Is|Is niet}} aan het opladen",
+    "da": "!{{Er|Er ikke}} ved at oplade",
+    "de": "!{{Lädt|Lädt nicht}}",
+    "es": "¡{{Está|No está}} cargando!",
+    "fr": "!{{Est|N'est pas}} en charge",
+    "it": "!{{Sta|Non sta}} caricando",
+    "no": "!{{Lader|Lader ikke}}",
+    "sv": "!{{Laddar|Laddar inte}}",
+    "pl": "!{{Ładuje się|Nie ładuje się}}",
+    "ru": "!{{Заряжается|Не заряжается}}",
+    "ko": "!{{충전 중|충전 중 아님}}"
   },
   "hint": {
     "en": "Checks whether the device is charging.",
-    "nl": "Controleert of het apparaat aan het opladen is."
+    "nl": "Controleert of het apparaat aan het opladen is.",
+    "da": "Kontrollerer, om enheden oplader.",
+    "de": "Prüft, ob das Gerät geladen wird.",
+    "es": "Verifica si el dispositivo se está cargando.",
+    "fr": "Vérifie si l'appareil est en charge.",
+    "it": "Controlla se il dispositivo è in carica.",
+    "no": "Sjekker om enheten lader.",
+    "sv": "Kontrollerar om enheten laddas.",
+    "pl": "Sprawdza, czy urządzenie się ładuje.",
+    "ru": "Проверяет, заряжается ли устройство.",
+    "ko": "장치가 충전 중인지 확인합니다."
   },
   "platforms": [
     "local"
