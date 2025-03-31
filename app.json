@@ -584,24 +584,6 @@
                 "en": "The maximum current that this charging point can support.",
                 "nl": "De maximale stroom die dit oplaadpunt kan ondersteunen."
               }
-            },
-            {
-              "id": "led_brightness",
-              "type": "number",
-              "label": {
-                "en": "LED brightness",
-                "nl": "LED-helderheid"
-              },
-              "value": 0,
-              "min": 0,
-              "max": 100,
-              "units": {
-                "en": "%"
-              },
-              "hint": {
-                "en": "The LED brightness in percentages.",
-                "nl": "De helderheid van de LED in percentages."
-              }
             }
           ]
         },
@@ -699,6 +681,7 @@
       "capabilities": [
         "measure_power",
         "meter_power",
+        "dim",
         "cable_connected",
         "charging",
         "charging_mode"

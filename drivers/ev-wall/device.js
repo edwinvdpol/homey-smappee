@@ -19,6 +19,15 @@ class EVWallDevice extends MqttDevice {
     await this.setChargingMode(value);
   }
 
+  // Dim (LED brightness) changed
+  async onCapabilityDim(value) {
+    const percentage = value * 100;
+
+    this.log(`User changed capability 'dim' to '${percentage}'`);
+
+    await this.setBrightness(value);
+  }
+
   // Device initialized
   async onOAuth2Init() {
     // Migrate
@@ -61,22 +70,13 @@ class EVWallDevice extends MqttDevice {
 
   // Settings changed
   async onSettings({ oldSettings, newSettings, changedKeys }) {
-    this.updating = true;
-
     this.log('[Settings] Updating');
 
     for (const name of changedKeys) {
       const newValue = newSettings[name];
 
       this.log(`[Settings] '${name}' is now '${newValue}'`);
-
-      // LED brightness
-      if (name === 'led_brightness') {
-        await this.setBrightness(Number(newValue));
-      }
     }
-
-    this.updating = false;
 
     this.log('[Settings] Updated');
   }
@@ -87,16 +87,16 @@ class EVWallDevice extends MqttDevice {
 
   // LED brightness
   async setBrightness(percentage) {
-    const ledId = this.getStoreValue('led_id');
-
-    if (blank(ledId)) {
+    if (!this.hasCapability('dim')) {
       this.error('LED brightness not supported');
       throw new Error(this.homey.__('error.led'));
     }
 
+    percentage *= 100;
+
     this.log(`Set LED brightness to '${percentage}%'`);
 
-    await this.oAuth2Client.setLedBrightness(this.serviceLocationId, ledId, percentage);
+    await this.oAuth2Client.setLedBrightness(this.serviceLocationId, this.getStoreValue('led_id'), percentage);
   }
 
   // Activate charging mode
@@ -121,10 +121,8 @@ class EVWallDevice extends MqttDevice {
       ? await this.oAuth2Client.getLatestServiceLocationConsumption(this.serviceLocationId, this.latestRecordTime)
       : await this.oAuth2Client.getInitialServiceLocationConsumption(this.serviceLocationId);
 
-    const ledId = this.getStoreValue('led_id');
-
-    if (filled(ledId)) {
-      result.led_brightness = await this.oAuth2Client.getLedBrightness(this.serviceLocationId, ledId);
+    if (this.hasCapability('dim')) {
+      result.led_brightness = await this.oAuth2Client.getLedBrightness(this.serviceLocationId, this.getStoreValue('led_id'));
     }
 
     return result;
@@ -137,8 +135,8 @@ class EVWallDevice extends MqttDevice {
     this.log('[Sync]', JSON.stringify(data));
 
     // LED brightness (MQTT and sync)
-    if ('led_brightness' in data && !this.updating) {
-      this.setSettings(data).catch(this.error);
+    if (this.hasCapability('dim') && 'led_brightness' in data) {
+      this.setCapabilityValue('dim', (data.led_brightness / 100)).catch(this.error);
     }
 
     // Cable connected (MQTT)
@@ -218,19 +216,25 @@ class EVWallDevice extends MqttDevice {
 
     // Add `meter_power` capability
     if (!this.hasCapability('meter_power')) {
-      this.addCapability('meter_power').catch(this.error);
+      await this.addCapability('meter_power');
       this.log('[Migrate] Added `meter_power` capability');
     }
 
     // Add `charging` capability
     if (!this.hasCapability('charging')) {
-      this.addCapability('charging').catch(this.error);
+      await this.addCapability('charging');
       this.log('[Migrate] Added `charging` capability');
+    }
+
+    // Add `dim` capability
+    if (!this.hasCapability('dim') && filled(this.getStoreValue('led_id'))) {
+      await this.addCapability('dim');
+      this.log('[Migrate] Added `dim` capability');
     }
 
     // Remove `measure_power.alwayson` capability
     if (this.hasCapability('measure_power.alwayson')) {
-      this.removeCapability('measure_power.alwayson').catch(this.error);
+      await this.removeCapability('measure_power.alwayson');
       this.log('[Migrate] Removed `measure_power.alwayson` capability');
     }
 
