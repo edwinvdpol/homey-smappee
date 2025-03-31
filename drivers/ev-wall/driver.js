@@ -32,6 +32,7 @@ class EVWallDriver extends Driver {
     return [
       'measure_power',
       'meter_power',
+      'dim',
       'cable_connected',
       'charging',
       'charging_mode',

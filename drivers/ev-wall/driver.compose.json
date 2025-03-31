@@ -6,6 +6,7 @@
   "capabilities": [
     "measure_power",
     "meter_power",
+    "dim",
     "cable_connected",
     "charging",
     "charging_mode"
