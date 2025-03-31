@@ -21,9 +21,9 @@ class EVWallDevice extends MqttDevice {
 
   // Dim (LED brightness) changed
   async onCapabilityDim(value) {
-    value *= 100;
+    const percentage = value * 100;
 
-    this.log(`User changed capability 'dim' to '${value}'`);
+    this.log(`User changed capability 'dim' to '${percentage}'`);
 
     await this.setBrightness(value);
   }
@@ -216,25 +216,25 @@ class EVWallDevice extends MqttDevice {
 
     // Add `meter_power` capability
     if (!this.hasCapability('meter_power')) {
-      this.addCapability('meter_power').catch(this.error);
+      await this.addCapability('meter_power');
       this.log('[Migrate] Added `meter_power` capability');
     }
 
     // Add `charging` capability
     if (!this.hasCapability('charging')) {
-      this.addCapability('charging').catch(this.error);
+      await this.addCapability('charging');
       this.log('[Migrate] Added `charging` capability');
     }
 
     // Add `dim` capability
     if (!this.hasCapability('dim') && filled(this.getStoreValue('led_id'))) {
-      this.addCapability('dim').catch(this.error);
+      await this.addCapability('dim');
       this.log('[Migrate] Added `dim` capability');
     }
 
     // Remove `measure_power.alwayson` capability
     if (this.hasCapability('measure_power.alwayson')) {
-      this.removeCapability('measure_power.alwayson').catch(this.error);
+      await this.removeCapability('measure_power.alwayson');
       this.log('[Migrate] Removed `measure_power.alwayson` capability');
     }
 
