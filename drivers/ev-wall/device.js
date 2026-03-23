@@ -73,9 +73,7 @@ class EVWallDevice extends MqttDevice {
     this.log('[Settings] Updating');
 
     for (const name of changedKeys) {
-      const newValue = newSettings[name];
-
-      this.log(`[Settings] '${name}' is now '${newValue}'`);
+      this.log(`[Settings] User changed '${name}' from '${oldSettings[name]}' to '${newSettings[name]}'`);
     }
 
     this.log('[Settings] Updated');
