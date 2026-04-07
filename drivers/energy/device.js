@@ -85,7 +85,7 @@ class EnergyDevice extends MqttDevice {
 
     // Add `meter_power` capability
     if (!this.hasCapability('meter_power')) {
-      this.addCapability('meter_power').catch(this.error);
+      await this.addCapability('meter_power');
       this.log('[Migrate] Added `meter_power` capability');
     }
 

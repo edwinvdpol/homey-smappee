@@ -48,7 +48,7 @@ class GasWaterDevice extends Device {
 
     // Remove `measure_water` capability
     if (this.hasCapability('measure_water')) {
-      this.removeCapability('measure_water').catch(this.error);
+      await this.removeCapability('measure_water');
       this.log('[Maintenance] Removed `measure_water` capability');
     }
 
@@ -159,8 +159,8 @@ class GasWaterDevice extends Device {
 
     if (this.getStore().water_enabled) {
       if (!this.hasCapability('button.reset_water_meter')) {
-        this.addCapability('button.reset_water_meter').catch(this.error);
-        this.log('[Migrate] Added reset water meter button capability');
+        await this.addCapability('button.reset_water_meter');
+        this.log('[Migrate] Added `button.reset_water_meter` capability');
       }
 
       if (this.getStore().water_uom !== 'm3') {
