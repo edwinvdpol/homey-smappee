@@ -4,18 +4,18 @@
     "connecting": "Bezig met verbinden..."
   },
   "error": {
-    "401": "Inloggegevens van de Smappee API zijn onjuist",
-    "403": "Smappee API heeft de toegang tot dit apparaat geweigerd",
-    "404": "Apparaat is niet gevonden in Smappee account",
-    "50x": "Smappee API is niet beschikbaar",
-    "client_id": "Voer een geldig client ID in",
-    "client_secret": "Voer een geldig client secret in",
-    "led": "LED-helderheid wordt niet ondersteund door dit apparaat",
-    "network": "Smappee API is niet bereikbaar",
-    "unavailable": "Apparaat is niet beschikbaar",
-    "unknown": "Er is een onbekende fout opgetreden",
-    "water_disabled": "Apparaat heeft geen waterfunctie",
-    "water_uom": "De maateenheid voor water zou m³ moeten zijn in plaats van __uom__"
+    "401": "Inloggegevens van de Smappee API zijn onjuist.",
+    "403": "Smappee API heeft de toegang tot dit apparaat geweigerd.",
+    "404": "Apparaat is niet gevonden in Smappee account.",
+    "50x": "Smappee API is niet beschikbaar.",
+    "client_id": "Voer een geldig client ID in.",
+    "client_secret": "Voer een geldig client secret in.",
+    "led": "LED-helderheid wordt niet ondersteund door dit apparaat.",
+    "network": "Smappee API is niet bereikbaar.",
+    "unavailable": "Apparaat is niet beschikbaar.",
+    "unknown": "Er is een onbekende fout opgetreden.",
+    "water_disabled": "Apparaat heeft geen waterfunctie.",
+    "water_uom": "De maateenheid voor water zou m³ moeten zijn in plaats van __uom__."
   },
   "mqtt": "berichtenservice",
   "notification": {

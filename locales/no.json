@@ -4,18 +4,18 @@
     "connecting": "Kobler til..."
   },
   "error": {
-    "401": "Smappee API-legitimasjonen er feil",
-    "403": "Smappee API har nektet tilgang til denne enheten",
-    "404": "Enhet ikke funnet i Smappee-konto",
-    "50x": "Smappee API er utilgjengelig",
-    "client_id": "Oppgi en gyldig klient-ID",
-    "client_secret": "Oppgi en gyldig klienthemmelighet",
-    "led": "LED-lysstyrke støttes ikke av denne enheten",
-    "network": "Smappee API er utilgjengelig",
-    "unavailable": "Enheten er utilgjengelig",
-    "unknown": "En ukjent feil har oppstått",
-    "water_disabled": "Enheten har ikke vann aktivert",
-    "water_uom": "Vannmåleenheten skal være m³ i stedet for __uom__"
+    "401": "Smappee API-legitimasjonen er feil.",
+    "403": "Smappee API har nektet tilgang til denne enheten.",
+    "404": "Enhet ikke funnet i Smappee-konto.",
+    "50x": "Smappee API er utilgjengelig.",
+    "client_id": "Oppgi en gyldig klient-ID.",
+    "client_secret": "Oppgi en gyldig klienthemmelighet.",
+    "led": "LED-lysstyrke støttes ikke av denne enheten.",
+    "network": "Smappee API er utilgjengelig.",
+    "unavailable": "Enheten er utilgjengelig.",
+    "unknown": "En ukjent feil har oppstått.",
+    "water_disabled": "Enheten har ikke vann aktivert.",
+    "water_uom": "Vannmåleenheten skal være m³ i stedet for __uom__."
   },
   "mqtt": "meldingsservice",
   "notification": {

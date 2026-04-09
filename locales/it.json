@@ -4,18 +4,18 @@
     "connecting": "Connessione in corso..."
   },
   "error": {
-    "401": "Le credenziali API di Smappee sono errate",
-    "403": "L'API di Smappee ha negato l'accesso a questo dispositivo",
-    "404": "Dispositivo non trovato nell'account Smappee",
-    "50x": "L'API di Smappee non è disponibile",
-    "client_id": "Inserisci un client ID valido",
-    "client_secret": "Inserisci un client secret valido",
-    "led": "La luminosità del LED non è supportata da questo dispositivo",
-    "network": "L'API di Smappee non è raggiungibile",
-    "unavailable": "Dispositivo non disponibile",
-    "unknown": "Si è verificato un errore sconosciuto",
-    "water_disabled": "Il dispositivo non ha l'acqua abilitata",
-    "water_uom": "L'unità di misura dell'acqua dovrebbe essere m³ invece di __uom__"
+    "401": "Le credenziali API di Smappee sono errate.",
+    "403": "L'API di Smappee ha negato l'accesso a questo dispositivo.",
+    "404": "Dispositivo non trovato nell'account Smappee.",
+    "50x": "L'API di Smappee non è disponibile.",
+    "client_id": "Inserisci un client ID valido.",
+    "client_secret": "Inserisci un client secret valido.",
+    "led": "La luminosità del LED non è supportata da questo dispositivo.",
+    "network": "L'API di Smappee non è raggiungibile.",
+    "unavailable": "Dispositivo non disponibile.",
+    "unknown": "Si è verificato un errore sconosciuto.",
+    "water_disabled": "Il dispositivo non ha l'acqua abilitata.",
+    "water_uom": "L'unità di misura dell'acqua dovrebbe essere m³ invece di __uom__."
   },
   "mqtt": "servizio di messaggi",
   "notification": {
