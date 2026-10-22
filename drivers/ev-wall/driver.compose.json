@@ -4,13 +4,17 @@
   },
   "class": "evcharger",
   "capabilities": [
+    "evcharger_charging_state",
+    "evcharger_charging",
     "measure_power",
     "meter_power",
     "dim",
     "cable_connected",
-    "charging",
     "charging_mode"
   ],
+  "energy": {
+    "evCharger": true
+  },
   "$extends": [
     "defaults"
   ]
