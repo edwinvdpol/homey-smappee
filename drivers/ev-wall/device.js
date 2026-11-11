@@ -142,9 +142,14 @@ class EVWallDevice extends MqttDevice {
       this.setCapabilityValue('cable_connected', data.cableConnected).catch(this.error);
     }
 
-    // Charging (MQTT)
-    if (this.hasCapability('charging') && 'charging' in data) {
-      this.setCapabilityValue('charging', data.charging).catch(this.error);
+    // Charger charging (MQTT)
+    if (this.hasCapability('evcharger_charging') && 'charging' in data) {
+      this.setCapabilityValue('evcharger_charging', data.charging).catch(this.error);
+    }
+
+    // Charger charging state (MQTT)
+    if (this.hasCapability('evcharger_charging_state') && 'chargingState' in data) {
+      this.setCapabilityValue('evcharger_charging_state', data.chargingState).catch(this.error);
     }
 
     // Charging mode (MQTT)
@@ -212,16 +217,16 @@ class EVWallDevice extends MqttDevice {
   async migrate() {
     this.log('[Migrate] Started');
 
-    // Add `meter_power` capability
-    if (!this.hasCapability('meter_power')) {
-      await this.addCapability('meter_power');
-      this.log('[Migrate] Added `meter_power` capability');
+    // Remove `charging` capability
+    if (this.hasCapability('charging')) {
+      await this.removeCapability('charging');
+      this.log('[Migrate] Removed `charging` capability');
     }
 
-    // Add `charging` capability
-    if (!this.hasCapability('charging')) {
-      await this.addCapability('charging');
-      this.log('[Migrate] Added `charging` capability');
+    // Remove `measure_power.alwayson` capability
+    if (this.hasCapability('measure_power.alwayson')) {
+      await this.removeCapability('measure_power.alwayson');
+      this.log('[Migrate] Removed `measure_power.alwayson` capability');
     }
 
     // Add `dim` capability
@@ -230,10 +235,22 @@ class EVWallDevice extends MqttDevice {
       this.log('[Migrate] Added `dim` capability');
     }
 
-    // Remove `measure_power.alwayson` capability
-    if (this.hasCapability('measure_power.alwayson')) {
-      await this.removeCapability('measure_power.alwayson');
-      this.log('[Migrate] Removed `measure_power.alwayson` capability');
+    // Add `evcharger_charging_state` capability
+    if (!this.hasCapability('evcharger_charging_state')) {
+      await this.addCapability('evcharger_charging_state');
+      this.log('[Migrate] Added `evcharger_charging_state` capability');
+    }
+
+    // Add `evcharger_charging` capability
+    if (!this.hasCapability('evcharger_charging')) {
+      await this.addCapability('evcharger_charging');
+      this.log('[Migrate] Added `evcharger_charging` capability');
+    }
+
+    // Add `meter_power` capability
+    if (!this.hasCapability('meter_power')) {
+      await this.addCapability('meter_power');
+      this.log('[Migrate] Added `meter_power` capability');
     }
 
     this.log('[Migrate] Finished');

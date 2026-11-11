@@ -13,10 +13,10 @@
 class ChargingState {
 
   constructor(data) {
-    this.available = data.available || false;
+    this.available = data.available || true;
     this.chargingState = data.chargingState || null;
     this.chargingMode = data.chargingMode || null;
-    this.state = { current: null, previous: null };
+    this.state = { current: '', previous: '' };
 
     if ('iecStatus' in data) {
       this.state = data.iecStatus;
@@ -29,12 +29,34 @@ class ChargingState {
       cableConnected: this.isCableConnected(),
       charging: this.isCharging(),
       chargingMode: this.chargingMode.toLowerCase(),
+      chargingState: this.getChargingState(),
     };
+  }
+
+  // Return the charging state
+  getChargingState() {
+    if (!this.isCableConnected()) {
+      return 'plugged_out';
+    }
+
+    if (this.isCharging()) {
+      return 'plugged_in_charging';
+    }
+
+    return 'plugged_in';
+
+    // possible options:
+    // plugged_in_discharging
+    // plugged_in_paused
+
+    // plugged_in_charging
+    // plugged_in
+    // plugged_out
   }
 
   // Return whether the cable is connected
   isCableConnected() {
-    if (this.state.current === 'B1' || this.state.current === 'B2') {
+    if (this.state.current.startsWith('B')) {
       return true;
     }
 
@@ -43,13 +65,7 @@ class ChargingState {
 
   // Return whether charging is active
   isCharging() {
-    if (this.state.current === 'C1') {
-      if (this.state.previous === 'C2') return true;
-
-      return true;
-    }
-
-    return this.state.current === 'C2';
+    return this.state.current.startsWith('C');
   }
 
 }
